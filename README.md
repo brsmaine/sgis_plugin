@@ -2,9 +2,10 @@
 v3.40.1a <br>
 2024.03.DEC<br>
 updated to ensure compatibility with latest QGIS (v3.40.1)<br>
-sanitized - all references to BRS removed<br>
-config.json - org specific configuration is now maintained in external file and read at plugin load/reload...<br>
---<br>
-t.schmaltz@brsmaine.com
+<ul>
+<li>sanitized - all references to BRS/LA and all hardcoded paths/values removed</li>
+<li>config.json - org specific configuration is now maintained in external file and read at plugin load/reload...</ul>li
+</ul>
+mailto:t.schmaltz@brsmaine.com
 <hr>
 
