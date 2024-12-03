@@ -1,0 +1,12 @@
+{
+  "dbServer": "192.168.1.101",
+  "dbPort": "5432",
+  "db": "BRS_GIS_DEV",
+  "dbUser": "postgres",
+  "dbPass": "QlJTTUFpbkU0NDQ1",
+  "jobsPath": "Z:\\BRS-DEV",
+  "estimatesPath": "Z:\\0 - Settings\\GIS\\Reports\\GIS_Estimates.xlsx",
+  "reportsPath": "Z:\\0 - Settings\\GIS\\Reports",
+  "wwwURL": "http://brsmaine.com/brstree/",
+  "wwwRootFolder": "\\\\BRS-DEUCE\\inetpub$\\wwwroot\\brstree"
+}

@@ -1,0 +1,15 @@
+[general]
+name=sGIS_plugin
+qgisMinimumVersion=3.0
+qgisMaximumVersion=4.0
+description=surveyorGIS | Vector Operations Plugin
+about=sGIS is a set of Python plugins for manipulating vector map layers in Quantum GIS. sGIS provides an alternative to the Processing toolbox, with verbose progress reporting, an intuitive user interface and customized capabilities tailored to the operations of professional Surveyors in the US State of Maine.
+category=Vector
+version=3.40.1 (02DEC2024)
+author=AViTAS Concepts, LLC.
+email=admin@avitasconcepts.com
+homepage=http:/avitasconcepts.com
+tracker=https://github.com/brsmaine/brsgis_plugin/issues
+repository=https://github.com/brsmaine/brsgis_plugin
+experimental=False
+deprecated=False
