@@ -699,15 +699,19 @@ def formOpen(dialog, layerid, featureid):
             pass
 
 
-        if objectType.toPlainText() == 'polygon':
-            mbl.show()
-            lMBL.setText("map_bk_lot(s)")
-            objectType.hide()
+        try:
+            if objectType.toPlainText() == 'polygon':
+                mbl.show()
+                lMBL.setText("map_bk_lot(s)")
+                objectType.hide()
+                pass
+            else:
+                mbl.hide()
+                lMBL.setText("Feature Type")
+                objectType.show()
+        
+        except Exception as e:
             pass
-        else:
-            mbl.hide()
-            lMBL.setText("Feature Type")
-            objectType.show()
 
         try:
             if state.text() == 'NULL':

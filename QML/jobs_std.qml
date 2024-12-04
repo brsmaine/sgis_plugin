@@ -1,67 +1,199 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis maxScale="0" minScale="100000000" version="3.18.2-Zürich" labelsEnabled="1" styleCategories="AllStyleCategories" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" simplifyAlgorithm="0" simplifyLocal="1" simplifyDrawingTol="1" readOnly="0">
+<qgis minScale="100000000" readOnly="0" labelsEnabled="1" simplifyLocal="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" maxScale="0" version="3.40.1-Bratislava" autoRefreshTime="0" autoRefreshMode="Disabled" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyMaxScale="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal mode="0" endExpression="" startField="" endField="" durationUnit="min" fixedDuration="0" accumulate="0" enabled="0" durationField="" startExpression="">
+  <temporal endField="" limitMode="0" startExpression="" startField="" durationUnit="min" durationField="sid" endExpression="" enabled="0" mode="0" fixedDuration="0" accumulate="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
+  <elevation clamping="Terrain" binding="Centroid" symbology="Line" zoffset="0" type="IndividualFeatures" showMarkerSymbolInSurfacePlots="0" zscale="1" extrusionEnabled="0" extrusion="0" respectLayerSymbol="1">
+    <data-defined-properties>
+      <Option type="Map">
+        <Option name="name" type="QString" value=""/>
+        <Option name="properties"/>
+        <Option name="type" type="QString" value="collection"/>
+      </Option>
+    </data-defined-properties>
+    <profileLineSymbol>
+      <symbol force_rhr="0" name="" type="line" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer pass="0" id="{34e935a3-0ca1-446a-b9cb-382e1d737e84}" enabled="1" locked="0" class="SimpleLine">
+          <Option type="Map">
+            <Option name="align_dash_pattern" type="QString" value="0"/>
+            <Option name="capstyle" type="QString" value="square"/>
+            <Option name="customdash" type="QString" value="5;2"/>
+            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="customdash_unit" type="QString" value="MM"/>
+            <Option name="dash_pattern_offset" type="QString" value="0"/>
+            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="line_color" type="QString" value="114,155,111,255,rgb:0.44705882352941179,0.60784313725490191,0.43529411764705883,1"/>
+            <Option name="line_style" type="QString" value="solid"/>
+            <Option name="line_width" type="QString" value="0.6"/>
+            <Option name="line_width_unit" type="QString" value="MM"/>
+            <Option name="offset" type="QString" value="0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="ring_filter" type="QString" value="0"/>
+            <Option name="trim_distance_end" type="QString" value="0"/>
+            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+            <Option name="trim_distance_start" type="QString" value="0"/>
+            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
+            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+            <Option name="use_custom_dash" type="QString" value="0"/>
+            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileLineSymbol>
+    <profileFillSymbol>
+      <symbol force_rhr="0" name="" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer pass="0" id="{f7e2e6ef-ba32-42a9-b938-76bfa18672b5}" enabled="1" locked="0" class="SimpleFill">
+          <Option type="Map">
+            <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="color" type="QString" value="114,155,111,255,rgb:0.44705882352941179,0.60784313725490191,0.43529411764705883,1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="81,111,79,255,rgb:0.31764705882352939,0.43529411764705883,0.30980392156862746,1"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.2"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="style" type="QString" value="solid"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileFillSymbol>
+    <profileMarkerSymbol>
+      <symbol force_rhr="0" name="" type="marker" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer pass="0" id="{1184e7d1-1041-4bb4-9b83-83b0f2e7fbed}" enabled="1" locked="0" class="SimpleMarker">
+          <Option type="Map">
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="114,155,111,255,rgb:0.44705882352941179,0.60784313725490191,0.43529411764705883,1"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="name" type="QString" value="diamond"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="81,111,79,255,rgb:0.31764705882352939,0.43529411764705883,0.30980392156862746,1"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.2"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="3"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileMarkerSymbol>
+  </elevation>
+  <renderer-v2 referencescale="-1" symbollevels="0" type="RuleRenderer" enableorderby="0" forceraster="0">
     <rules key="{6e19d5e1-ebcc-4858-ab59-730850fcb1d0}">
-      <rule key="{1e5a7b63-f355-42ff-bc8e-46c77b948125}" filter="&quot;job_type&quot; = 'BRS'" label="BRS" symbol="0">
-        <rule key="{89d1fd1a-1fae-4f47-a9d8-04487501294a}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="1"/>
+      <rule filter="&quot;job_type&quot; = 'BRS'" key="{1e5a7b63-f355-42ff-bc8e-46c77b948125}" label="BRS" symbol="0">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{89d1fd1a-1fae-4f47-a9d8-04487501294a}" scalemindenom="500" label="Line Objects" symbol="1"/>
       </rule>
-      <rule key="{d17a2d67-7c76-4d76-bf5b-9322c97b7bfb}" filter="&quot;job_type&quot; = 'SDP'" label="SDP" symbol="2">
-        <rule key="{3b94ee39-22d6-4bf7-b5bd-40d71a742226}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="3"/>
+      <rule filter="&quot;job_type&quot; = 'SDP'" key="{d17a2d67-7c76-4d76-bf5b-9322c97b7bfb}" label="SDP" symbol="2">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{3b94ee39-22d6-4bf7-b5bd-40d71a742226}" scalemindenom="500" label="Line Objects" symbol="3"/>
       </rule>
-      <rule key="{a4b0dfba-ff6d-4f79-85ff-8ed456ef7d61}" filter="&quot;job_type&quot; = 'BRSDP'" label="BRSDP" symbol="4">
-        <rule key="{5631f5a5-dbf3-48d7-b590-41454f367315}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="5"/>
+      <rule filter="&quot;job_type&quot; = 'BRSDP'" key="{a4b0dfba-ff6d-4f79-85ff-8ed456ef7d61}" label="BRSDP" symbol="4">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{5631f5a5-dbf3-48d7-b590-41454f367315}" scalemindenom="500" label="Line Objects" symbol="5"/>
       </rule>
-      <rule key="{31166ece-b6d3-413d-99d4-3ef3dd233f69}" filter="&quot;job_type&quot; =  'FEMA'" label="FEMA" symbol="6">
-        <rule key="{c60d77a1-1b09-49bf-a5ba-668850253ef5}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="7"/>
+      <rule filter="&quot;job_type&quot; =  'FEMA'" key="{31166ece-b6d3-413d-99d4-3ef3dd233f69}" label="FEMA" symbol="6">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{c60d77a1-1b09-49bf-a5ba-668850253ef5}" scalemindenom="500" label="Line Objects" symbol="7"/>
       </rule>
-      <rule key="{45e849f6-39d3-44c5-a5af-6354b91e56d6}" filter="&quot;job_type&quot;  = 'MIS'" label="MIS" symbol="8">
-        <rule key="{0613835e-6b93-4c57-87d6-3658991bcaf5}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="9"/>
+      <rule filter="&quot;job_type&quot;  = 'MIS'" key="{45e849f6-39d3-44c5-a5af-6354b91e56d6}" label="MIS" symbol="8">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{0613835e-6b93-4c57-87d6-3658991bcaf5}" scalemindenom="500" label="Line Objects" symbol="9"/>
       </rule>
-      <rule key="{98cce8cb-1ee2-497a-a300-1d4c66777f48}" filter="&quot;job_type&quot; = 'Research'" label="Research" symbol="10">
-        <rule key="{8c5d0d82-4bb6-4dd1-8160-16797cf29aa0}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="11"/>
+      <rule filter="&quot;job_type&quot; = 'Research'" key="{98cce8cb-1ee2-497a-a300-1d4c66777f48}" label="Research" symbol="10">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{8c5d0d82-4bb6-4dd1-8160-16797cf29aa0}" scalemindenom="500" label="Line Objects" symbol="11"/>
       </rule>
-      <rule key="{18f9bfc1-2ce0-4951-a836-04d121d0cd30}" filter="&quot;job_type&quot; = 'Stake Line'" label="Stake Line" symbol="12">
-        <rule key="{f22f4b92-94bb-4f5c-ab23-ecb5f2492751}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="13"/>
+      <rule filter="&quot;job_type&quot; = 'Stake Line'" key="{18f9bfc1-2ce0-4951-a836-04d121d0cd30}" label="Stake Line" symbol="12">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{f22f4b92-94bb-4f5c-ab23-ecb5f2492751}" scalemindenom="500" label="Line Objects" symbol="13"/>
       </rule>
-      <rule key="{eb3bd3db-b01c-4aa5-b69d-9ca971903c8b}" filter="&quot;job_type&quot; = 'Flag Line'" label="Flag Line" symbol="14">
-        <rule key="{15c42b3c-ff05-4c23-9e9a-0ecfcc476fae}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="15"/>
+      <rule filter="&quot;job_type&quot; = 'Flag Line'" key="{eb3bd3db-b01c-4aa5-b69d-9ca971903c8b}" label="Flag Line" symbol="14">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{15c42b3c-ff05-4c23-9e9a-0ecfcc476fae}" scalemindenom="500" label="Line Objects" symbol="15"/>
       </rule>
-      <rule key="{3191cb64-9079-45bf-99d2-c4f83d751f28}" filter="&quot;job_type&quot; = 'Stake Out'" label="Stake Out" symbol="16">
-        <rule key="{34d43701-69e5-4e32-bb04-08725d9e58cd}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="17"/>
+      <rule filter="&quot;job_type&quot; = 'Stake Out'" key="{3191cb64-9079-45bf-99d2-c4f83d751f28}" label="Stake Out" symbol="16">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{34d43701-69e5-4e32-bb04-08725d9e58cd}" scalemindenom="500" label="Line Objects" symbol="17"/>
       </rule>
-      <rule key="{4ffcbb3c-5cd0-4e7e-b0f2-91bee2d9cd54}" filter="&quot;job_type&quot;  = 'Subdivision'" label="Subdivision" symbol="18">
-        <rule key="{27013f12-3249-44a6-90af-7930551a1f4d}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="19"/>
+      <rule filter="&quot;job_type&quot;  = 'Subdivision'" key="{4ffcbb3c-5cd0-4e7e-b0f2-91bee2d9cd54}" label="Subdivision" symbol="18">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{27013f12-3249-44a6-90af-7930551a1f4d}" scalemindenom="500" label="Line Objects" symbol="19"/>
       </rule>
-      <rule key="{a6273937-b18c-467c-bbd6-d987ab251794}" filter="&quot;job_type&quot; = 'Route Survey'" label="Route Survey" symbol="20">
-        <rule key="{ea997695-c1c8-463e-8315-927afe86c13b}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="21"/>
+      <rule filter="&quot;job_type&quot; = 'Route Survey'" key="{a6273937-b18c-467c-bbd6-d987ab251794}" label="Route Survey" symbol="20">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{ea997695-c1c8-463e-8315-927afe86c13b}" scalemindenom="500" label="Line Objects" symbol="21"/>
       </rule>
-      <rule key="{676d2a60-6698-4fd4-9f4d-5b4e3695bb6f}" filter="&quot;job_type&quot; = 'As-built'" label="As-built" symbol="22">
-        <rule key="{233b102c-ca37-4311-9069-3c5feee5891c}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="23"/>
+      <rule filter="&quot;job_type&quot; = 'As-built'" key="{676d2a60-6698-4fd4-9f4d-5b4e3695bb6f}" label="As-built" symbol="22">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{233b102c-ca37-4311-9069-3c5feee5891c}" scalemindenom="500" label="Line Objects" symbol="23"/>
       </rule>
-      <rule key="{730ec2b7-a613-4df0-8e96-5638975b2765}" filter="&quot;job_type&quot; = 'Bathymetric Survey'" label="Bathymetric Survey" symbol="24">
-        <rule key="{8afb3617-04f3-4763-874d-ece2c79ad3be}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="25"/>
+      <rule filter="&quot;job_type&quot; = 'Bathymetric Survey'" key="{730ec2b7-a613-4df0-8e96-5638975b2765}" label="Bathymetric Survey" symbol="24">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{8afb3617-04f3-4763-874d-ece2c79ad3be}" scalemindenom="500" label="Line Objects" symbol="25"/>
       </rule>
-      <rule key="{2c829efa-c695-48be-81b9-0bfedd3848c7}" filter="&quot;job_type&quot; = 'Other Job'" label="Other Job" symbol="26">
-        <rule key="{be35cf9c-af46-4944-be8d-25080e2ea1a8}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="27"/>
+      <rule filter="&quot;job_type&quot; = 'Other Job'" key="{2c829efa-c695-48be-81b9-0bfedd3848c7}" label="Other Job" symbol="26">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{be35cf9c-af46-4944-be8d-25080e2ea1a8}" scalemindenom="500" label="Line Objects" symbol="27"/>
       </rule>
-      <rule key="{e82fb555-6ada-45d4-aba4-8d387c8c1f0b}" filter=" &quot;job_type&quot; = ''" symbol="28">
-        <rule key="{705c6f58-9bcf-48b8-9cf8-43a52a3beb1e}" filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" label="Line Objects" scalemindenom="500" scalemaxdenom="25000" symbol="29"/>
+      <rule filter=" &quot;job_type&quot; = ''" key="{e82fb555-6ada-45d4-aba4-8d387c8c1f0b}" symbol="28">
+        <rule filter="&quot;objectType&quot; = 'road' or&#xd;&#xa;&quot;objectType&quot; = 'utility' or&#xd;&#xa;&quot;objectType&quot; = 'easement'" scalemaxdenom="25000" key="{705c6f58-9bcf-48b8-9cf8-43a52a3beb1e}" scalemindenom="500" label="Line Objects" symbol="29"/>
       </rule>
     </rules>
     <symbols>
-      <symbol alpha="1" force_rhr="0" name="0" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="0" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -69,31 +201,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{75dde460-1eaf-4e8d-bceb-329952578afb}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="78,229,255,255"/>
+            <Option name="color" type="QString" value="78,229,255,255,rgb:0.30588235294117649,0.89803921568627454,1,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="78,229,255,255"/>
+            <Option name="outline_color" type="QString" value="78,229,255,255,rgb:0.30588235294117649,0.89803921568627454,1,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="78,229,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="78,229,255,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -103,7 +224,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="1" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="1" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -111,31 +232,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{56073446-b3eb-44b6-b0bb-936e55db0897}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="78,229,255,255"/>
+            <Option name="color" type="QString" value="78,229,255,255,rgb:0.30588235294117649,0.89803921568627454,1,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="78,229,255,255"/>
+            <Option name="outline_color" type="QString" value="78,229,255,255,rgb:0.30588235294117649,0.89803921568627454,1,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="78,229,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="78,229,255,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -145,7 +255,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="10" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="10" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -153,31 +263,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{f214dac4-f8c5-43c6-b6a3-af4453be2413}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="246,248,226,255"/>
+            <Option name="color" type="QString" value="246,248,226,255,rgb:0.96470588235294119,0.97254901960784312,0.88627450980392153,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="134,134,0,255"/>
+            <Option name="outline_color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="246,248,226,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="134,134,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -187,7 +286,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="11" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="11" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -195,31 +294,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{965d66cb-053a-4c52-b421-500239a1e94b}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="246,248,226,255"/>
+            <Option name="color" type="QString" value="246,248,226,255,rgb:0.96470588235294119,0.97254901960784312,0.88627450980392153,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="246,248,226,255"/>
+            <Option name="outline_color" type="QString" value="246,248,226,255,rgb:0.96470588235294119,0.97254901960784312,0.88627450980392153,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="246,248,226,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="246,248,226,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -229,7 +317,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="12" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="12" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -237,31 +325,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{bcdb9b28-ef3a-4fdc-895e-1db3b9fceeae}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="161,214,166,255"/>
+            <Option name="color" type="QString" value="161,214,166,255,rgb:0.63137254901960782,0.83921568627450982,0.65098039215686276,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="134,134,0,255"/>
+            <Option name="outline_color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="161,214,166,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="134,134,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -271,7 +348,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="13" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="13" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -279,31 +356,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{4762e9ee-21ae-4a16-bc3c-89b66a2d7fee}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="161,214,166,255"/>
+            <Option name="color" type="QString" value="161,214,166,255,rgb:0.63137254901960782,0.83921568627450982,0.65098039215686276,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="161,214,166,255"/>
+            <Option name="outline_color" type="QString" value="161,214,166,255,rgb:0.63137254901960782,0.83921568627450982,0.65098039215686276,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="161,214,166,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="161,214,166,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -313,7 +379,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="14" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="14" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -321,31 +387,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{ddbac5bf-cb87-452a-8234-908bcdddbb77}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="204,242,208,255"/>
+            <Option name="color" type="QString" value="204,242,208,255,rgb:0.80000000000000004,0.94901960784313721,0.81568627450980391,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="134,134,0,255"/>
+            <Option name="outline_color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="204,242,208,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="134,134,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -355,7 +410,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="15" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="15" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -363,31 +418,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{b779a661-a908-4fb0-8e61-c1c6c20da02c}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="204,242,208,255"/>
+            <Option name="color" type="QString" value="204,242,208,255,rgb:0.80000000000000004,0.94901960784313721,0.81568627450980391,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="204,242,208,255"/>
+            <Option name="outline_color" type="QString" value="204,242,208,255,rgb:0.80000000000000004,0.94901960784313721,0.81568627450980391,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="204,242,208,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="204,242,208,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -397,7 +441,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="16" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="16" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -405,31 +449,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{fe595d91-a049-4ff2-8731-6c5930797bcb}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="255,224,91,255"/>
+            <Option name="color" type="QString" value="255,224,91,255,rgb:1,0.8784313725490196,0.35686274509803922,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="255,224,91,255"/>
+            <Option name="outline_color" type="QString" value="255,224,91,255,rgb:1,0.8784313725490196,0.35686274509803922,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="255,224,91,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="255,224,91,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -439,7 +472,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="17" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="17" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -447,31 +480,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{2f1428a3-81a1-4b38-9943-68d517371def}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="255,224,91,255"/>
+            <Option name="color" type="QString" value="255,224,91,255,rgb:1,0.8784313725490196,0.35686274509803922,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="255,224,91,255"/>
+            <Option name="outline_color" type="QString" value="255,224,91,255,rgb:1,0.8784313725490196,0.35686274509803922,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="255,224,91,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="255,224,91,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -481,7 +503,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="18" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="18" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -489,31 +511,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{a4aeb299-5cdd-4754-a931-0bdc4a944337}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="49,67,230,255"/>
+            <Option name="color" type="QString" value="49,67,230,255,rgb:0.19215686274509805,0.2627450980392157,0.90196078431372551,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="49,67,230,255"/>
+            <Option name="outline_color" type="QString" value="49,67,230,255,rgb:0.19215686274509805,0.2627450980392157,0.90196078431372551,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="49,67,230,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="49,67,230,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -523,7 +534,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="19" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="19" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -531,31 +542,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{9476613e-4067-4db6-a040-bfe4b10945e0}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="49,67,230,255"/>
+            <Option name="color" type="QString" value="49,67,230,255,rgb:0.19215686274509805,0.2627450980392157,0.90196078431372551,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="49,67,230,255"/>
+            <Option name="outline_color" type="QString" value="49,67,230,255,rgb:0.19215686274509805,0.2627450980392157,0.90196078431372551,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="49,67,230,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="49,67,230,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -565,7 +565,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="2" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="2" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -573,31 +573,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{75091ce1-b610-4417-b251-48665adc5923}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="204,75,81,255"/>
+            <Option name="color" type="QString" value="204,75,81,255,rgb:0.80000000000000004,0.29411764705882354,0.31764705882352939,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="204,75,81,255"/>
+            <Option name="outline_color" type="QString" value="204,75,81,255,rgb:0.80000000000000004,0.29411764705882354,0.31764705882352939,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="204,75,81,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="204,75,81,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -607,7 +596,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="0.607" force_rhr="0" name="20" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="20" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="0.607">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -615,31 +604,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{c9cd73e6-9fa1-443e-97b7-d7b852ca71b9}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="246,121,233,255"/>
+            <Option name="color" type="QString" value="246,121,233,255,rgb:0.96470588235294119,0.47450980392156861,0.9137254901960784,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="246,121,233,255"/>
+            <Option name="outline_color" type="QString" value="246,121,233,255,rgb:0.96470588235294119,0.47450980392156861,0.9137254901960784,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="246,121,233,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="246,121,233,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -649,7 +627,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="21" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="21" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -657,31 +635,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{566ff05c-1612-490b-a9be-f577c95be538}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="246,121,233,255"/>
+            <Option name="color" type="QString" value="246,121,233,255,rgb:0.96470588235294119,0.47450980392156861,0.9137254901960784,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="246,121,233,255"/>
+            <Option name="outline_color" type="QString" value="246,121,233,255,rgb:0.96470588235294119,0.47450980392156861,0.9137254901960784,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="246,121,233,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="246,121,233,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -691,7 +658,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="22" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="22" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -699,31 +666,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{c27b73f1-0f91-42d6-b244-b8a4afe531a0}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="237,253,255,255"/>
+            <Option name="color" type="QString" value="237,253,255,255,rgb:0.92941176470588238,0.99215686274509807,1,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="134,134,0,255"/>
+            <Option name="outline_color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="237,253,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="134,134,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -733,7 +689,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="23" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="23" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -741,31 +697,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{62e51368-0f88-465a-b67c-bb57d0b3e3f7}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="237,253,255,255"/>
+            <Option name="color" type="QString" value="237,253,255,255,rgb:0.92941176470588238,0.99215686274509807,1,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="237,253,255,255"/>
+            <Option name="outline_color" type="QString" value="237,253,255,255,rgb:0.92941176470588238,0.99215686274509807,1,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="237,253,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="237,253,255,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -775,7 +720,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="24" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="24" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -783,31 +728,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{7bc7260a-4f78-48ca-8475-257e9cc6809a}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="0,204,0,255"/>
+            <Option name="color" type="QString" value="0,204,0,255,rgb:0,0.80000000000000004,0,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="134,134,0,255"/>
+            <Option name="outline_color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,204,0,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="134,134,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -817,7 +751,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="25" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="25" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -825,31 +759,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{e78c9b2c-c03f-4a52-ad2e-2f7fc5ccb151}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="0,204,0,255"/>
+            <Option name="color" type="QString" value="0,204,0,255,rgb:0,0.80000000000000004,0,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="0,204,0,255"/>
+            <Option name="outline_color" type="QString" value="0,204,0,255,rgb:0,0.80000000000000004,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,204,0,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="0,204,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -859,7 +782,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="26" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="26" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -867,31 +790,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{1e12058e-87c7-447a-a62d-82c67b6d874b}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="134,134,0,255"/>
+            <Option name="color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="134,134,0,255"/>
+            <Option name="outline_color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="134,134,0,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="134,134,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -901,7 +813,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="27" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="27" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -909,31 +821,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{5a1aedb1-3638-4b00-9a65-85e97c63f46d}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="134,134,0,255"/>
+            <Option name="color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="134,134,0,255"/>
+            <Option name="outline_color" type="QString" value="134,134,0,255,rgb:0.52549019607843139,0.52549019607843139,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="134,134,0,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="134,134,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -943,7 +844,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="0.607" force_rhr="0" name="28" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="28" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="0.607">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -951,31 +852,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{018bf639-b722-4944-bb57-643b875e747f}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="43,131,186,255"/>
+            <Option name="color" type="QString" value="43,131,186,255,rgb:0.16862745098039217,0.51372549019607838,0.72941176470588232,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="0,0,0,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255,rgb:0,0,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="43,131,186,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -985,7 +875,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="29" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="29" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -993,31 +883,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{5b0b9222-e6dd-4ac1-a33e-36b75cb4861c}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="43,131,186,255"/>
+            <Option name="color" type="QString" value="43,131,186,255,rgb:0.16862745098039217,0.51372549019607838,0.72941176470588232,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="43,131,186,255"/>
+            <Option name="outline_color" type="QString" value="43,131,186,255,rgb:0.16862745098039217,0.51372549019607838,0.72941176470588232,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="43,131,186,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="43,131,186,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1027,7 +906,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="3" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="3" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -1035,31 +914,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{13cc5a45-6d73-4842-afd2-9be524cffd20}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="204,75,81,255"/>
+            <Option name="color" type="QString" value="204,75,81,255,rgb:0.80000000000000004,0.29411764705882354,0.31764705882352939,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="204,75,81,255"/>
+            <Option name="outline_color" type="QString" value="204,75,81,255,rgb:0.80000000000000004,0.29411764705882354,0.31764705882352939,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="204,75,81,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="204,75,81,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1069,7 +937,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="4" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="4" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -1077,31 +945,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{58f4efdc-ac50-4e26-a597-0c74838ab3b2}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="177,90,231,255"/>
+            <Option name="color" type="QString" value="177,90,231,255,rgb:0.69411764705882351,0.35294117647058826,0.90588235294117647,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="0,0,0,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255,rgb:0,0,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="177,90,231,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1111,7 +968,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="5" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="5" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -1119,31 +976,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{ac007888-147e-43ca-8238-955c7396fef2}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="177,90,231,255"/>
+            <Option name="color" type="QString" value="177,90,231,255,rgb:0.69411764705882351,0.35294117647058826,0.90588235294117647,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="177,90,231,255"/>
+            <Option name="outline_color" type="QString" value="177,90,231,255,rgb:0.69411764705882351,0.35294117647058826,0.90588235294117647,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="177,90,231,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="177,90,231,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1153,7 +999,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="6" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="6" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -1161,31 +1007,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{fc94019b-0bfd-4aa0-bd50-cb11f20e10f4}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="250,146,55,255"/>
+            <Option name="color" type="QString" value="250,146,55,255,rgb:0.98039215686274506,0.5725490196078431,0.21568627450980393,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="250,146,55,255"/>
+            <Option name="outline_color" type="QString" value="250,146,55,255,rgb:0.98039215686274506,0.5725490196078431,0.21568627450980393,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="250,146,55,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="250,146,55,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1195,7 +1030,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="7" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="7" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -1203,31 +1038,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{319a7dcd-1c60-4870-8457-215dfc6f327c}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="250,146,55,255"/>
+            <Option name="color" type="QString" value="250,146,55,255,rgb:0.98039215686274506,0.5725490196078431,0.21568627450980393,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="250,146,55,255"/>
+            <Option name="outline_color" type="QString" value="250,146,55,255,rgb:0.98039215686274506,0.5725490196078431,0.21568627450980393,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="250,146,55,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="250,146,55,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1237,7 +1061,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="0.75" force_rhr="0" name="8" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="8" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="0.75">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -1245,31 +1069,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{7ada48d0-769e-4982-bd49-91f9446d75d2}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="67,227,184,255"/>
+            <Option name="color" type="QString" value="67,227,184,255,rgb:0.2627450980392157,0.8901960784313725,0.72156862745098038,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="0,0,0,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255,rgb:0,0,0,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.26"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="67,227,184,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1279,7 +1092,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" force_rhr="0" name="9" clip_to_extent="1" type="fill">
+      <symbol force_rhr="0" name="9" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -1287,31 +1100,20 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+        <layer pass="0" id="{858dedf8-42cb-4046-a4d4-98de0c9cc287}" enabled="1" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="67,227,184,255"/>
+            <Option name="color" type="QString" value="67,227,184,255,rgb:0.2627450980392157,0.8901960784313725,0.72156862745098038,1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="Point"/>
-            <Option name="outline_color" type="QString" value="67,227,184,255"/>
+            <Option name="outline_color" type="QString" value="67,227,184,255,rgb:0.2627450980392157,0.8901960784313725,0.72156862745098038,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="5"/>
             <Option name="outline_width_unit" type="QString" value="Point"/>
             <Option name="style" type="QString" value="no"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="67,227,184,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="Point"/>
-          <prop k="outline_color" v="67,227,184,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="5"/>
-          <prop k="outline_width_unit" v="Point"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1322,16 +1124,60 @@
         </layer>
       </symbol>
     </symbols>
+    <data-defined-properties>
+      <Option type="Map">
+        <Option name="name" type="QString" value=""/>
+        <Option name="properties"/>
+        <Option name="type" type="QString" value="collection"/>
+      </Option>
+    </data-defined-properties>
   </renderer-v2>
+  <selection mode="Default">
+    <selectionColor invalid="1"/>
+    <selectionSymbol>
+      <symbol force_rhr="0" name="" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </data_defined_properties>
+        <layer pass="0" id="{2a0cb6b8-34cb-4f17-8765-93b6f6104777}" enabled="1" locked="0" class="SimpleFill">
+          <Option type="Map">
+            <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="color" type="QString" value="0,0,255,255,rgb:0,0,1,1"/>
+            <Option name="joinstyle" type="QString" value="bevel"/>
+            <Option name="offset" type="QString" value="0,0"/>
+            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="offset_unit" type="QString" value="MM"/>
+            <Option name="outline_color" type="QString" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.26"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="style" type="QString" value="solid"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties"/>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </selectionSymbol>
+  </selection>
   <labeling type="rule-based">
-    <rules key="{d434f02f-c11c-4db7-97bc-6def8e972b89}">
-      <rule key="{7bdf3f41-4e77-4320-b4bf-0e941f2f2474}" filter=" &quot;objectType&quot; = 'road' or&#xd;&#xa;  &quot;objectType&quot; = 'utility' or&#xd;&#xa;   &quot;objectType&quot; = 'easement' " description="Line Labels" scalemindenom="1" scalemaxdenom="7500">
+    <rules key="{bcb69cd3-00d3-4848-80fa-ea8b9a6eb00d}">
+      <rule filter=" &quot;objectType&quot; = 'road' or&#xd;&#xa;  &quot;objectType&quot; = 'utility' or&#xd;&#xa;   &quot;objectType&quot; = 'easement' " scalemaxdenom="7500" key="{5fa00612-54d0-4b3c-86e6-07c89f01b962}" scalemindenom="1" description="Line Labels">
         <settings calloutType="simple">
-          <text-style multilineHeight="1" textOrientation="horizontal" fontLetterSpacing="0" fontWordSpacing="0" fontStrikeout="0" fontFamily="MS Shell Dlg 2" fontKerning="1" fieldName="job_no" fontSize="11" namedStyle="Regular" fontWeight="50" capitalization="0" blendMode="0" fontItalic="0" allowHtml="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" isExpression="0" useSubstitutions="0" textColor="255,161,9,255" fontUnderline="0" previewBkgrdColor="255,255,255,255" fontSizeUnit="Point">
-            <text-buffer bufferBlendMode="0" bufferNoFill="0" bufferJoinStyle="128" bufferSize="1" bufferDraw="1" bufferColor="89,89,89,255" bufferOpacity="1" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0"/>
-            <text-mask maskOpacity="1" maskEnabled="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSizeUnits="MM" maskJoinStyle="128" maskedSymbolLayers="" maskType="0" maskSize="0"/>
-            <background shapeRotation="0" shapeBorderWidth="0" shapeBlendMode="0" shapeSizeY="0" shapeSizeUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeSizeX="0" shapeJoinStyle="64" shapeRadiiY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeRadiiX="0" shapeFillColor="255,255,255,255" shapeSizeType="0" shapeSVGFile="" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeOpacity="1" shapeOffsetX="0" shapeBorderColor="128,128,128,255" shapeRadiiUnit="MM" shapeDraw="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeBorderWidthUnit="MM">
-              <symbol alpha="0" force_rhr="0" name="markerSymbol" clip_to_extent="1" type="marker">
+          <text-style namedStyle="Regular" capitalization="0" fontSizeUnit="Point" fontWeight="50" fontItalic="0" textColor="255,161,9,255,rgb:1,0.63137254901960782,0.03529411764705882,1" isExpression="0" fontSize="11" fontStrikeout="0" tabStopDistanceUnit="Point" forcedItalic="0" fontKerning="1" fieldName="job_no" forcedBold="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" tabStopDistance="80" allowHtml="0" blendMode="0" fontLetterSpacing="0" multilineHeight="1" fontWordSpacing="0" fontUnderline="0" textOrientation="horizontal" textOpacity="1" previewBkgrdColor="255,255,255,255,rgb:1,1,1,1" multilineHeightUnit="Percentage" fontFamily="MS Shell Dlg 2" legendString="Aa" tabStopDistanceMapUnitScale="3x:0,0,0,0,0,0">
+            <families/>
+            <text-buffer bufferOpacity="1" bufferDraw="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="89,89,89,255,rgb:0.34901960784313724,0.34901960784313724,0.34901960784313724,1" bufferNoFill="0" bufferSizeUnits="MM" bufferSize="1" bufferJoinStyle="128"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskedSymbolLayers="" maskSize2="1.5" maskType="0" maskSizeUnits="MM" maskOpacity="1" maskEnabled="0" maskSize="1.5" maskJoinStyle="128"/>
+            <background shapeOffsetX="0" shapeOffsetUnit="MM" shapeBlendMode="0" shapeSVGFile="" shapeSizeUnit="MM" shapeRotation="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeSizeX="0" shapeRadiiY="0" shapeType="0" shapeOpacity="1" shapeRadiiX="0" shapeJoinStyle="64" shapeSizeType="0" shapeDraw="0" shapeFillColor="255,255,255,255,rgb:1,1,1,1" shapeRadiiUnit="MM" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidth="0" shapeOffsetY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeBorderWidthUnit="MM" shapeBorderColor="128,128,128,255,rgb:0.50196078431372548,0.50196078431372548,0.50196078431372548,1">
+              <symbol force_rhr="0" name="markerSymbol" type="marker" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="0">
                 <data_defined_properties>
                   <Option type="Map">
                     <Option name="name" type="QString" value=""/>
@@ -1339,17 +1185,18 @@
                     <Option name="type" type="QString" value="collection"/>
                   </Option>
                 </data_defined_properties>
-                <layer locked="0" class="SimpleMarker" pass="0" enabled="1">
+                <layer pass="0" id="" enabled="1" locked="0" class="SimpleMarker">
                   <Option type="Map">
                     <Option name="angle" type="QString" value="0"/>
-                    <Option name="color" type="QString" value="229,182,54,255"/>
+                    <Option name="cap_style" type="QString" value="square"/>
+                    <Option name="color" type="QString" value="229,182,54,255,rgb:0.89803921568627454,0.71372549019607845,0.21176470588235294,1"/>
                     <Option name="horizontal_anchor_point" type="QString" value="1"/>
                     <Option name="joinstyle" type="QString" value="bevel"/>
                     <Option name="name" type="QString" value="circle"/>
                     <Option name="offset" type="QString" value="0,0"/>
                     <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                     <Option name="offset_unit" type="QString" value="MM"/>
-                    <Option name="outline_color" type="QString" value="35,35,35,255"/>
+                    <Option name="outline_color" type="QString" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
                     <Option name="outline_style" type="QString" value="solid"/>
                     <Option name="outline_width" type="QString" value="0"/>
                     <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1360,24 +1207,37 @@
                     <Option name="size_unit" type="QString" value="MM"/>
                     <Option name="vertical_anchor_point" type="QString" value="1"/>
                   </Option>
-                  <prop k="angle" v="0"/>
-                  <prop k="color" v="229,182,54,255"/>
-                  <prop k="horizontal_anchor_point" v="1"/>
-                  <prop k="joinstyle" v="bevel"/>
-                  <prop k="name" v="circle"/>
-                  <prop k="offset" v="0,0"/>
-                  <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="outline_color" v="35,35,35,255"/>
-                  <prop k="outline_style" v="solid"/>
-                  <prop k="outline_width" v="0"/>
-                  <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="outline_width_unit" v="MM"/>
-                  <prop k="scale_method" v="diameter"/>
-                  <prop k="size" v="2"/>
-                  <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="size_unit" v="MM"/>
-                  <prop k="vertical_anchor_point" v="1"/>
+                  <data_defined_properties>
+                    <Option type="Map">
+                      <Option name="name" type="QString" value=""/>
+                      <Option name="properties"/>
+                      <Option name="type" type="QString" value="collection"/>
+                    </Option>
+                  </data_defined_properties>
+                </layer>
+              </symbol>
+              <symbol force_rhr="0" name="fillSymbol" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" type="QString" value=""/>
+                    <Option name="properties"/>
+                    <Option name="type" type="QString" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+                <layer pass="0" id="" enabled="1" locked="0" class="SimpleFill">
+                  <Option type="Map">
+                    <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                    <Option name="color" type="QString" value="255,255,255,255,rgb:1,1,1,1"/>
+                    <Option name="joinstyle" type="QString" value="bevel"/>
+                    <Option name="offset" type="QString" value="0,0"/>
+                    <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                    <Option name="offset_unit" type="QString" value="MM"/>
+                    <Option name="outline_color" type="QString" value="128,128,128,255,rgb:0.50196078431372548,0.50196078431372548,0.50196078431372548,1"/>
+                    <Option name="outline_style" type="QString" value="no"/>
+                    <Option name="outline_width" type="QString" value="0"/>
+                    <Option name="outline_width_unit" type="QString" value="MM"/>
+                    <Option name="style" type="QString" value="solid"/>
+                  </Option>
                   <data_defined_properties>
                     <Option type="Map">
                       <Option name="name" type="QString" value=""/>
@@ -1388,7 +1248,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowBlendMode="6" shadowRadius="1.5" shadowDraw="0" shadowColor="0,0,0,255" shadowOpacity="0.7" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetUnit="MM" shadowRadiusAlphaOnly="0" shadowUnder="0" shadowScale="100" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOffsetAngle="135" shadowScale="100" shadowBlendMode="6" shadowOffsetDist="1" shadowOpacity="0.69999999999999996" shadowOffsetUnit="MM" shadowUnder="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowColor="0,0,0,255,rgb:0,0,0,1" shadowRadiusUnit="MM" shadowDraw="0" shadowRadius="1.5"/>
             <dd_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
@@ -1398,9 +1258,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format decimals="3" leftDirectionSymbol="&lt;" autoWrapLength="0" addDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" formatNumbers="0" plussign="0" placeDirectionSymbol="0" wrapChar="" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1"/>
-          <placement yOffset="0" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" placementFlags="1" rotationAngle="0" placement="2" lineAnchorPercent="0.5" centroidInside="1" offsetType="0" lineAnchorType="0" dist="2" centroidWhole="0" maxCurvedCharAngleOut="-25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" layerType="PolygonGeometry" offsetUnits="MapUnit" maxCurvedCharAngleIn="25" geometryGenerator="" overrunDistanceUnit="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" polygonPlacementFlags="2" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" fitInPolygonOnly="0" preserveRotation="1" overrunDistance="0" xOffset="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4" distUnits="Point" priority="8" repeatDistanceUnits="Point"/>
-          <rendering obstacleFactor="1" obstacle="1" zIndex="0" upsidedownLabels="0" minFeatureSize="5" fontLimitPixelSize="0" drawLabels="1" limitNumLabels="1" obstacleType="0" scaleVisibility="0" fontMaxPixelSize="10000" fontMinPixelSize="3" mergeLines="0" scaleMin="1" scaleMax="10000000" maxNumLabels="500" displayAll="0" labelPerPart="0"/>
+          <text-format addDirectionSymbol="0" wrapChar="" formatNumbers="0" rightDirectionSymbol=">" reverseDirectionSymbol="0" plussign="0" autoWrapLength="0" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" multilineAlign="0" decimals="3"/>
+          <placement geometryGenerator="" overlapHandling="PreventOverlap" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" maximumDistance="0" overrunDistanceUnit="MM" placementFlags="1" preserveRotation="1" lineAnchorClipping="0" priority="8" fitInPolygonOnly="0" quadOffset="4" repeatDistance="0" dist="2" centroidWhole="0" geometryGeneratorEnabled="0" layerType="PolygonGeometry" placement="2" centroidInside="1" lineAnchorPercent="0.5" maxCurvedCharAngleOut="-25" maximumDistanceUnit="MM" yOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="0" overrunDistance="0" rotationUnit="AngleDegrees" polygonPlacementFlags="2" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MapUnit" distUnits="Point" lineAnchorTextPoint="CenterOfText" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maximumDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorType="0" rotationAngle="0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" offsetType="0" xOffset="0" prioritization="PreferCloser"/>
+          <rendering fontMaxPixelSize="10000" obstacle="1" obstacleFactor="1" upsidedownLabels="0" unplacedVisibility="0" fontMinPixelSize="3" minFeatureSize="5" scaleMax="10000000" scaleVisibility="0" obstacleType="0" mergeLines="0" fontLimitPixelSize="0" labelPerPart="0" drawLabels="1" limitNumLabels="1" zIndex="0" scaleMin="1" maxNumLabels="500"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1411,6 +1271,7 @@
           <callout type="simple">
             <Option type="Map">
               <Option name="anchorPoint" type="QString" value="pole_of_inaccessibility"/>
+              <Option name="blendMode" type="int" value="0"/>
               <Option name="ddProperties" type="Map">
                 <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
@@ -1419,7 +1280,7 @@
               <Option name="drawToAllParts" type="bool" value="false"/>
               <Option name="enabled" type="QString" value="0"/>
               <Option name="labelAnchorPoint" type="QString" value="point_on_exterior"/>
-              <Option name="lineSymbol" type="QString" value="&lt;symbol alpha=&quot;1&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer locked=&quot;0&quot; class=&quot;SimpleLine&quot; pass=&quot;0&quot; enabled=&quot;1&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
+              <Option name="lineSymbol" type="QString" value="&lt;symbol force_rhr=&quot;0&quot; name=&quot;symbol&quot; type=&quot;line&quot; clip_to_extent=&quot;1&quot; is_animated=&quot;0&quot; frame_rate=&quot;10&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; id=&quot;{7d1dca5f-13a1-4cb3-92ef-e86cbdd02b8a}&quot; enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255,rgb:0.23529411764705882,0.23529411764705882,0.23529411764705882,1&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;trim_distance_start&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
               <Option name="minLength" type="double" value="0"/>
               <Option name="minLengthMapUnitScale" type="QString" value="3x:0,0,0,0,0,0"/>
               <Option name="minLengthUnit" type="QString" value="MM"/>
@@ -1433,13 +1294,14 @@
           </callout>
         </settings>
       </rule>
-      <rule key="{44560fed-dbce-4e5f-8be7-66e12427103b}" filter="ELSE" description="Polygon labels" scalemindenom="1" scalemaxdenom="7500">
+      <rule filter="ELSE" scalemaxdenom="7500" key="{c6f9d367-4e5e-4ff1-aaa6-31ab3a199f7a}" scalemindenom="1" description="Polygon labels">
         <settings calloutType="simple">
-          <text-style multilineHeight="1" textOrientation="horizontal" fontLetterSpacing="0" fontWordSpacing="0" fontStrikeout="0" fontFamily="MS Shell Dlg 2" fontKerning="1" fieldName="job_no" fontSize="11" namedStyle="Regular" fontWeight="50" capitalization="0" blendMode="0" fontItalic="0" allowHtml="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" isExpression="0" useSubstitutions="0" textColor="255,161,9,255" fontUnderline="0" previewBkgrdColor="255,255,255,255" fontSizeUnit="Point">
-            <text-buffer bufferBlendMode="0" bufferNoFill="0" bufferJoinStyle="128" bufferSize="1" bufferDraw="1" bufferColor="89,89,89,255" bufferOpacity="1" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0"/>
-            <text-mask maskOpacity="1" maskEnabled="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSizeUnits="MM" maskJoinStyle="128" maskedSymbolLayers="" maskType="0" maskSize="0"/>
-            <background shapeRotation="0" shapeBorderWidth="0" shapeBlendMode="0" shapeSizeY="0" shapeSizeUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeSizeX="0" shapeJoinStyle="64" shapeRadiiY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeRadiiX="0" shapeFillColor="255,255,255,255" shapeSizeType="0" shapeSVGFile="" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeOpacity="1" shapeOffsetX="0" shapeBorderColor="128,128,128,255" shapeRadiiUnit="MM" shapeDraw="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeBorderWidthUnit="MM">
-              <symbol alpha="0" force_rhr="0" name="markerSymbol" clip_to_extent="1" type="marker">
+          <text-style namedStyle="Regular" capitalization="0" fontSizeUnit="Point" fontWeight="50" fontItalic="0" textColor="255,161,9,255,rgb:1,0.63137254901960782,0.03529411764705882,1" isExpression="0" fontSize="11" fontStrikeout="0" tabStopDistanceUnit="Point" forcedItalic="0" fontKerning="1" fieldName="job_no" forcedBold="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" tabStopDistance="80" allowHtml="0" blendMode="0" fontLetterSpacing="0" multilineHeight="1" fontWordSpacing="0" fontUnderline="0" textOrientation="horizontal" textOpacity="1" previewBkgrdColor="255,255,255,255,rgb:1,1,1,1" multilineHeightUnit="Percentage" fontFamily="MS Shell Dlg 2" legendString="Aa" tabStopDistanceMapUnitScale="3x:0,0,0,0,0,0">
+            <families/>
+            <text-buffer bufferOpacity="1" bufferDraw="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="89,89,89,255,rgb:0.34901960784313724,0.34901960784313724,0.34901960784313724,1" bufferNoFill="0" bufferSizeUnits="MM" bufferSize="1" bufferJoinStyle="128"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskedSymbolLayers="" maskSize2="1.5" maskType="0" maskSizeUnits="MM" maskOpacity="1" maskEnabled="0" maskSize="1.5" maskJoinStyle="128"/>
+            <background shapeOffsetX="0" shapeOffsetUnit="MM" shapeBlendMode="0" shapeSVGFile="" shapeSizeUnit="MM" shapeRotation="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeSizeX="0" shapeRadiiY="0" shapeType="0" shapeOpacity="1" shapeRadiiX="0" shapeJoinStyle="64" shapeSizeType="0" shapeDraw="0" shapeFillColor="255,255,255,255,rgb:1,1,1,1" shapeRadiiUnit="MM" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidth="0" shapeOffsetY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeBorderWidthUnit="MM" shapeBorderColor="128,128,128,255,rgb:0.50196078431372548,0.50196078431372548,0.50196078431372548,1">
+              <symbol force_rhr="0" name="markerSymbol" type="marker" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="0">
                 <data_defined_properties>
                   <Option type="Map">
                     <Option name="name" type="QString" value=""/>
@@ -1447,17 +1309,18 @@
                     <Option name="type" type="QString" value="collection"/>
                   </Option>
                 </data_defined_properties>
-                <layer locked="0" class="SimpleMarker" pass="0" enabled="1">
+                <layer pass="0" id="" enabled="1" locked="0" class="SimpleMarker">
                   <Option type="Map">
                     <Option name="angle" type="QString" value="0"/>
-                    <Option name="color" type="QString" value="225,89,137,255"/>
+                    <Option name="cap_style" type="QString" value="square"/>
+                    <Option name="color" type="QString" value="225,89,137,255,rgb:0.88235294117647056,0.34901960784313724,0.53725490196078429,1"/>
                     <Option name="horizontal_anchor_point" type="QString" value="1"/>
                     <Option name="joinstyle" type="QString" value="bevel"/>
                     <Option name="name" type="QString" value="circle"/>
                     <Option name="offset" type="QString" value="0,0"/>
                     <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                     <Option name="offset_unit" type="QString" value="MM"/>
-                    <Option name="outline_color" type="QString" value="35,35,35,255"/>
+                    <Option name="outline_color" type="QString" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
                     <Option name="outline_style" type="QString" value="solid"/>
                     <Option name="outline_width" type="QString" value="0"/>
                     <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1468,24 +1331,37 @@
                     <Option name="size_unit" type="QString" value="MM"/>
                     <Option name="vertical_anchor_point" type="QString" value="1"/>
                   </Option>
-                  <prop k="angle" v="0"/>
-                  <prop k="color" v="225,89,137,255"/>
-                  <prop k="horizontal_anchor_point" v="1"/>
-                  <prop k="joinstyle" v="bevel"/>
-                  <prop k="name" v="circle"/>
-                  <prop k="offset" v="0,0"/>
-                  <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="outline_color" v="35,35,35,255"/>
-                  <prop k="outline_style" v="solid"/>
-                  <prop k="outline_width" v="0"/>
-                  <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="outline_width_unit" v="MM"/>
-                  <prop k="scale_method" v="diameter"/>
-                  <prop k="size" v="2"/>
-                  <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="size_unit" v="MM"/>
-                  <prop k="vertical_anchor_point" v="1"/>
+                  <data_defined_properties>
+                    <Option type="Map">
+                      <Option name="name" type="QString" value=""/>
+                      <Option name="properties"/>
+                      <Option name="type" type="QString" value="collection"/>
+                    </Option>
+                  </data_defined_properties>
+                </layer>
+              </symbol>
+              <symbol force_rhr="0" name="fillSymbol" type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" type="QString" value=""/>
+                    <Option name="properties"/>
+                    <Option name="type" type="QString" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+                <layer pass="0" id="" enabled="1" locked="0" class="SimpleFill">
+                  <Option type="Map">
+                    <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                    <Option name="color" type="QString" value="255,255,255,255,rgb:1,1,1,1"/>
+                    <Option name="joinstyle" type="QString" value="bevel"/>
+                    <Option name="offset" type="QString" value="0,0"/>
+                    <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                    <Option name="offset_unit" type="QString" value="MM"/>
+                    <Option name="outline_color" type="QString" value="128,128,128,255,rgb:0.50196078431372548,0.50196078431372548,0.50196078431372548,1"/>
+                    <Option name="outline_style" type="QString" value="no"/>
+                    <Option name="outline_width" type="QString" value="0"/>
+                    <Option name="outline_width_unit" type="QString" value="MM"/>
+                    <Option name="style" type="QString" value="solid"/>
+                  </Option>
                   <data_defined_properties>
                     <Option type="Map">
                       <Option name="name" type="QString" value=""/>
@@ -1496,7 +1372,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowBlendMode="6" shadowRadius="1.5" shadowDraw="0" shadowColor="0,0,0,255" shadowOpacity="0.7" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetUnit="MM" shadowRadiusAlphaOnly="0" shadowUnder="0" shadowScale="100" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOffsetAngle="135" shadowScale="100" shadowBlendMode="6" shadowOffsetDist="1" shadowOpacity="0.69999999999999996" shadowOffsetUnit="MM" shadowUnder="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowColor="0,0,0,255,rgb:0,0,0,1" shadowRadiusUnit="MM" shadowDraw="0" shadowRadius="1.5"/>
             <dd_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
@@ -1506,9 +1382,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format decimals="3" leftDirectionSymbol="&lt;" autoWrapLength="0" addDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" formatNumbers="0" plussign="0" placeDirectionSymbol="0" wrapChar="" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1"/>
-          <placement yOffset="0" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" placementFlags="10" rotationAngle="0" placement="0" lineAnchorPercent="0.5" centroidInside="1" offsetType="0" lineAnchorType="0" dist="6" centroidWhole="0" maxCurvedCharAngleOut="-25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" layerType="PolygonGeometry" offsetUnits="MapUnit" maxCurvedCharAngleIn="25" geometryGenerator="" overrunDistanceUnit="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" polygonPlacementFlags="2" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" fitInPolygonOnly="0" preserveRotation="1" overrunDistance="0" xOffset="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4" distUnits="MM" priority="8" repeatDistanceUnits="MM"/>
-          <rendering obstacleFactor="1" obstacle="1" zIndex="0" upsidedownLabels="0" minFeatureSize="0" fontLimitPixelSize="0" drawLabels="1" limitNumLabels="0" obstacleType="0" scaleVisibility="0" fontMaxPixelSize="10000" fontMinPixelSize="3" mergeLines="0" scaleMin="1" scaleMax="10000000" maxNumLabels="2000" displayAll="1" labelPerPart="0"/>
+          <text-format addDirectionSymbol="0" wrapChar="" formatNumbers="0" rightDirectionSymbol=">" reverseDirectionSymbol="0" plussign="0" autoWrapLength="0" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" multilineAlign="0" decimals="3"/>
+          <placement geometryGenerator="" overlapHandling="AllowOverlapIfRequired" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" maximumDistance="0" overrunDistanceUnit="MM" placementFlags="10" preserveRotation="1" lineAnchorClipping="0" priority="8" fitInPolygonOnly="0" quadOffset="4" repeatDistance="0" dist="6" centroidWhole="0" geometryGeneratorEnabled="0" layerType="PolygonGeometry" placement="0" centroidInside="1" lineAnchorPercent="0.5" maxCurvedCharAngleOut="-25" maximumDistanceUnit="MM" yOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="1" overrunDistance="0" rotationUnit="AngleDegrees" polygonPlacementFlags="2" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MapUnit" distUnits="MM" lineAnchorTextPoint="CenterOfText" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maximumDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorType="0" rotationAngle="0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="MM" offsetType="0" xOffset="0" prioritization="PreferCloser"/>
+          <rendering fontMaxPixelSize="10000" obstacle="1" obstacleFactor="1" upsidedownLabels="0" unplacedVisibility="0" fontMinPixelSize="3" minFeatureSize="0" scaleMax="10000000" scaleVisibility="0" obstacleType="0" mergeLines="0" fontLimitPixelSize="0" labelPerPart="0" drawLabels="1" limitNumLabels="0" zIndex="0" scaleMin="1" maxNumLabels="2000"/>
           <dd_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1519,6 +1395,7 @@
           <callout type="simple">
             <Option type="Map">
               <Option name="anchorPoint" type="QString" value="pole_of_inaccessibility"/>
+              <Option name="blendMode" type="int" value="0"/>
               <Option name="ddProperties" type="Map">
                 <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
@@ -1527,7 +1404,7 @@
               <Option name="drawToAllParts" type="bool" value="false"/>
               <Option name="enabled" type="QString" value="0"/>
               <Option name="labelAnchorPoint" type="QString" value="point_on_exterior"/>
-              <Option name="lineSymbol" type="QString" value="&lt;symbol alpha=&quot;1&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer locked=&quot;0&quot; class=&quot;SimpleLine&quot; pass=&quot;0&quot; enabled=&quot;1&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
+              <Option name="lineSymbol" type="QString" value="&lt;symbol force_rhr=&quot;0&quot; name=&quot;symbol&quot; type=&quot;line&quot; clip_to_extent=&quot;1&quot; is_animated=&quot;0&quot; frame_rate=&quot;10&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; id=&quot;{84462d55-9545-4e32-a5ad-d1b8b135ec69}&quot; enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255,rgb:0.23529411764705882,0.23529411764705882,0.23529411764705882,1&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;trim_distance_start&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
               <Option name="minLength" type="double" value="0"/>
               <Option name="minLengthMapUnitScale" type="QString" value="3x:0,0,0,0,0,0"/>
               <Option name="minLengthUnit" type="QString" value="MM"/>
@@ -1544,20 +1421,22 @@
     </rules>
   </labeling>
   <customproperties>
-    <property key="dualview/previewExpressions" value="&quot;job_no&quot;"/>
-    <property key="embeddedWidgets/count" value="0"/>
-    <property key="variableNames"/>
-    <property key="variableValues"/>
+    <Option type="Map">
+      <Option name="dualview/previewExpressions" type="QString" value="&quot;job_no&quot;"/>
+      <Option name="embeddedWidgets/count" type="QString" value="0"/>
+      <Option name="variableNames"/>
+      <Option name="variableValues"/>
+    </Option>
   </customproperties>
   <blendMode>6</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>0.8</layerOpacity>
-  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory spacingUnitScale="3x:0,0,0,0,0,0" lineSizeType="MM" diagramOrientation="Up" direction="1" opacity="1" minimumSize="0" showAxis="0" scaleDependency="Area" enabled="0" rotationOffset="270" penWidth="0" scaleBasedVisibility="0" penAlpha="255" maxScaleDenominator="1e+08" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" height="15" sizeType="MM" width="15" spacingUnit="MM" minScaleDenominator="0" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" backgroundAlpha="255" backgroundColor="#ffffff" spacing="0" barWidth="5">
-      <fontProperties style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
-      <attribute field="" label="" color="#000000"/>
+  <LinearlyInterpolatedDiagramRenderer upperHeight="5" attributeLegend="1" lowerHeight="0" upperValue="0" lowerWidth="0" classificationAttributeExpression="" upperWidth="5" lowerValue="0" diagramType="Histogram">
+    <DiagramCategory backgroundAlpha="255" spacing="0" sizeType="MM" enabled="0" direction="1" labelPlacementMethod="XHeight" opacity="1" stackedDiagramSpacingUnitScale="3x:0,0,0,0,0,0" rotationOffset="270" stackedDiagramSpacing="0" scaleDependency="Area" diagramOrientation="Up" backgroundColor="#ffffff" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" lineSizeType="MM" showAxis="0" height="15" maxScaleDenominator="1e+08" width="15" scaleBasedVisibility="0" spacingUnit="MM" penColor="#000000" barWidth="5" minScaleDenominator="0" penAlpha="255" penWidth="0" stackedDiagramMode="Horizontal" sizeScale="3x:0,0,0,0,0,0" stackedDiagramSpacingUnit="MM">
+      <fontProperties bold="0" underline="0" italic="0" style="" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+      <attribute color="#000000" field="" colorOpacity="1" label=""/>
       <axisSymbol>
-        <symbol alpha="1" force_rhr="0" name="" clip_to_extent="1" type="line">
+        <symbol force_rhr="0" name="" type="line" clip_to_extent="1" is_animated="0" frame_rate="10" alpha="1">
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -1565,7 +1444,7 @@
               <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <layer locked="0" class="SimpleLine" pass="0" enabled="1">
+          <layer pass="0" id="{dd9bcdc2-5878-4a26-9784-3135ba114091}" enabled="1" locked="0" class="SimpleLine">
             <Option type="Map">
               <Option name="align_dash_pattern" type="QString" value="0"/>
               <Option name="capstyle" type="QString" value="square"/>
@@ -1577,7 +1456,7 @@
               <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
               <Option name="draw_inside_polygon" type="QString" value="0"/>
               <Option name="joinstyle" type="QString" value="bevel"/>
-              <Option name="line_color" type="QString" value="35,35,35,255"/>
+              <Option name="line_color" type="QString" value="35,35,35,255,rgb:0.13725490196078433,0.13725490196078433,0.13725490196078433,1"/>
               <Option name="line_style" type="QString" value="solid"/>
               <Option name="line_width" type="QString" value="0.26"/>
               <Option name="line_width_unit" type="QString" value="MM"/>
@@ -1585,31 +1464,16 @@
               <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
               <Option name="offset_unit" type="QString" value="MM"/>
               <Option name="ring_filter" type="QString" value="0"/>
+              <Option name="trim_distance_end" type="QString" value="0"/>
+              <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="trim_distance_end_unit" type="QString" value="MM"/>
+              <Option name="trim_distance_start" type="QString" value="0"/>
+              <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+              <Option name="trim_distance_start_unit" type="QString" value="MM"/>
               <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
               <Option name="use_custom_dash" type="QString" value="0"/>
               <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             </Option>
-            <prop k="align_dash_pattern" v="0"/>
-            <prop k="capstyle" v="square"/>
-            <prop k="customdash" v="5;2"/>
-            <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="customdash_unit" v="MM"/>
-            <prop k="dash_pattern_offset" v="0"/>
-            <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="dash_pattern_offset_unit" v="MM"/>
-            <prop k="draw_inside_polygon" v="0"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="line_color" v="35,35,35,255"/>
-            <prop k="line_style" v="solid"/>
-            <prop k="line_width" v="0.26"/>
-            <prop k="line_width_unit" v="MM"/>
-            <prop k="offset" v="0"/>
-            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="ring_filter" v="0"/>
-            <prop k="tweak_dash_pattern_on_corners" v="0"/>
-            <prop k="use_custom_dash" v="0"/>
-            <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
@@ -1621,8 +1485,8 @@
         </symbol>
       </axisSymbol>
     </DiagramCategory>
-  </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="0" showAll="1" dist="0" priority="0" zIndex="0" obstacle="0" linePlacementFlags="2">
+  </LinearlyInterpolatedDiagramRenderer>
+  <DiagramLayerSettings obstacle="0" zIndex="0" placement="0" linePlacementFlags="2" priority="0" showAll="1" dist="0">
     <properties>
       <Option type="Map">
         <Option name="name" type="QString" value=""/>
@@ -1631,7 +1495,7 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration type="Map">
       <Option name="QgsGeometryGapCheck" type="Map">
@@ -1641,10 +1505,10 @@
       </Option>
     </checkConfiguration>
   </geometryOptions>
-  <legend type="default-vector"/>
+  <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field name="sid" configurationFlags="None">
+    <field name="sid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1654,7 +1518,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="id" configurationFlags="None">
+    <field name="id" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1664,7 +1528,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="map_bk_lot" configurationFlags="None">
+    <field name="map_bk_lot" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1674,7 +1538,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="job_no" configurationFlags="None">
+    <field name="job_no" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1684,7 +1548,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="rev_no" configurationFlags="None">
+    <field name="rev_no" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1694,7 +1558,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="old_plan_no" configurationFlags="None">
+    <field name="old_plan_no" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1704,7 +1568,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="job_type" configurationFlags="None">
+    <field name="job_type" configurationFlags="NoFlag">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -1762,7 +1626,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="job_desc" configurationFlags="None">
+    <field name="job_desc" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1772,7 +1636,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="folder_name" configurationFlags="None">
+    <field name="folder_name" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1782,7 +1646,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="client_name" configurationFlags="None">
+    <field name="client_name" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1792,7 +1656,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="contact_type" configurationFlags="None">
+    <field name="contact_type" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1802,7 +1666,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="contact_addr" configurationFlags="None">
+    <field name="contact_addr" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1812,7 +1676,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="locus_addr" configurationFlags="None">
+    <field name="locus_addr" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1822,7 +1686,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="town" configurationFlags="None">
+    <field name="town" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1832,7 +1696,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="state" configurationFlags="None">
+    <field name="state" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1842,7 +1706,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="phone_mobile" configurationFlags="None">
+    <field name="phone_mobile" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1852,7 +1716,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="phone_work" configurationFlags="None">
+    <field name="phone_work" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1862,7 +1726,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="phone_home" configurationFlags="None">
+    <field name="phone_home" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1872,7 +1736,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="primary_contact" configurationFlags="None">
+    <field name="primary_contact" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1882,7 +1746,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="email_primary" configurationFlags="None">
+    <field name="email_primary" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1892,7 +1756,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="email_secondary" configurationFlags="None">
+    <field name="email_secondary" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1902,7 +1766,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="recorded_by" configurationFlags="None">
+    <field name="recorded_by" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1912,7 +1776,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="planbook_page" configurationFlags="None">
+    <field name="planbook_page" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1922,7 +1786,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="folder_present" configurationFlags="None">
+    <field name="folder_present" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1932,17 +1796,17 @@
         </config>
       </editWidget>
     </field>
-    <field name="active" configurationFlags="None">
+    <field name="active" configurationFlags="NoFlag">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
-            <Option name="CheckedState" type="QString" value=""/>
-            <Option name="UncheckedState" type="QString" value=""/>
+            <Option name="CheckedState" type="invalid"/>
+            <Option name="UncheckedState" type="invalid"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="pins_set" configurationFlags="None">
+    <field name="pins_set" configurationFlags="NoFlag">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -1961,7 +1825,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="date_recorded" configurationFlags="None">
+    <field name="date_recorded" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
@@ -1974,7 +1838,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="date_requested" configurationFlags="None">
+    <field name="date_requested" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
@@ -1987,7 +1851,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="date_fw_sched" configurationFlags="None">
+    <field name="date_fw_sched" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
@@ -2000,7 +1864,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="date_due" configurationFlags="None">
+    <field name="date_due" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
@@ -2013,21 +1877,21 @@
         </config>
       </editWidget>
     </field>
-    <field name="date_estimate_sent" configurationFlags="None">
+    <field name="date_estimate_sent" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_dep" configurationFlags="None">
+    <field name="date_dep" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="hrs_rs_est" configurationFlags="None">
+    <field name="hrs_rs_est" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2036,7 +1900,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="hrs_rs_comp" configurationFlags="None">
+    <field name="hrs_rs_comp" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2045,7 +1909,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="hrs_fw_est" configurationFlags="None">
+    <field name="hrs_fw_est" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2054,7 +1918,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="hrs_fw_comp" configurationFlags="None">
+    <field name="hrs_fw_comp" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2063,7 +1927,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="hrs_cad_est" configurationFlags="None">
+    <field name="hrs_cad_est" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2072,7 +1936,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="hrs_cad_comp" configurationFlags="None">
+    <field name="hrs_cad_comp" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2081,7 +1945,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="hrs_misc_est" configurationFlags="None">
+    <field name="hrs_misc_est" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2090,7 +1954,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="hrs_misc_comp" configurationFlags="None">
+    <field name="hrs_misc_comp" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2099,7 +1963,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="rate_fw" configurationFlags="None">
+    <field name="rate_fw" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2108,7 +1972,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="rate_cad" configurationFlags="None">
+    <field name="rate_cad" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2117,7 +1981,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="rate_rs" configurationFlags="None">
+    <field name="rate_rs" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2126,7 +1990,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="rate_misc" configurationFlags="None">
+    <field name="rate_misc" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2135,7 +1999,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="amt_fw" configurationFlags="None">
+    <field name="amt_fw" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2144,7 +2008,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="amt_rs" configurationFlags="None">
+    <field name="amt_rs" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2153,7 +2017,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="amt_cad" configurationFlags="None">
+    <field name="amt_cad" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2162,7 +2026,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="amt_misc" configurationFlags="None">
+    <field name="amt_misc" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2171,7 +2035,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="amt_total" configurationFlags="None">
+    <field name="amt_total" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2180,7 +2044,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="amt_dep" configurationFlags="None">
+    <field name="amt_dep" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2189,56 +2053,56 @@
         </config>
       </editWidget>
     </field>
-    <field name="date_prelim" configurationFlags="None">
+    <field name="date_prelim" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_finalplans" configurationFlags="None">
+    <field name="date_finalplans" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_mylar" configurationFlags="None">
+    <field name="date_mylar" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_deeddesc" configurationFlags="None">
+    <field name="date_deeddesc" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_pins" configurationFlags="None">
+    <field name="date_pins" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_fw" configurationFlags="None">
+    <field name="date_fw" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_cad" configurationFlags="None">
+    <field name="date_cad" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="copies_prelim" configurationFlags="None">
+    <field name="copies_prelim" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2247,7 +2111,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="copies_finalplans" configurationFlags="None">
+    <field name="copies_finalplans" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2256,7 +2120,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="copies_mylar" configurationFlags="None">
+    <field name="copies_mylar" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2265,7 +2129,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="copies_deeddesc" configurationFlags="None">
+    <field name="copies_deeddesc" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2274,7 +2138,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="copies_pins" configurationFlags="None">
+    <field name="copies_pins" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2283,7 +2147,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="copies_fw" configurationFlags="None">
+    <field name="copies_fw" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2292,7 +2156,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="copies_cad" configurationFlags="None">
+    <field name="copies_cad" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2301,7 +2165,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="to_prelim" configurationFlags="None">
+    <field name="to_prelim" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2310,7 +2174,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="to_finalplans" configurationFlags="None">
+    <field name="to_finalplans" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2319,7 +2183,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="to_mylar" configurationFlags="None">
+    <field name="to_mylar" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2328,7 +2192,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="to_deeddesc" configurationFlags="None">
+    <field name="to_deeddesc" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2337,7 +2201,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="to_pins" configurationFlags="None">
+    <field name="to_pins" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2346,7 +2210,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="to_fw" configurationFlags="None">
+    <field name="to_fw" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2355,7 +2219,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="to_cad" configurationFlags="None">
+    <field name="to_cad" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2364,28 +2228,28 @@
         </config>
       </editWidget>
     </field>
-    <field name="date_invoice1" configurationFlags="None">
+    <field name="date_invoice1" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_invoice2" configurationFlags="None">
+    <field name="date_invoice2" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_invoice3" configurationFlags="None">
+    <field name="date_invoice3" configurationFlags="NoFlag">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="amt_invoice1" configurationFlags="None">
+    <field name="amt_invoice1" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2394,7 +2258,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="amt_invoice2" configurationFlags="None">
+    <field name="amt_invoice2" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2403,7 +2267,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="amt_invoice3" configurationFlags="None">
+    <field name="amt_invoice3" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2412,7 +2276,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="lowtide_hrs" configurationFlags="None">
+    <field name="lowtide_hrs" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2421,16 +2285,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="lowtide" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option name="IsMultiline" type="QString" value="False"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="perimeter" configurationFlags="None">
+    <field name="lowtide" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2440,7 +2295,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="area" configurationFlags="None">
+    <field name="perimeter" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2450,7 +2305,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="abutters" configurationFlags="None">
+    <field name="area" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2460,7 +2315,17 @@
         </config>
       </editWidget>
     </field>
-    <field name="objectid" configurationFlags="None">
+    <field name="abutters" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option name="IsMultiline" type="bool" value="false"/>
+            <Option name="UseHtml" type="bool" value="false"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field name="objectid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2469,7 +2334,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="county" configurationFlags="None">
+    <field name="county" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2478,7 +2343,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="zipcode" configurationFlags="None">
+    <field name="zipcode" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2487,7 +2352,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="lat_lon" configurationFlags="None">
+    <field name="lat_lon" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2497,7 +2362,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="sPerimeter" configurationFlags="None">
+    <field name="sPerimeter" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2507,7 +2372,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="old_plan" configurationFlags="None">
+    <field name="old_plan" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2517,7 +2382,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="plan_no" configurationFlags="None">
+    <field name="plan_no" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2527,7 +2392,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="job" configurationFlags="None">
+    <field name="job" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2537,7 +2402,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="client_role" configurationFlags="None">
+    <field name="client_role" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2547,7 +2412,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="folder_type" configurationFlags="None">
+    <field name="folder_type" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2557,24 +2422,24 @@
         </config>
       </editWidget>
     </field>
-    <field name="estimate" configurationFlags="None">
+    <field name="estimate" configurationFlags="NoFlag">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
-            <Option name="CheckedState" type="QString" value=""/>
-            <Option name="UncheckedState" type="QString" value=""/>
+            <Option name="CheckedState" type="invalid"/>
+            <Option name="UncheckedState" type="invalid"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="objectid3" configurationFlags="None">
+    <field name="objectid3" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="jobSubtype" configurationFlags="None">
+    <field name="jobSubtype" configurationFlags="NoFlag">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -2653,7 +2518,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="supp_type" configurationFlags="None">
+    <field name="supp_type" configurationFlags="NoFlag">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -2693,7 +2558,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="document_subtype" configurationFlags="None">
+    <field name="document_subtype" configurationFlags="NoFlag">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -2721,7 +2586,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="design_type" configurationFlags="None">
+    <field name="design_type" configurationFlags="NoFlag">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -2746,7 +2611,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="scale" configurationFlags="None">
+    <field name="scale" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2756,7 +2621,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="map_type" configurationFlags="None">
+    <field name="map_type" configurationFlags="NoFlag">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -2793,7 +2658,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="map_subtype" configurationFlags="None">
+    <field name="map_subtype" configurationFlags="NoFlag">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
@@ -2809,7 +2674,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="pls_no" configurationFlags="None">
+    <field name="pls_no" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2819,56 +2684,56 @@
         </config>
       </editWidget>
     </field>
-    <field name="record_jurisdiction" configurationFlags="None">
+    <field name="record_jurisdiction" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="record_office" configurationFlags="None">
+    <field name="record_office" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="obtained_from" configurationFlags="None">
+    <field name="obtained_from" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="quality" configurationFlags="None">
+    <field name="quality" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="media" configurationFlags="None">
+    <field name="media" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="color" configurationFlags="None">
+    <field name="color" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="author" configurationFlags="None">
+    <field name="author" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="objectType" configurationFlags="None">
+    <field name="objectType" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2878,25 +2743,25 @@
         </config>
       </editWidget>
     </field>
-    <field name="extension" configurationFlags="None">
+    <field name="extension" configurationFlags="NoFlag">
       <editWidget type="Hidden">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="completed" configurationFlags="None">
+    <field name="completed" configurationFlags="NoFlag">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
-            <Option name="CheckedState" type="QString" value=""/>
+            <Option name="CheckedState" type="invalid"/>
             <Option name="TextDisplayMethod" type="int" value="0"/>
-            <Option name="UncheckedState" type="QString" value=""/>
+            <Option name="UncheckedState" type="invalid"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="zdistrict" configurationFlags="None">
+    <field name="zdistrict" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2908,585 +2773,815 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="sid" name="" index="0"/>
-    <alias field="id" name="" index="1"/>
-    <alias field="map_bk_lot" name="" index="2"/>
-    <alias field="job_no" name="" index="3"/>
-    <alias field="rev_no" name="" index="4"/>
-    <alias field="old_plan_no" name="" index="5"/>
-    <alias field="job_type" name="" index="6"/>
-    <alias field="job_desc" name="" index="7"/>
-    <alias field="folder_name" name="" index="8"/>
-    <alias field="client_name" name="" index="9"/>
-    <alias field="contact_type" name="" index="10"/>
-    <alias field="contact_addr" name="" index="11"/>
-    <alias field="locus_addr" name="" index="12"/>
-    <alias field="town" name="" index="13"/>
-    <alias field="state" name="" index="14"/>
-    <alias field="phone_mobile" name="" index="15"/>
-    <alias field="phone_work" name="" index="16"/>
-    <alias field="phone_home" name="" index="17"/>
-    <alias field="primary_contact" name="" index="18"/>
-    <alias field="email_primary" name="" index="19"/>
-    <alias field="email_secondary" name="" index="20"/>
-    <alias field="recorded_by" name="" index="21"/>
-    <alias field="planbook_page" name="" index="22"/>
-    <alias field="folder_present" name="" index="23"/>
-    <alias field="active" name="" index="24"/>
-    <alias field="pins_set" name="" index="25"/>
-    <alias field="date_recorded" name="" index="26"/>
-    <alias field="date_requested" name="" index="27"/>
-    <alias field="date_fw_sched" name="" index="28"/>
-    <alias field="date_due" name="" index="29"/>
-    <alias field="date_estimate_sent" name="" index="30"/>
-    <alias field="date_dep" name="" index="31"/>
-    <alias field="hrs_rs_est" name="" index="32"/>
-    <alias field="hrs_rs_comp" name="" index="33"/>
-    <alias field="hrs_fw_est" name="" index="34"/>
-    <alias field="hrs_fw_comp" name="" index="35"/>
-    <alias field="hrs_cad_est" name="" index="36"/>
-    <alias field="hrs_cad_comp" name="" index="37"/>
-    <alias field="hrs_misc_est" name="" index="38"/>
-    <alias field="hrs_misc_comp" name="" index="39"/>
-    <alias field="rate_fw" name="" index="40"/>
-    <alias field="rate_cad" name="" index="41"/>
-    <alias field="rate_rs" name="" index="42"/>
-    <alias field="rate_misc" name="" index="43"/>
-    <alias field="amt_fw" name="" index="44"/>
-    <alias field="amt_rs" name="" index="45"/>
-    <alias field="amt_cad" name="" index="46"/>
-    <alias field="amt_misc" name="" index="47"/>
-    <alias field="amt_total" name="" index="48"/>
-    <alias field="amt_dep" name="" index="49"/>
-    <alias field="date_prelim" name="" index="50"/>
-    <alias field="date_finalplans" name="" index="51"/>
-    <alias field="date_mylar" name="" index="52"/>
-    <alias field="date_deeddesc" name="" index="53"/>
-    <alias field="date_pins" name="" index="54"/>
-    <alias field="date_fw" name="" index="55"/>
-    <alias field="date_cad" name="" index="56"/>
-    <alias field="copies_prelim" name="" index="57"/>
-    <alias field="copies_finalplans" name="" index="58"/>
-    <alias field="copies_mylar" name="" index="59"/>
-    <alias field="copies_deeddesc" name="" index="60"/>
-    <alias field="copies_pins" name="" index="61"/>
-    <alias field="copies_fw" name="" index="62"/>
-    <alias field="copies_cad" name="" index="63"/>
-    <alias field="to_prelim" name="" index="64"/>
-    <alias field="to_finalplans" name="" index="65"/>
-    <alias field="to_mylar" name="" index="66"/>
-    <alias field="to_deeddesc" name="" index="67"/>
-    <alias field="to_pins" name="" index="68"/>
-    <alias field="to_fw" name="" index="69"/>
-    <alias field="to_cad" name="" index="70"/>
-    <alias field="date_invoice1" name="" index="71"/>
-    <alias field="date_invoice2" name="" index="72"/>
-    <alias field="date_invoice3" name="" index="73"/>
-    <alias field="amt_invoice1" name="" index="74"/>
-    <alias field="amt_invoice2" name="" index="75"/>
-    <alias field="amt_invoice3" name="" index="76"/>
-    <alias field="lowtide_hrs" name="" index="77"/>
-    <alias field="lowtide" name="" index="78"/>
-    <alias field="perimeter" name="" index="79"/>
-    <alias field="area" name="" index="80"/>
-    <alias field="abutters" name="" index="81"/>
-    <alias field="objectid" name="" index="82"/>
-    <alias field="county" name="" index="83"/>
-    <alias field="zipcode" name="" index="84"/>
-    <alias field="lat_lon" name="" index="85"/>
-    <alias field="sPerimeter" name="" index="86"/>
-    <alias field="old_plan" name="" index="87"/>
-    <alias field="plan_no" name="" index="88"/>
-    <alias field="job" name="" index="89"/>
-    <alias field="client_role" name="" index="90"/>
-    <alias field="folder_type" name="" index="91"/>
-    <alias field="estimate" name="" index="92"/>
-    <alias field="objectid3" name="" index="93"/>
-    <alias field="jobSubtype" name="job_purpose" index="94"/>
-    <alias field="supp_type" name="" index="95"/>
-    <alias field="document_subtype" name="" index="96"/>
-    <alias field="design_type" name="" index="97"/>
-    <alias field="scale" name="" index="98"/>
-    <alias field="map_type" name="" index="99"/>
-    <alias field="map_subtype" name="" index="100"/>
-    <alias field="pls_no" name="" index="101"/>
-    <alias field="record_jurisdiction" name="" index="102"/>
-    <alias field="record_office" name="" index="103"/>
-    <alias field="obtained_from" name="" index="104"/>
-    <alias field="quality" name="" index="105"/>
-    <alias field="media" name="" index="106"/>
-    <alias field="color" name="" index="107"/>
-    <alias field="author" name="" index="108"/>
-    <alias field="objectType" name="" index="109"/>
-    <alias field="extension" name="" index="110"/>
-    <alias field="completed" name="" index="111"/>
-    <alias field="zdistrict" name="" index="112"/>
+    <alias name="" field="sid" index="0"/>
+    <alias name="" field="id" index="1"/>
+    <alias name="" field="map_bk_lot" index="2"/>
+    <alias name="" field="job_no" index="3"/>
+    <alias name="" field="rev_no" index="4"/>
+    <alias name="" field="old_plan_no" index="5"/>
+    <alias name="" field="job_type" index="6"/>
+    <alias name="" field="job_desc" index="7"/>
+    <alias name="" field="folder_name" index="8"/>
+    <alias name="" field="client_name" index="9"/>
+    <alias name="" field="contact_type" index="10"/>
+    <alias name="" field="contact_addr" index="11"/>
+    <alias name="" field="locus_addr" index="12"/>
+    <alias name="" field="town" index="13"/>
+    <alias name="" field="state" index="14"/>
+    <alias name="" field="phone_mobile" index="15"/>
+    <alias name="" field="phone_work" index="16"/>
+    <alias name="" field="phone_home" index="17"/>
+    <alias name="" field="primary_contact" index="18"/>
+    <alias name="" field="email_primary" index="19"/>
+    <alias name="" field="email_secondary" index="20"/>
+    <alias name="" field="recorded_by" index="21"/>
+    <alias name="" field="planbook_page" index="22"/>
+    <alias name="" field="folder_present" index="23"/>
+    <alias name="" field="active" index="24"/>
+    <alias name="" field="pins_set" index="25"/>
+    <alias name="" field="date_recorded" index="26"/>
+    <alias name="" field="date_requested" index="27"/>
+    <alias name="" field="date_fw_sched" index="28"/>
+    <alias name="" field="date_due" index="29"/>
+    <alias name="" field="date_estimate_sent" index="30"/>
+    <alias name="" field="date_dep" index="31"/>
+    <alias name="" field="hrs_rs_est" index="32"/>
+    <alias name="" field="hrs_rs_comp" index="33"/>
+    <alias name="" field="hrs_fw_est" index="34"/>
+    <alias name="" field="hrs_fw_comp" index="35"/>
+    <alias name="" field="hrs_cad_est" index="36"/>
+    <alias name="" field="hrs_cad_comp" index="37"/>
+    <alias name="" field="hrs_misc_est" index="38"/>
+    <alias name="" field="hrs_misc_comp" index="39"/>
+    <alias name="" field="rate_fw" index="40"/>
+    <alias name="" field="rate_cad" index="41"/>
+    <alias name="" field="rate_rs" index="42"/>
+    <alias name="" field="rate_misc" index="43"/>
+    <alias name="" field="amt_fw" index="44"/>
+    <alias name="" field="amt_rs" index="45"/>
+    <alias name="" field="amt_cad" index="46"/>
+    <alias name="" field="amt_misc" index="47"/>
+    <alias name="" field="amt_total" index="48"/>
+    <alias name="" field="amt_dep" index="49"/>
+    <alias name="" field="date_prelim" index="50"/>
+    <alias name="" field="date_finalplans" index="51"/>
+    <alias name="" field="date_mylar" index="52"/>
+    <alias name="" field="date_deeddesc" index="53"/>
+    <alias name="" field="date_pins" index="54"/>
+    <alias name="" field="date_fw" index="55"/>
+    <alias name="" field="date_cad" index="56"/>
+    <alias name="" field="copies_prelim" index="57"/>
+    <alias name="" field="copies_finalplans" index="58"/>
+    <alias name="" field="copies_mylar" index="59"/>
+    <alias name="" field="copies_deeddesc" index="60"/>
+    <alias name="" field="copies_pins" index="61"/>
+    <alias name="" field="copies_fw" index="62"/>
+    <alias name="" field="copies_cad" index="63"/>
+    <alias name="" field="to_prelim" index="64"/>
+    <alias name="" field="to_finalplans" index="65"/>
+    <alias name="" field="to_mylar" index="66"/>
+    <alias name="" field="to_deeddesc" index="67"/>
+    <alias name="" field="to_pins" index="68"/>
+    <alias name="" field="to_fw" index="69"/>
+    <alias name="" field="to_cad" index="70"/>
+    <alias name="" field="date_invoice1" index="71"/>
+    <alias name="" field="date_invoice2" index="72"/>
+    <alias name="" field="date_invoice3" index="73"/>
+    <alias name="" field="amt_invoice1" index="74"/>
+    <alias name="" field="amt_invoice2" index="75"/>
+    <alias name="" field="amt_invoice3" index="76"/>
+    <alias name="" field="lowtide_hrs" index="77"/>
+    <alias name="" field="lowtide" index="78"/>
+    <alias name="" field="perimeter" index="79"/>
+    <alias name="" field="area" index="80"/>
+    <alias name="" field="abutters" index="81"/>
+    <alias name="" field="objectid" index="82"/>
+    <alias name="" field="county" index="83"/>
+    <alias name="" field="zipcode" index="84"/>
+    <alias name="" field="lat_lon" index="85"/>
+    <alias name="" field="sPerimeter" index="86"/>
+    <alias name="" field="old_plan" index="87"/>
+    <alias name="" field="plan_no" index="88"/>
+    <alias name="" field="job" index="89"/>
+    <alias name="" field="client_role" index="90"/>
+    <alias name="" field="folder_type" index="91"/>
+    <alias name="" field="estimate" index="92"/>
+    <alias name="" field="objectid3" index="93"/>
+    <alias name="job_purpose" field="jobSubtype" index="94"/>
+    <alias name="" field="supp_type" index="95"/>
+    <alias name="" field="document_subtype" index="96"/>
+    <alias name="" field="design_type" index="97"/>
+    <alias name="" field="scale" index="98"/>
+    <alias name="" field="map_type" index="99"/>
+    <alias name="" field="map_subtype" index="100"/>
+    <alias name="" field="pls_no" index="101"/>
+    <alias name="" field="record_jurisdiction" index="102"/>
+    <alias name="" field="record_office" index="103"/>
+    <alias name="" field="obtained_from" index="104"/>
+    <alias name="" field="quality" index="105"/>
+    <alias name="" field="media" index="106"/>
+    <alias name="" field="color" index="107"/>
+    <alias name="" field="author" index="108"/>
+    <alias name="" field="objectType" index="109"/>
+    <alias name="" field="extension" index="110"/>
+    <alias name="" field="completed" index="111"/>
+    <alias name="" field="zdistrict" index="112"/>
   </aliases>
+  <splitPolicies>
+    <policy policy="Duplicate" field="sid"/>
+    <policy policy="Duplicate" field="id"/>
+    <policy policy="Duplicate" field="map_bk_lot"/>
+    <policy policy="Duplicate" field="job_no"/>
+    <policy policy="Duplicate" field="rev_no"/>
+    <policy policy="Duplicate" field="old_plan_no"/>
+    <policy policy="Duplicate" field="job_type"/>
+    <policy policy="Duplicate" field="job_desc"/>
+    <policy policy="Duplicate" field="folder_name"/>
+    <policy policy="Duplicate" field="client_name"/>
+    <policy policy="Duplicate" field="contact_type"/>
+    <policy policy="Duplicate" field="contact_addr"/>
+    <policy policy="Duplicate" field="locus_addr"/>
+    <policy policy="Duplicate" field="town"/>
+    <policy policy="Duplicate" field="state"/>
+    <policy policy="Duplicate" field="phone_mobile"/>
+    <policy policy="Duplicate" field="phone_work"/>
+    <policy policy="Duplicate" field="phone_home"/>
+    <policy policy="Duplicate" field="primary_contact"/>
+    <policy policy="Duplicate" field="email_primary"/>
+    <policy policy="Duplicate" field="email_secondary"/>
+    <policy policy="Duplicate" field="recorded_by"/>
+    <policy policy="Duplicate" field="planbook_page"/>
+    <policy policy="Duplicate" field="folder_present"/>
+    <policy policy="Duplicate" field="active"/>
+    <policy policy="Duplicate" field="pins_set"/>
+    <policy policy="Duplicate" field="date_recorded"/>
+    <policy policy="Duplicate" field="date_requested"/>
+    <policy policy="Duplicate" field="date_fw_sched"/>
+    <policy policy="Duplicate" field="date_due"/>
+    <policy policy="Duplicate" field="date_estimate_sent"/>
+    <policy policy="Duplicate" field="date_dep"/>
+    <policy policy="Duplicate" field="hrs_rs_est"/>
+    <policy policy="Duplicate" field="hrs_rs_comp"/>
+    <policy policy="Duplicate" field="hrs_fw_est"/>
+    <policy policy="Duplicate" field="hrs_fw_comp"/>
+    <policy policy="Duplicate" field="hrs_cad_est"/>
+    <policy policy="Duplicate" field="hrs_cad_comp"/>
+    <policy policy="Duplicate" field="hrs_misc_est"/>
+    <policy policy="Duplicate" field="hrs_misc_comp"/>
+    <policy policy="Duplicate" field="rate_fw"/>
+    <policy policy="Duplicate" field="rate_cad"/>
+    <policy policy="Duplicate" field="rate_rs"/>
+    <policy policy="Duplicate" field="rate_misc"/>
+    <policy policy="Duplicate" field="amt_fw"/>
+    <policy policy="Duplicate" field="amt_rs"/>
+    <policy policy="Duplicate" field="amt_cad"/>
+    <policy policy="Duplicate" field="amt_misc"/>
+    <policy policy="Duplicate" field="amt_total"/>
+    <policy policy="Duplicate" field="amt_dep"/>
+    <policy policy="Duplicate" field="date_prelim"/>
+    <policy policy="Duplicate" field="date_finalplans"/>
+    <policy policy="Duplicate" field="date_mylar"/>
+    <policy policy="Duplicate" field="date_deeddesc"/>
+    <policy policy="Duplicate" field="date_pins"/>
+    <policy policy="Duplicate" field="date_fw"/>
+    <policy policy="Duplicate" field="date_cad"/>
+    <policy policy="Duplicate" field="copies_prelim"/>
+    <policy policy="Duplicate" field="copies_finalplans"/>
+    <policy policy="Duplicate" field="copies_mylar"/>
+    <policy policy="Duplicate" field="copies_deeddesc"/>
+    <policy policy="Duplicate" field="copies_pins"/>
+    <policy policy="Duplicate" field="copies_fw"/>
+    <policy policy="Duplicate" field="copies_cad"/>
+    <policy policy="Duplicate" field="to_prelim"/>
+    <policy policy="Duplicate" field="to_finalplans"/>
+    <policy policy="Duplicate" field="to_mylar"/>
+    <policy policy="Duplicate" field="to_deeddesc"/>
+    <policy policy="Duplicate" field="to_pins"/>
+    <policy policy="Duplicate" field="to_fw"/>
+    <policy policy="Duplicate" field="to_cad"/>
+    <policy policy="Duplicate" field="date_invoice1"/>
+    <policy policy="Duplicate" field="date_invoice2"/>
+    <policy policy="Duplicate" field="date_invoice3"/>
+    <policy policy="Duplicate" field="amt_invoice1"/>
+    <policy policy="Duplicate" field="amt_invoice2"/>
+    <policy policy="Duplicate" field="amt_invoice3"/>
+    <policy policy="Duplicate" field="lowtide_hrs"/>
+    <policy policy="Duplicate" field="lowtide"/>
+    <policy policy="Duplicate" field="perimeter"/>
+    <policy policy="Duplicate" field="area"/>
+    <policy policy="Duplicate" field="abutters"/>
+    <policy policy="Duplicate" field="objectid"/>
+    <policy policy="Duplicate" field="county"/>
+    <policy policy="Duplicate" field="zipcode"/>
+    <policy policy="Duplicate" field="lat_lon"/>
+    <policy policy="Duplicate" field="sPerimeter"/>
+    <policy policy="Duplicate" field="old_plan"/>
+    <policy policy="Duplicate" field="plan_no"/>
+    <policy policy="Duplicate" field="job"/>
+    <policy policy="Duplicate" field="client_role"/>
+    <policy policy="Duplicate" field="folder_type"/>
+    <policy policy="Duplicate" field="estimate"/>
+    <policy policy="Duplicate" field="objectid3"/>
+    <policy policy="Duplicate" field="jobSubtype"/>
+    <policy policy="Duplicate" field="supp_type"/>
+    <policy policy="Duplicate" field="document_subtype"/>
+    <policy policy="Duplicate" field="design_type"/>
+    <policy policy="Duplicate" field="scale"/>
+    <policy policy="Duplicate" field="map_type"/>
+    <policy policy="Duplicate" field="map_subtype"/>
+    <policy policy="Duplicate" field="pls_no"/>
+    <policy policy="Duplicate" field="record_jurisdiction"/>
+    <policy policy="Duplicate" field="record_office"/>
+    <policy policy="Duplicate" field="obtained_from"/>
+    <policy policy="Duplicate" field="quality"/>
+    <policy policy="Duplicate" field="media"/>
+    <policy policy="Duplicate" field="color"/>
+    <policy policy="Duplicate" field="author"/>
+    <policy policy="Duplicate" field="objectType"/>
+    <policy policy="Duplicate" field="extension"/>
+    <policy policy="Duplicate" field="completed"/>
+    <policy policy="Duplicate" field="zdistrict"/>
+  </splitPolicies>
+  <duplicatePolicies>
+    <policy policy="Duplicate" field="sid"/>
+    <policy policy="Duplicate" field="id"/>
+    <policy policy="Duplicate" field="map_bk_lot"/>
+    <policy policy="Duplicate" field="job_no"/>
+    <policy policy="Duplicate" field="rev_no"/>
+    <policy policy="Duplicate" field="old_plan_no"/>
+    <policy policy="Duplicate" field="job_type"/>
+    <policy policy="Duplicate" field="job_desc"/>
+    <policy policy="Duplicate" field="folder_name"/>
+    <policy policy="Duplicate" field="client_name"/>
+    <policy policy="Duplicate" field="contact_type"/>
+    <policy policy="Duplicate" field="contact_addr"/>
+    <policy policy="Duplicate" field="locus_addr"/>
+    <policy policy="Duplicate" field="town"/>
+    <policy policy="Duplicate" field="state"/>
+    <policy policy="Duplicate" field="phone_mobile"/>
+    <policy policy="Duplicate" field="phone_work"/>
+    <policy policy="Duplicate" field="phone_home"/>
+    <policy policy="Duplicate" field="primary_contact"/>
+    <policy policy="Duplicate" field="email_primary"/>
+    <policy policy="Duplicate" field="email_secondary"/>
+    <policy policy="Duplicate" field="recorded_by"/>
+    <policy policy="Duplicate" field="planbook_page"/>
+    <policy policy="Duplicate" field="folder_present"/>
+    <policy policy="Duplicate" field="active"/>
+    <policy policy="Duplicate" field="pins_set"/>
+    <policy policy="Duplicate" field="date_recorded"/>
+    <policy policy="Duplicate" field="date_requested"/>
+    <policy policy="Duplicate" field="date_fw_sched"/>
+    <policy policy="Duplicate" field="date_due"/>
+    <policy policy="Duplicate" field="date_estimate_sent"/>
+    <policy policy="Duplicate" field="date_dep"/>
+    <policy policy="Duplicate" field="hrs_rs_est"/>
+    <policy policy="Duplicate" field="hrs_rs_comp"/>
+    <policy policy="Duplicate" field="hrs_fw_est"/>
+    <policy policy="Duplicate" field="hrs_fw_comp"/>
+    <policy policy="Duplicate" field="hrs_cad_est"/>
+    <policy policy="Duplicate" field="hrs_cad_comp"/>
+    <policy policy="Duplicate" field="hrs_misc_est"/>
+    <policy policy="Duplicate" field="hrs_misc_comp"/>
+    <policy policy="Duplicate" field="rate_fw"/>
+    <policy policy="Duplicate" field="rate_cad"/>
+    <policy policy="Duplicate" field="rate_rs"/>
+    <policy policy="Duplicate" field="rate_misc"/>
+    <policy policy="Duplicate" field="amt_fw"/>
+    <policy policy="Duplicate" field="amt_rs"/>
+    <policy policy="Duplicate" field="amt_cad"/>
+    <policy policy="Duplicate" field="amt_misc"/>
+    <policy policy="Duplicate" field="amt_total"/>
+    <policy policy="Duplicate" field="amt_dep"/>
+    <policy policy="Duplicate" field="date_prelim"/>
+    <policy policy="Duplicate" field="date_finalplans"/>
+    <policy policy="Duplicate" field="date_mylar"/>
+    <policy policy="Duplicate" field="date_deeddesc"/>
+    <policy policy="Duplicate" field="date_pins"/>
+    <policy policy="Duplicate" field="date_fw"/>
+    <policy policy="Duplicate" field="date_cad"/>
+    <policy policy="Duplicate" field="copies_prelim"/>
+    <policy policy="Duplicate" field="copies_finalplans"/>
+    <policy policy="Duplicate" field="copies_mylar"/>
+    <policy policy="Duplicate" field="copies_deeddesc"/>
+    <policy policy="Duplicate" field="copies_pins"/>
+    <policy policy="Duplicate" field="copies_fw"/>
+    <policy policy="Duplicate" field="copies_cad"/>
+    <policy policy="Duplicate" field="to_prelim"/>
+    <policy policy="Duplicate" field="to_finalplans"/>
+    <policy policy="Duplicate" field="to_mylar"/>
+    <policy policy="Duplicate" field="to_deeddesc"/>
+    <policy policy="Duplicate" field="to_pins"/>
+    <policy policy="Duplicate" field="to_fw"/>
+    <policy policy="Duplicate" field="to_cad"/>
+    <policy policy="Duplicate" field="date_invoice1"/>
+    <policy policy="Duplicate" field="date_invoice2"/>
+    <policy policy="Duplicate" field="date_invoice3"/>
+    <policy policy="Duplicate" field="amt_invoice1"/>
+    <policy policy="Duplicate" field="amt_invoice2"/>
+    <policy policy="Duplicate" field="amt_invoice3"/>
+    <policy policy="Duplicate" field="lowtide_hrs"/>
+    <policy policy="Duplicate" field="lowtide"/>
+    <policy policy="Duplicate" field="perimeter"/>
+    <policy policy="Duplicate" field="area"/>
+    <policy policy="Duplicate" field="abutters"/>
+    <policy policy="Duplicate" field="objectid"/>
+    <policy policy="Duplicate" field="county"/>
+    <policy policy="Duplicate" field="zipcode"/>
+    <policy policy="Duplicate" field="lat_lon"/>
+    <policy policy="Duplicate" field="sPerimeter"/>
+    <policy policy="Duplicate" field="old_plan"/>
+    <policy policy="Duplicate" field="plan_no"/>
+    <policy policy="Duplicate" field="job"/>
+    <policy policy="Duplicate" field="client_role"/>
+    <policy policy="Duplicate" field="folder_type"/>
+    <policy policy="Duplicate" field="estimate"/>
+    <policy policy="Duplicate" field="objectid3"/>
+    <policy policy="Duplicate" field="jobSubtype"/>
+    <policy policy="Duplicate" field="supp_type"/>
+    <policy policy="Duplicate" field="document_subtype"/>
+    <policy policy="Duplicate" field="design_type"/>
+    <policy policy="Duplicate" field="scale"/>
+    <policy policy="Duplicate" field="map_type"/>
+    <policy policy="Duplicate" field="map_subtype"/>
+    <policy policy="Duplicate" field="pls_no"/>
+    <policy policy="Duplicate" field="record_jurisdiction"/>
+    <policy policy="Duplicate" field="record_office"/>
+    <policy policy="Duplicate" field="obtained_from"/>
+    <policy policy="Duplicate" field="quality"/>
+    <policy policy="Duplicate" field="media"/>
+    <policy policy="Duplicate" field="color"/>
+    <policy policy="Duplicate" field="author"/>
+    <policy policy="Duplicate" field="objectType"/>
+    <policy policy="Duplicate" field="extension"/>
+    <policy policy="Duplicate" field="completed"/>
+    <policy policy="Duplicate" field="zdistrict"/>
+  </duplicatePolicies>
   <defaults>
-    <default field="sid" expression="" applyOnUpdate="0"/>
-    <default field="id" expression="" applyOnUpdate="0"/>
-    <default field="map_bk_lot" expression="" applyOnUpdate="0"/>
-    <default field="job_no" expression="" applyOnUpdate="0"/>
-    <default field="rev_no" expression="" applyOnUpdate="0"/>
-    <default field="old_plan_no" expression="" applyOnUpdate="0"/>
-    <default field="job_type" expression="" applyOnUpdate="0"/>
-    <default field="job_desc" expression="" applyOnUpdate="0"/>
-    <default field="folder_name" expression="" applyOnUpdate="0"/>
-    <default field="client_name" expression="" applyOnUpdate="0"/>
-    <default field="contact_type" expression="" applyOnUpdate="0"/>
-    <default field="contact_addr" expression="" applyOnUpdate="0"/>
-    <default field="locus_addr" expression="" applyOnUpdate="0"/>
-    <default field="town" expression="" applyOnUpdate="0"/>
-    <default field="state" expression="ME" applyOnUpdate="0"/>
-    <default field="phone_mobile" expression="" applyOnUpdate="0"/>
-    <default field="phone_work" expression="" applyOnUpdate="0"/>
-    <default field="phone_home" expression="" applyOnUpdate="0"/>
-    <default field="primary_contact" expression="" applyOnUpdate="0"/>
-    <default field="email_primary" expression="" applyOnUpdate="0"/>
-    <default field="email_secondary" expression="" applyOnUpdate="0"/>
-    <default field="recorded_by" expression="" applyOnUpdate="0"/>
-    <default field="planbook_page" expression="" applyOnUpdate="0"/>
-    <default field="folder_present" expression="" applyOnUpdate="0"/>
-    <default field="active" expression="" applyOnUpdate="0"/>
-    <default field="pins_set" expression="" applyOnUpdate="0"/>
-    <default field="date_recorded" expression="&#xd;&#xa;'1900-01-01'" applyOnUpdate="0"/>
-    <default field="date_requested" expression="" applyOnUpdate="0"/>
-    <default field="date_fw_sched" expression="" applyOnUpdate="0"/>
-    <default field="date_due" expression="" applyOnUpdate="0"/>
-    <default field="date_estimate_sent" expression="" applyOnUpdate="0"/>
-    <default field="date_dep" expression="" applyOnUpdate="0"/>
-    <default field="hrs_rs_est" expression="" applyOnUpdate="0"/>
-    <default field="hrs_rs_comp" expression="" applyOnUpdate="0"/>
-    <default field="hrs_fw_est" expression="" applyOnUpdate="0"/>
-    <default field="hrs_fw_comp" expression="" applyOnUpdate="0"/>
-    <default field="hrs_cad_est" expression="" applyOnUpdate="0"/>
-    <default field="hrs_cad_comp" expression="" applyOnUpdate="0"/>
-    <default field="hrs_misc_est" expression="" applyOnUpdate="0"/>
-    <default field="hrs_misc_comp" expression="" applyOnUpdate="0"/>
-    <default field="rate_fw" expression="" applyOnUpdate="0"/>
-    <default field="rate_cad" expression="" applyOnUpdate="0"/>
-    <default field="rate_rs" expression="" applyOnUpdate="0"/>
-    <default field="rate_misc" expression="" applyOnUpdate="0"/>
-    <default field="amt_fw" expression="" applyOnUpdate="0"/>
-    <default field="amt_rs" expression="" applyOnUpdate="0"/>
-    <default field="amt_cad" expression="" applyOnUpdate="0"/>
-    <default field="amt_misc" expression="" applyOnUpdate="0"/>
-    <default field="amt_total" expression="" applyOnUpdate="0"/>
-    <default field="amt_dep" expression="" applyOnUpdate="0"/>
-    <default field="date_prelim" expression="" applyOnUpdate="0"/>
-    <default field="date_finalplans" expression="" applyOnUpdate="0"/>
-    <default field="date_mylar" expression="" applyOnUpdate="0"/>
-    <default field="date_deeddesc" expression="" applyOnUpdate="0"/>
-    <default field="date_pins" expression="" applyOnUpdate="0"/>
-    <default field="date_fw" expression="" applyOnUpdate="0"/>
-    <default field="date_cad" expression="" applyOnUpdate="0"/>
-    <default field="copies_prelim" expression="" applyOnUpdate="0"/>
-    <default field="copies_finalplans" expression="" applyOnUpdate="0"/>
-    <default field="copies_mylar" expression="" applyOnUpdate="0"/>
-    <default field="copies_deeddesc" expression="" applyOnUpdate="0"/>
-    <default field="copies_pins" expression="" applyOnUpdate="0"/>
-    <default field="copies_fw" expression="" applyOnUpdate="0"/>
-    <default field="copies_cad" expression="" applyOnUpdate="0"/>
-    <default field="to_prelim" expression="" applyOnUpdate="0"/>
-    <default field="to_finalplans" expression="" applyOnUpdate="0"/>
-    <default field="to_mylar" expression="" applyOnUpdate="0"/>
-    <default field="to_deeddesc" expression="" applyOnUpdate="0"/>
-    <default field="to_pins" expression="" applyOnUpdate="0"/>
-    <default field="to_fw" expression="" applyOnUpdate="0"/>
-    <default field="to_cad" expression="" applyOnUpdate="0"/>
-    <default field="date_invoice1" expression="" applyOnUpdate="0"/>
-    <default field="date_invoice2" expression="" applyOnUpdate="0"/>
-    <default field="date_invoice3" expression="" applyOnUpdate="0"/>
-    <default field="amt_invoice1" expression="" applyOnUpdate="0"/>
-    <default field="amt_invoice2" expression="" applyOnUpdate="0"/>
-    <default field="amt_invoice3" expression="" applyOnUpdate="0"/>
-    <default field="lowtide_hrs" expression="" applyOnUpdate="0"/>
-    <default field="lowtide" expression="" applyOnUpdate="0"/>
-    <default field="perimeter" expression="$perimeter" applyOnUpdate="1"/>
-    <default field="area" expression="($area)" applyOnUpdate="1"/>
-    <default field="abutters" expression="" applyOnUpdate="0"/>
-    <default field="objectid" expression="" applyOnUpdate="0"/>
-    <default field="county" expression="" applyOnUpdate="0"/>
-    <default field="zipcode" expression="" applyOnUpdate="0"/>
-    <default field="lat_lon" expression="y(transform($geometry,  layer_property( 'brs_jobs', 'crs'), 'EPSG:4326')) || ',' || x(transform($geometry,  layer_property( 'brs_jobs', 'crs'), 'EPSG:4326'))" applyOnUpdate="0"/>
-    <default field="sPerimeter" expression="format_number($perimeter,00)" applyOnUpdate="1"/>
-    <default field="old_plan" expression="" applyOnUpdate="0"/>
-    <default field="plan_no" expression="" applyOnUpdate="0"/>
-    <default field="job" expression="" applyOnUpdate="0"/>
-    <default field="client_role" expression="" applyOnUpdate="0"/>
-    <default field="folder_type" expression="" applyOnUpdate="0"/>
-    <default field="estimate" expression="" applyOnUpdate="0"/>
-    <default field="objectid3" expression="" applyOnUpdate="0"/>
-    <default field="jobSubtype" expression="" applyOnUpdate="0"/>
-    <default field="supp_type" expression="" applyOnUpdate="0"/>
-    <default field="document_subtype" expression="" applyOnUpdate="0"/>
-    <default field="design_type" expression="" applyOnUpdate="0"/>
-    <default field="scale" expression="" applyOnUpdate="0"/>
-    <default field="map_type" expression="" applyOnUpdate="0"/>
-    <default field="map_subtype" expression="" applyOnUpdate="0"/>
-    <default field="pls_no" expression="" applyOnUpdate="0"/>
-    <default field="record_jurisdiction" expression="" applyOnUpdate="0"/>
-    <default field="record_office" expression="" applyOnUpdate="0"/>
-    <default field="obtained_from" expression="" applyOnUpdate="0"/>
-    <default field="quality" expression="" applyOnUpdate="0"/>
-    <default field="media" expression="" applyOnUpdate="0"/>
-    <default field="color" expression="" applyOnUpdate="0"/>
-    <default field="author" expression="" applyOnUpdate="0"/>
-    <default field="objectType" expression="" applyOnUpdate="0"/>
-    <default field="extension" expression="" applyOnUpdate="0"/>
-    <default field="completed" expression="&quot;False&quot;" applyOnUpdate="0"/>
-    <default field="zdistrict" expression="" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" expression="" field="sid"/>
+    <default applyOnUpdate="0" expression="" field="id"/>
+    <default applyOnUpdate="0" expression="" field="map_bk_lot"/>
+    <default applyOnUpdate="0" expression="" field="job_no"/>
+    <default applyOnUpdate="0" expression="" field="rev_no"/>
+    <default applyOnUpdate="0" expression="" field="old_plan_no"/>
+    <default applyOnUpdate="0" expression="" field="job_type"/>
+    <default applyOnUpdate="0" expression="" field="job_desc"/>
+    <default applyOnUpdate="0" expression="" field="folder_name"/>
+    <default applyOnUpdate="0" expression="" field="client_name"/>
+    <default applyOnUpdate="0" expression="" field="contact_type"/>
+    <default applyOnUpdate="0" expression="" field="contact_addr"/>
+    <default applyOnUpdate="0" expression="" field="locus_addr"/>
+    <default applyOnUpdate="0" expression="" field="town"/>
+    <default applyOnUpdate="0" expression="ME" field="state"/>
+    <default applyOnUpdate="0" expression="" field="phone_mobile"/>
+    <default applyOnUpdate="0" expression="" field="phone_work"/>
+    <default applyOnUpdate="0" expression="" field="phone_home"/>
+    <default applyOnUpdate="0" expression="" field="primary_contact"/>
+    <default applyOnUpdate="0" expression="" field="email_primary"/>
+    <default applyOnUpdate="0" expression="" field="email_secondary"/>
+    <default applyOnUpdate="0" expression="" field="recorded_by"/>
+    <default applyOnUpdate="0" expression="" field="planbook_page"/>
+    <default applyOnUpdate="0" expression="" field="folder_present"/>
+    <default applyOnUpdate="0" expression="" field="active"/>
+    <default applyOnUpdate="0" expression="" field="pins_set"/>
+    <default applyOnUpdate="0" expression="&#xd;&#xa;'1900-01-01'" field="date_recorded"/>
+    <default applyOnUpdate="0" expression="" field="date_requested"/>
+    <default applyOnUpdate="0" expression="" field="date_fw_sched"/>
+    <default applyOnUpdate="0" expression="" field="date_due"/>
+    <default applyOnUpdate="0" expression="" field="date_estimate_sent"/>
+    <default applyOnUpdate="0" expression="" field="date_dep"/>
+    <default applyOnUpdate="0" expression="" field="hrs_rs_est"/>
+    <default applyOnUpdate="0" expression="" field="hrs_rs_comp"/>
+    <default applyOnUpdate="0" expression="" field="hrs_fw_est"/>
+    <default applyOnUpdate="0" expression="" field="hrs_fw_comp"/>
+    <default applyOnUpdate="0" expression="" field="hrs_cad_est"/>
+    <default applyOnUpdate="0" expression="" field="hrs_cad_comp"/>
+    <default applyOnUpdate="0" expression="" field="hrs_misc_est"/>
+    <default applyOnUpdate="0" expression="" field="hrs_misc_comp"/>
+    <default applyOnUpdate="0" expression="" field="rate_fw"/>
+    <default applyOnUpdate="0" expression="" field="rate_cad"/>
+    <default applyOnUpdate="0" expression="" field="rate_rs"/>
+    <default applyOnUpdate="0" expression="" field="rate_misc"/>
+    <default applyOnUpdate="0" expression="" field="amt_fw"/>
+    <default applyOnUpdate="0" expression="" field="amt_rs"/>
+    <default applyOnUpdate="0" expression="" field="amt_cad"/>
+    <default applyOnUpdate="0" expression="" field="amt_misc"/>
+    <default applyOnUpdate="0" expression="" field="amt_total"/>
+    <default applyOnUpdate="0" expression="" field="amt_dep"/>
+    <default applyOnUpdate="0" expression="" field="date_prelim"/>
+    <default applyOnUpdate="0" expression="" field="date_finalplans"/>
+    <default applyOnUpdate="0" expression="" field="date_mylar"/>
+    <default applyOnUpdate="0" expression="" field="date_deeddesc"/>
+    <default applyOnUpdate="0" expression="" field="date_pins"/>
+    <default applyOnUpdate="0" expression="" field="date_fw"/>
+    <default applyOnUpdate="0" expression="" field="date_cad"/>
+    <default applyOnUpdate="0" expression="" field="copies_prelim"/>
+    <default applyOnUpdate="0" expression="" field="copies_finalplans"/>
+    <default applyOnUpdate="0" expression="" field="copies_mylar"/>
+    <default applyOnUpdate="0" expression="" field="copies_deeddesc"/>
+    <default applyOnUpdate="0" expression="" field="copies_pins"/>
+    <default applyOnUpdate="0" expression="" field="copies_fw"/>
+    <default applyOnUpdate="0" expression="" field="copies_cad"/>
+    <default applyOnUpdate="0" expression="" field="to_prelim"/>
+    <default applyOnUpdate="0" expression="" field="to_finalplans"/>
+    <default applyOnUpdate="0" expression="" field="to_mylar"/>
+    <default applyOnUpdate="0" expression="" field="to_deeddesc"/>
+    <default applyOnUpdate="0" expression="" field="to_pins"/>
+    <default applyOnUpdate="0" expression="" field="to_fw"/>
+    <default applyOnUpdate="0" expression="" field="to_cad"/>
+    <default applyOnUpdate="0" expression="" field="date_invoice1"/>
+    <default applyOnUpdate="0" expression="" field="date_invoice2"/>
+    <default applyOnUpdate="0" expression="" field="date_invoice3"/>
+    <default applyOnUpdate="0" expression="" field="amt_invoice1"/>
+    <default applyOnUpdate="0" expression="" field="amt_invoice2"/>
+    <default applyOnUpdate="0" expression="" field="amt_invoice3"/>
+    <default applyOnUpdate="0" expression="" field="lowtide_hrs"/>
+    <default applyOnUpdate="0" expression="" field="lowtide"/>
+    <default applyOnUpdate="1" expression="$perimeter" field="perimeter"/>
+    <default applyOnUpdate="1" expression="($area)" field="area"/>
+    <default applyOnUpdate="0" expression="" field="abutters"/>
+    <default applyOnUpdate="0" expression="" field="objectid"/>
+    <default applyOnUpdate="0" expression="" field="county"/>
+    <default applyOnUpdate="0" expression="" field="zipcode"/>
+    <default applyOnUpdate="0" expression="y(transform($geometry,  layer_property( 'brs_jobs', 'crs'), 'EPSG:4326')) || ',' || x(transform($geometry,  layer_property( 'brs_jobs', 'crs'), 'EPSG:4326'))" field="lat_lon"/>
+    <default applyOnUpdate="1" expression="format_number($perimeter,00)" field="sPerimeter"/>
+    <default applyOnUpdate="0" expression="" field="old_plan"/>
+    <default applyOnUpdate="0" expression="" field="plan_no"/>
+    <default applyOnUpdate="0" expression="" field="job"/>
+    <default applyOnUpdate="0" expression="" field="client_role"/>
+    <default applyOnUpdate="0" expression="" field="folder_type"/>
+    <default applyOnUpdate="0" expression="" field="estimate"/>
+    <default applyOnUpdate="0" expression="" field="objectid3"/>
+    <default applyOnUpdate="0" expression="" field="jobSubtype"/>
+    <default applyOnUpdate="0" expression="" field="supp_type"/>
+    <default applyOnUpdate="0" expression="" field="document_subtype"/>
+    <default applyOnUpdate="0" expression="" field="design_type"/>
+    <default applyOnUpdate="0" expression="" field="scale"/>
+    <default applyOnUpdate="0" expression="" field="map_type"/>
+    <default applyOnUpdate="0" expression="" field="map_subtype"/>
+    <default applyOnUpdate="0" expression="" field="pls_no"/>
+    <default applyOnUpdate="0" expression="" field="record_jurisdiction"/>
+    <default applyOnUpdate="0" expression="" field="record_office"/>
+    <default applyOnUpdate="0" expression="" field="obtained_from"/>
+    <default applyOnUpdate="0" expression="" field="quality"/>
+    <default applyOnUpdate="0" expression="" field="media"/>
+    <default applyOnUpdate="0" expression="" field="color"/>
+    <default applyOnUpdate="0" expression="" field="author"/>
+    <default applyOnUpdate="0" expression="" field="objectType"/>
+    <default applyOnUpdate="0" expression="" field="extension"/>
+    <default applyOnUpdate="0" expression="&quot;False&quot;" field="completed"/>
+    <default applyOnUpdate="0" expression="" field="zdistrict"/>
   </defaults>
   <constraints>
-    <constraint exp_strength="0" field="sid" unique_strength="1" notnull_strength="1" constraints="3"/>
-    <constraint exp_strength="0" field="id" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="map_bk_lot" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="job_no" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="2" field="rev_no" unique_strength="0" notnull_strength="0" constraints="4"/>
-    <constraint exp_strength="0" field="old_plan_no" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="job_type" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="job_desc" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="folder_name" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="client_name" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="contact_type" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="contact_addr" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="locus_addr" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="town" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="state" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="phone_mobile" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="phone_work" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="phone_home" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="primary_contact" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="email_primary" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="email_secondary" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="recorded_by" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="planbook_page" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="folder_present" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="active" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="pins_set" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_recorded" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_requested" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_fw_sched" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_due" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_estimate_sent" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_dep" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="hrs_rs_est" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="hrs_rs_comp" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="hrs_fw_est" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="hrs_fw_comp" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="hrs_cad_est" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="hrs_cad_comp" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="hrs_misc_est" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="hrs_misc_comp" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="rate_fw" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="rate_cad" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="rate_rs" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="rate_misc" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_fw" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_rs" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_cad" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_misc" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_total" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_dep" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_prelim" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_finalplans" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_mylar" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_deeddesc" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_pins" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_fw" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_cad" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="copies_prelim" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="copies_finalplans" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="copies_mylar" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="copies_deeddesc" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="copies_pins" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="copies_fw" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="copies_cad" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="to_prelim" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="to_finalplans" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="to_mylar" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="to_deeddesc" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="to_pins" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="to_fw" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="to_cad" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_invoice1" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_invoice2" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="date_invoice3" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_invoice1" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_invoice2" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="amt_invoice3" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="lowtide_hrs" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="lowtide" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="perimeter" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="area" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="abutters" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="objectid" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="county" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="zipcode" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="lat_lon" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="sPerimeter" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="old_plan" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="plan_no" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="job" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="client_role" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="folder_type" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="estimate" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="objectid3" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="jobSubtype" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="supp_type" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="document_subtype" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="design_type" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="scale" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="map_type" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="map_subtype" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="pls_no" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="record_jurisdiction" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="record_office" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="obtained_from" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="quality" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="media" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="color" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="author" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="objectType" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="0" field="extension" unique_strength="0" notnull_strength="0" constraints="0"/>
-    <constraint exp_strength="2" field="completed" unique_strength="0" notnull_strength="0" constraints="4"/>
-    <constraint exp_strength="0" field="zdistrict" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint constraints="3" notnull_strength="1" field="sid" unique_strength="1" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="id" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="map_bk_lot" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="job_no" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="4" notnull_strength="0" field="rev_no" unique_strength="0" exp_strength="2"/>
+    <constraint constraints="0" notnull_strength="0" field="old_plan_no" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="job_type" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="job_desc" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="folder_name" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="client_name" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="contact_type" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="contact_addr" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="locus_addr" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="town" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="state" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="phone_mobile" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="phone_work" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="phone_home" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="primary_contact" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="email_primary" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="email_secondary" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="recorded_by" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="planbook_page" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="folder_present" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="active" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="pins_set" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_recorded" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_requested" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_fw_sched" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_due" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_estimate_sent" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_dep" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="hrs_rs_est" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="hrs_rs_comp" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="hrs_fw_est" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="hrs_fw_comp" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="hrs_cad_est" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="hrs_cad_comp" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="hrs_misc_est" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="hrs_misc_comp" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="rate_fw" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="rate_cad" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="rate_rs" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="rate_misc" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_fw" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_rs" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_cad" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_misc" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_total" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_dep" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_prelim" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_finalplans" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_mylar" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_deeddesc" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_pins" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_fw" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_cad" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="copies_prelim" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="copies_finalplans" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="copies_mylar" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="copies_deeddesc" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="copies_pins" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="copies_fw" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="copies_cad" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="to_prelim" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="to_finalplans" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="to_mylar" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="to_deeddesc" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="to_pins" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="to_fw" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="to_cad" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_invoice1" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_invoice2" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="date_invoice3" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_invoice1" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_invoice2" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="amt_invoice3" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="lowtide_hrs" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="lowtide" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="perimeter" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="area" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="abutters" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="objectid" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="county" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="zipcode" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="lat_lon" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="sPerimeter" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="old_plan" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="plan_no" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="job" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="client_role" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="folder_type" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="estimate" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="objectid3" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="jobSubtype" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="supp_type" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="document_subtype" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="design_type" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="scale" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="map_type" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="map_subtype" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="pls_no" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="record_jurisdiction" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="record_office" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="obtained_from" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="quality" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="media" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="color" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="author" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="objectType" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="extension" unique_strength="0" exp_strength="0"/>
+    <constraint constraints="4" notnull_strength="0" field="completed" unique_strength="0" exp_strength="2"/>
+    <constraint constraints="0" notnull_strength="0" field="zdistrict" unique_strength="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="sid" exp="" desc=""/>
-    <constraint field="id" exp="" desc=""/>
-    <constraint field="map_bk_lot" exp="" desc=""/>
-    <constraint field="job_no" exp="" desc=""/>
-    <constraint field="rev_no" exp="CASE WHEN   &quot;rev_no&quot;  IS NULL THEN '' ELSE   &quot;rev_no&quot;  &#xd;&#xa;END" desc=""/>
-    <constraint field="old_plan_no" exp="" desc=""/>
-    <constraint field="job_type" exp="" desc=""/>
-    <constraint field="job_desc" exp="" desc=""/>
-    <constraint field="folder_name" exp="" desc=""/>
-    <constraint field="client_name" exp="" desc=""/>
-    <constraint field="contact_type" exp="" desc=""/>
-    <constraint field="contact_addr" exp="" desc=""/>
-    <constraint field="locus_addr" exp="" desc=""/>
-    <constraint field="town" exp="" desc=""/>
-    <constraint field="state" exp="" desc=""/>
-    <constraint field="phone_mobile" exp="" desc=""/>
-    <constraint field="phone_work" exp="" desc=""/>
-    <constraint field="phone_home" exp="" desc=""/>
-    <constraint field="primary_contact" exp="" desc=""/>
-    <constraint field="email_primary" exp="" desc=""/>
-    <constraint field="email_secondary" exp="" desc=""/>
-    <constraint field="recorded_by" exp="" desc=""/>
-    <constraint field="planbook_page" exp="" desc=""/>
-    <constraint field="folder_present" exp="" desc=""/>
-    <constraint field="active" exp="" desc=""/>
-    <constraint field="pins_set" exp="" desc=""/>
-    <constraint field="date_recorded" exp="" desc=""/>
-    <constraint field="date_requested" exp="" desc=""/>
-    <constraint field="date_fw_sched" exp="" desc=""/>
-    <constraint field="date_due" exp="" desc=""/>
-    <constraint field="date_estimate_sent" exp="" desc=""/>
-    <constraint field="date_dep" exp="" desc=""/>
-    <constraint field="hrs_rs_est" exp="" desc=""/>
-    <constraint field="hrs_rs_comp" exp="" desc=""/>
-    <constraint field="hrs_fw_est" exp="" desc=""/>
-    <constraint field="hrs_fw_comp" exp="" desc=""/>
-    <constraint field="hrs_cad_est" exp="" desc=""/>
-    <constraint field="hrs_cad_comp" exp="" desc=""/>
-    <constraint field="hrs_misc_est" exp="" desc=""/>
-    <constraint field="hrs_misc_comp" exp="" desc=""/>
-    <constraint field="rate_fw" exp="" desc=""/>
-    <constraint field="rate_cad" exp="" desc=""/>
-    <constraint field="rate_rs" exp="" desc=""/>
-    <constraint field="rate_misc" exp="" desc=""/>
-    <constraint field="amt_fw" exp="" desc=""/>
-    <constraint field="amt_rs" exp="" desc=""/>
-    <constraint field="amt_cad" exp="" desc=""/>
-    <constraint field="amt_misc" exp="" desc=""/>
-    <constraint field="amt_total" exp="" desc=""/>
-    <constraint field="amt_dep" exp="" desc=""/>
-    <constraint field="date_prelim" exp="" desc=""/>
-    <constraint field="date_finalplans" exp="" desc=""/>
-    <constraint field="date_mylar" exp="" desc=""/>
-    <constraint field="date_deeddesc" exp="" desc=""/>
-    <constraint field="date_pins" exp="" desc=""/>
-    <constraint field="date_fw" exp="" desc=""/>
-    <constraint field="date_cad" exp="" desc=""/>
-    <constraint field="copies_prelim" exp="" desc=""/>
-    <constraint field="copies_finalplans" exp="" desc=""/>
-    <constraint field="copies_mylar" exp="" desc=""/>
-    <constraint field="copies_deeddesc" exp="" desc=""/>
-    <constraint field="copies_pins" exp="" desc=""/>
-    <constraint field="copies_fw" exp="" desc=""/>
-    <constraint field="copies_cad" exp="" desc=""/>
-    <constraint field="to_prelim" exp="" desc=""/>
-    <constraint field="to_finalplans" exp="" desc=""/>
-    <constraint field="to_mylar" exp="" desc=""/>
-    <constraint field="to_deeddesc" exp="" desc=""/>
-    <constraint field="to_pins" exp="" desc=""/>
-    <constraint field="to_fw" exp="" desc=""/>
-    <constraint field="to_cad" exp="" desc=""/>
-    <constraint field="date_invoice1" exp="" desc=""/>
-    <constraint field="date_invoice2" exp="" desc=""/>
-    <constraint field="date_invoice3" exp="" desc=""/>
-    <constraint field="amt_invoice1" exp="" desc=""/>
-    <constraint field="amt_invoice2" exp="" desc=""/>
-    <constraint field="amt_invoice3" exp="" desc=""/>
-    <constraint field="lowtide_hrs" exp="" desc=""/>
-    <constraint field="lowtide" exp="" desc=""/>
-    <constraint field="perimeter" exp="" desc=""/>
-    <constraint field="area" exp="" desc=""/>
-    <constraint field="abutters" exp="" desc=""/>
-    <constraint field="objectid" exp="" desc=""/>
-    <constraint field="county" exp="" desc=""/>
-    <constraint field="zipcode" exp="" desc=""/>
-    <constraint field="lat_lon" exp="" desc=""/>
-    <constraint field="sPerimeter" exp="" desc=""/>
-    <constraint field="old_plan" exp="" desc=""/>
-    <constraint field="plan_no" exp="" desc=""/>
-    <constraint field="job" exp="" desc=""/>
-    <constraint field="client_role" exp="" desc=""/>
-    <constraint field="folder_type" exp="" desc=""/>
-    <constraint field="estimate" exp="" desc=""/>
-    <constraint field="objectid3" exp="" desc=""/>
-    <constraint field="jobSubtype" exp="" desc=""/>
-    <constraint field="supp_type" exp="" desc=""/>
-    <constraint field="document_subtype" exp="" desc=""/>
-    <constraint field="design_type" exp="" desc=""/>
-    <constraint field="scale" exp="" desc=""/>
-    <constraint field="map_type" exp="" desc=""/>
-    <constraint field="map_subtype" exp="" desc=""/>
-    <constraint field="pls_no" exp="" desc=""/>
-    <constraint field="record_jurisdiction" exp="" desc=""/>
-    <constraint field="record_office" exp="" desc=""/>
-    <constraint field="obtained_from" exp="" desc=""/>
-    <constraint field="quality" exp="" desc=""/>
-    <constraint field="media" exp="" desc=""/>
-    <constraint field="color" exp="" desc=""/>
-    <constraint field="author" exp="" desc=""/>
-    <constraint field="objectType" exp="" desc=""/>
-    <constraint field="extension" exp="" desc=""/>
-    <constraint field="completed" exp="&quot;id&quot;" desc=""/>
-    <constraint field="zdistrict" exp="" desc=""/>
+    <constraint desc="" exp="" field="sid"/>
+    <constraint desc="" exp="" field="id"/>
+    <constraint desc="" exp="" field="map_bk_lot"/>
+    <constraint desc="" exp="" field="job_no"/>
+    <constraint desc="" exp="CASE WHEN   &quot;rev_no&quot;  IS NULL THEN '' ELSE   &quot;rev_no&quot;  &#xd;&#xa;END" field="rev_no"/>
+    <constraint desc="" exp="" field="old_plan_no"/>
+    <constraint desc="" exp="" field="job_type"/>
+    <constraint desc="" exp="" field="job_desc"/>
+    <constraint desc="" exp="" field="folder_name"/>
+    <constraint desc="" exp="" field="client_name"/>
+    <constraint desc="" exp="" field="contact_type"/>
+    <constraint desc="" exp="" field="contact_addr"/>
+    <constraint desc="" exp="" field="locus_addr"/>
+    <constraint desc="" exp="" field="town"/>
+    <constraint desc="" exp="" field="state"/>
+    <constraint desc="" exp="" field="phone_mobile"/>
+    <constraint desc="" exp="" field="phone_work"/>
+    <constraint desc="" exp="" field="phone_home"/>
+    <constraint desc="" exp="" field="primary_contact"/>
+    <constraint desc="" exp="" field="email_primary"/>
+    <constraint desc="" exp="" field="email_secondary"/>
+    <constraint desc="" exp="" field="recorded_by"/>
+    <constraint desc="" exp="" field="planbook_page"/>
+    <constraint desc="" exp="" field="folder_present"/>
+    <constraint desc="" exp="" field="active"/>
+    <constraint desc="" exp="" field="pins_set"/>
+    <constraint desc="" exp="" field="date_recorded"/>
+    <constraint desc="" exp="" field="date_requested"/>
+    <constraint desc="" exp="" field="date_fw_sched"/>
+    <constraint desc="" exp="" field="date_due"/>
+    <constraint desc="" exp="" field="date_estimate_sent"/>
+    <constraint desc="" exp="" field="date_dep"/>
+    <constraint desc="" exp="" field="hrs_rs_est"/>
+    <constraint desc="" exp="" field="hrs_rs_comp"/>
+    <constraint desc="" exp="" field="hrs_fw_est"/>
+    <constraint desc="" exp="" field="hrs_fw_comp"/>
+    <constraint desc="" exp="" field="hrs_cad_est"/>
+    <constraint desc="" exp="" field="hrs_cad_comp"/>
+    <constraint desc="" exp="" field="hrs_misc_est"/>
+    <constraint desc="" exp="" field="hrs_misc_comp"/>
+    <constraint desc="" exp="" field="rate_fw"/>
+    <constraint desc="" exp="" field="rate_cad"/>
+    <constraint desc="" exp="" field="rate_rs"/>
+    <constraint desc="" exp="" field="rate_misc"/>
+    <constraint desc="" exp="" field="amt_fw"/>
+    <constraint desc="" exp="" field="amt_rs"/>
+    <constraint desc="" exp="" field="amt_cad"/>
+    <constraint desc="" exp="" field="amt_misc"/>
+    <constraint desc="" exp="" field="amt_total"/>
+    <constraint desc="" exp="" field="amt_dep"/>
+    <constraint desc="" exp="" field="date_prelim"/>
+    <constraint desc="" exp="" field="date_finalplans"/>
+    <constraint desc="" exp="" field="date_mylar"/>
+    <constraint desc="" exp="" field="date_deeddesc"/>
+    <constraint desc="" exp="" field="date_pins"/>
+    <constraint desc="" exp="" field="date_fw"/>
+    <constraint desc="" exp="" field="date_cad"/>
+    <constraint desc="" exp="" field="copies_prelim"/>
+    <constraint desc="" exp="" field="copies_finalplans"/>
+    <constraint desc="" exp="" field="copies_mylar"/>
+    <constraint desc="" exp="" field="copies_deeddesc"/>
+    <constraint desc="" exp="" field="copies_pins"/>
+    <constraint desc="" exp="" field="copies_fw"/>
+    <constraint desc="" exp="" field="copies_cad"/>
+    <constraint desc="" exp="" field="to_prelim"/>
+    <constraint desc="" exp="" field="to_finalplans"/>
+    <constraint desc="" exp="" field="to_mylar"/>
+    <constraint desc="" exp="" field="to_deeddesc"/>
+    <constraint desc="" exp="" field="to_pins"/>
+    <constraint desc="" exp="" field="to_fw"/>
+    <constraint desc="" exp="" field="to_cad"/>
+    <constraint desc="" exp="" field="date_invoice1"/>
+    <constraint desc="" exp="" field="date_invoice2"/>
+    <constraint desc="" exp="" field="date_invoice3"/>
+    <constraint desc="" exp="" field="amt_invoice1"/>
+    <constraint desc="" exp="" field="amt_invoice2"/>
+    <constraint desc="" exp="" field="amt_invoice3"/>
+    <constraint desc="" exp="" field="lowtide_hrs"/>
+    <constraint desc="" exp="" field="lowtide"/>
+    <constraint desc="" exp="" field="perimeter"/>
+    <constraint desc="" exp="" field="area"/>
+    <constraint desc="" exp="" field="abutters"/>
+    <constraint desc="" exp="" field="objectid"/>
+    <constraint desc="" exp="" field="county"/>
+    <constraint desc="" exp="" field="zipcode"/>
+    <constraint desc="" exp="" field="lat_lon"/>
+    <constraint desc="" exp="" field="sPerimeter"/>
+    <constraint desc="" exp="" field="old_plan"/>
+    <constraint desc="" exp="" field="plan_no"/>
+    <constraint desc="" exp="" field="job"/>
+    <constraint desc="" exp="" field="client_role"/>
+    <constraint desc="" exp="" field="folder_type"/>
+    <constraint desc="" exp="" field="estimate"/>
+    <constraint desc="" exp="" field="objectid3"/>
+    <constraint desc="" exp="" field="jobSubtype"/>
+    <constraint desc="" exp="" field="supp_type"/>
+    <constraint desc="" exp="" field="document_subtype"/>
+    <constraint desc="" exp="" field="design_type"/>
+    <constraint desc="" exp="" field="scale"/>
+    <constraint desc="" exp="" field="map_type"/>
+    <constraint desc="" exp="" field="map_subtype"/>
+    <constraint desc="" exp="" field="pls_no"/>
+    <constraint desc="" exp="" field="record_jurisdiction"/>
+    <constraint desc="" exp="" field="record_office"/>
+    <constraint desc="" exp="" field="obtained_from"/>
+    <constraint desc="" exp="" field="quality"/>
+    <constraint desc="" exp="" field="media"/>
+    <constraint desc="" exp="" field="color"/>
+    <constraint desc="" exp="" field="author"/>
+    <constraint desc="" exp="" field="objectType"/>
+    <constraint desc="" exp="" field="extension"/>
+    <constraint desc="" exp="&quot;id&quot;" field="completed"/>
+    <constraint desc="" exp="" field="zdistrict"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="1" actionWidgetStyle="dropDown" sortExpression="&quot;sid&quot;">
+  <attributetableconfig sortOrder="1" sortExpression="&quot;sid&quot;" actionWidgetStyle="dropDown">
     <columns>
-      <column width="-1" hidden="0" name="sid" type="field"/>
-      <column width="-1" hidden="0" name="map_bk_lot" type="field"/>
-      <column width="-1" hidden="0" name="job_no" type="field"/>
-      <column width="-1" hidden="0" name="objectid" type="field"/>
-      <column width="-1" hidden="0" name="id" type="field"/>
-      <column width="-1" hidden="0" name="rev_no" type="field"/>
-      <column width="-1" hidden="0" name="old_plan_no" type="field"/>
-      <column width="-1" hidden="0" name="job_type" type="field"/>
-      <column width="-1" hidden="0" name="job_desc" type="field"/>
-      <column width="-1" hidden="0" name="folder_name" type="field"/>
-      <column width="-1" hidden="0" name="client_name" type="field"/>
-      <column width="-1" hidden="0" name="contact_type" type="field"/>
-      <column width="-1" hidden="0" name="contact_addr" type="field"/>
-      <column width="-1" hidden="0" name="locus_addr" type="field"/>
-      <column width="-1" hidden="0" name="town" type="field"/>
-      <column width="-1" hidden="0" name="state" type="field"/>
-      <column width="-1" hidden="0" name="phone_mobile" type="field"/>
-      <column width="-1" hidden="0" name="phone_work" type="field"/>
-      <column width="-1" hidden="0" name="phone_home" type="field"/>
-      <column width="-1" hidden="0" name="primary_contact" type="field"/>
-      <column width="-1" hidden="0" name="email_primary" type="field"/>
-      <column width="-1" hidden="0" name="email_secondary" type="field"/>
-      <column width="-1" hidden="0" name="recorded_by" type="field"/>
-      <column width="-1" hidden="0" name="planbook_page" type="field"/>
-      <column width="-1" hidden="0" name="folder_present" type="field"/>
-      <column width="-1" hidden="0" name="active" type="field"/>
-      <column width="-1" hidden="0" name="pins_set" type="field"/>
-      <column width="-1" hidden="0" name="date_recorded" type="field"/>
-      <column width="-1" hidden="0" name="date_requested" type="field"/>
-      <column width="-1" hidden="0" name="date_fw_sched" type="field"/>
-      <column width="-1" hidden="0" name="date_due" type="field"/>
-      <column width="-1" hidden="0" name="date_estimate_sent" type="field"/>
-      <column width="-1" hidden="0" name="date_dep" type="field"/>
-      <column width="-1" hidden="0" name="hrs_rs_est" type="field"/>
-      <column width="-1" hidden="0" name="hrs_rs_comp" type="field"/>
-      <column width="-1" hidden="0" name="hrs_fw_est" type="field"/>
-      <column width="-1" hidden="0" name="hrs_fw_comp" type="field"/>
-      <column width="-1" hidden="0" name="hrs_cad_est" type="field"/>
-      <column width="-1" hidden="0" name="hrs_cad_comp" type="field"/>
-      <column width="-1" hidden="0" name="hrs_misc_est" type="field"/>
-      <column width="-1" hidden="0" name="hrs_misc_comp" type="field"/>
-      <column width="-1" hidden="0" name="rate_fw" type="field"/>
-      <column width="-1" hidden="0" name="rate_cad" type="field"/>
-      <column width="-1" hidden="0" name="rate_rs" type="field"/>
-      <column width="-1" hidden="0" name="rate_misc" type="field"/>
-      <column width="-1" hidden="0" name="amt_fw" type="field"/>
-      <column width="-1" hidden="0" name="amt_rs" type="field"/>
-      <column width="-1" hidden="0" name="amt_cad" type="field"/>
-      <column width="-1" hidden="0" name="amt_misc" type="field"/>
-      <column width="-1" hidden="0" name="amt_total" type="field"/>
-      <column width="-1" hidden="0" name="amt_dep" type="field"/>
-      <column width="-1" hidden="0" name="date_prelim" type="field"/>
-      <column width="-1" hidden="0" name="date_finalplans" type="field"/>
-      <column width="-1" hidden="0" name="date_mylar" type="field"/>
-      <column width="-1" hidden="0" name="date_deeddesc" type="field"/>
-      <column width="-1" hidden="0" name="date_pins" type="field"/>
-      <column width="-1" hidden="0" name="date_fw" type="field"/>
-      <column width="-1" hidden="0" name="date_cad" type="field"/>
-      <column width="-1" hidden="0" name="copies_prelim" type="field"/>
-      <column width="-1" hidden="0" name="copies_finalplans" type="field"/>
-      <column width="-1" hidden="0" name="copies_mylar" type="field"/>
-      <column width="-1" hidden="0" name="copies_deeddesc" type="field"/>
-      <column width="-1" hidden="0" name="copies_pins" type="field"/>
-      <column width="-1" hidden="0" name="copies_fw" type="field"/>
-      <column width="-1" hidden="0" name="copies_cad" type="field"/>
-      <column width="-1" hidden="0" name="to_prelim" type="field"/>
-      <column width="-1" hidden="0" name="to_finalplans" type="field"/>
-      <column width="-1" hidden="0" name="to_mylar" type="field"/>
-      <column width="-1" hidden="0" name="to_deeddesc" type="field"/>
-      <column width="-1" hidden="0" name="to_pins" type="field"/>
-      <column width="-1" hidden="0" name="to_fw" type="field"/>
-      <column width="-1" hidden="0" name="to_cad" type="field"/>
-      <column width="-1" hidden="0" name="date_invoice1" type="field"/>
-      <column width="-1" hidden="0" name="date_invoice2" type="field"/>
-      <column width="-1" hidden="0" name="date_invoice3" type="field"/>
-      <column width="-1" hidden="0" name="amt_invoice1" type="field"/>
-      <column width="-1" hidden="0" name="amt_invoice2" type="field"/>
-      <column width="-1" hidden="0" name="amt_invoice3" type="field"/>
-      <column width="-1" hidden="0" name="lowtide_hrs" type="field"/>
-      <column width="-1" hidden="0" name="lowtide" type="field"/>
-      <column width="-1" hidden="1" type="actions"/>
-      <column width="-1" hidden="0" name="area" type="field"/>
-      <column width="-1" hidden="0" name="perimeter" type="field"/>
-      <column width="-1" hidden="0" name="abutters" type="field"/>
-      <column width="-1" hidden="0" name="county" type="field"/>
-      <column width="-1" hidden="0" name="zipcode" type="field"/>
-      <column width="-1" hidden="0" name="lat_lon" type="field"/>
-      <column width="-1" hidden="0" name="sPerimeter" type="field"/>
-      <column width="-1" hidden="0" name="old_plan" type="field"/>
-      <column width="-1" hidden="0" name="plan_no" type="field"/>
-      <column width="-1" hidden="0" name="job" type="field"/>
-      <column width="-1" hidden="0" name="client_role" type="field"/>
-      <column width="-1" hidden="0" name="folder_type" type="field"/>
-      <column width="-1" hidden="0" name="estimate" type="field"/>
-      <column width="-1" hidden="0" name="jobSubtype" type="field"/>
-      <column width="-1" hidden="0" name="objectType" type="field"/>
-      <column width="-1" hidden="0" name="supp_type" type="field"/>
-      <column width="-1" hidden="0" name="document_subtype" type="field"/>
-      <column width="-1" hidden="0" name="scale" type="field"/>
-      <column width="-1" hidden="0" name="design_type" type="field"/>
-      <column width="-1" hidden="0" name="map_type" type="field"/>
-      <column width="-1" hidden="0" name="map_subtype" type="field"/>
-      <column width="-1" hidden="0" name="pls_no" type="field"/>
-      <column width="-1" hidden="0" name="objectid3" type="field"/>
-      <column width="-1" hidden="0" name="record_jurisdiction" type="field"/>
-      <column width="-1" hidden="0" name="record_office" type="field"/>
-      <column width="-1" hidden="0" name="obtained_from" type="field"/>
-      <column width="-1" hidden="0" name="quality" type="field"/>
-      <column width="-1" hidden="0" name="media" type="field"/>
-      <column width="-1" hidden="0" name="color" type="field"/>
-      <column width="-1" hidden="0" name="author" type="field"/>
-      <column width="-1" hidden="0" name="extension" type="field"/>
-      <column width="-1" hidden="0" name="completed" type="field"/>
-      <column width="-1" hidden="0" name="zdistrict" type="field"/>
+      <column name="sid" width="-1" type="field" hidden="0"/>
+      <column name="map_bk_lot" width="-1" type="field" hidden="0"/>
+      <column name="job_no" width="-1" type="field" hidden="0"/>
+      <column name="objectid" width="-1" type="field" hidden="0"/>
+      <column name="id" width="-1" type="field" hidden="0"/>
+      <column name="rev_no" width="-1" type="field" hidden="0"/>
+      <column name="old_plan_no" width="-1" type="field" hidden="0"/>
+      <column name="job_type" width="-1" type="field" hidden="0"/>
+      <column name="job_desc" width="-1" type="field" hidden="0"/>
+      <column name="folder_name" width="-1" type="field" hidden="0"/>
+      <column name="client_name" width="-1" type="field" hidden="0"/>
+      <column name="contact_type" width="-1" type="field" hidden="0"/>
+      <column name="contact_addr" width="-1" type="field" hidden="0"/>
+      <column name="locus_addr" width="-1" type="field" hidden="0"/>
+      <column name="town" width="-1" type="field" hidden="0"/>
+      <column name="state" width="-1" type="field" hidden="0"/>
+      <column name="phone_mobile" width="-1" type="field" hidden="0"/>
+      <column name="phone_work" width="-1" type="field" hidden="0"/>
+      <column name="phone_home" width="-1" type="field" hidden="0"/>
+      <column name="primary_contact" width="-1" type="field" hidden="0"/>
+      <column name="email_primary" width="-1" type="field" hidden="0"/>
+      <column name="email_secondary" width="-1" type="field" hidden="0"/>
+      <column name="recorded_by" width="-1" type="field" hidden="0"/>
+      <column name="planbook_page" width="-1" type="field" hidden="0"/>
+      <column name="folder_present" width="-1" type="field" hidden="0"/>
+      <column name="active" width="-1" type="field" hidden="0"/>
+      <column name="pins_set" width="-1" type="field" hidden="0"/>
+      <column name="date_recorded" width="-1" type="field" hidden="0"/>
+      <column name="date_requested" width="-1" type="field" hidden="0"/>
+      <column name="date_fw_sched" width="-1" type="field" hidden="0"/>
+      <column name="date_due" width="-1" type="field" hidden="0"/>
+      <column name="date_estimate_sent" width="-1" type="field" hidden="0"/>
+      <column name="date_dep" width="-1" type="field" hidden="0"/>
+      <column name="hrs_rs_est" width="-1" type="field" hidden="0"/>
+      <column name="hrs_rs_comp" width="-1" type="field" hidden="0"/>
+      <column name="hrs_fw_est" width="-1" type="field" hidden="0"/>
+      <column name="hrs_fw_comp" width="-1" type="field" hidden="0"/>
+      <column name="hrs_cad_est" width="-1" type="field" hidden="0"/>
+      <column name="hrs_cad_comp" width="-1" type="field" hidden="0"/>
+      <column name="hrs_misc_est" width="-1" type="field" hidden="0"/>
+      <column name="hrs_misc_comp" width="-1" type="field" hidden="0"/>
+      <column name="rate_fw" width="-1" type="field" hidden="0"/>
+      <column name="rate_cad" width="-1" type="field" hidden="0"/>
+      <column name="rate_rs" width="-1" type="field" hidden="0"/>
+      <column name="rate_misc" width="-1" type="field" hidden="0"/>
+      <column name="amt_fw" width="-1" type="field" hidden="0"/>
+      <column name="amt_rs" width="-1" type="field" hidden="0"/>
+      <column name="amt_cad" width="-1" type="field" hidden="0"/>
+      <column name="amt_misc" width="-1" type="field" hidden="0"/>
+      <column name="amt_total" width="-1" type="field" hidden="0"/>
+      <column name="amt_dep" width="-1" type="field" hidden="0"/>
+      <column name="date_prelim" width="-1" type="field" hidden="0"/>
+      <column name="date_finalplans" width="-1" type="field" hidden="0"/>
+      <column name="date_mylar" width="-1" type="field" hidden="0"/>
+      <column name="date_deeddesc" width="-1" type="field" hidden="0"/>
+      <column name="date_pins" width="-1" type="field" hidden="0"/>
+      <column name="date_fw" width="-1" type="field" hidden="0"/>
+      <column name="date_cad" width="-1" type="field" hidden="0"/>
+      <column name="copies_prelim" width="-1" type="field" hidden="0"/>
+      <column name="copies_finalplans" width="-1" type="field" hidden="0"/>
+      <column name="copies_mylar" width="-1" type="field" hidden="0"/>
+      <column name="copies_deeddesc" width="-1" type="field" hidden="0"/>
+      <column name="copies_pins" width="-1" type="field" hidden="0"/>
+      <column name="copies_fw" width="-1" type="field" hidden="0"/>
+      <column name="copies_cad" width="-1" type="field" hidden="0"/>
+      <column name="to_prelim" width="-1" type="field" hidden="0"/>
+      <column name="to_finalplans" width="-1" type="field" hidden="0"/>
+      <column name="to_mylar" width="-1" type="field" hidden="0"/>
+      <column name="to_deeddesc" width="-1" type="field" hidden="0"/>
+      <column name="to_pins" width="-1" type="field" hidden="0"/>
+      <column name="to_fw" width="-1" type="field" hidden="0"/>
+      <column name="to_cad" width="-1" type="field" hidden="0"/>
+      <column name="date_invoice1" width="-1" type="field" hidden="0"/>
+      <column name="date_invoice2" width="-1" type="field" hidden="0"/>
+      <column name="date_invoice3" width="-1" type="field" hidden="0"/>
+      <column name="amt_invoice1" width="-1" type="field" hidden="0"/>
+      <column name="amt_invoice2" width="-1" type="field" hidden="0"/>
+      <column name="amt_invoice3" width="-1" type="field" hidden="0"/>
+      <column name="lowtide_hrs" width="-1" type="field" hidden="0"/>
+      <column name="lowtide" width="-1" type="field" hidden="0"/>
+      <column width="-1" type="actions" hidden="1"/>
+      <column name="area" width="-1" type="field" hidden="0"/>
+      <column name="perimeter" width="-1" type="field" hidden="0"/>
+      <column name="abutters" width="-1" type="field" hidden="0"/>
+      <column name="county" width="-1" type="field" hidden="0"/>
+      <column name="zipcode" width="-1" type="field" hidden="0"/>
+      <column name="lat_lon" width="-1" type="field" hidden="0"/>
+      <column name="sPerimeter" width="-1" type="field" hidden="0"/>
+      <column name="old_plan" width="-1" type="field" hidden="0"/>
+      <column name="plan_no" width="-1" type="field" hidden="0"/>
+      <column name="job" width="-1" type="field" hidden="0"/>
+      <column name="client_role" width="-1" type="field" hidden="0"/>
+      <column name="folder_type" width="-1" type="field" hidden="0"/>
+      <column name="estimate" width="-1" type="field" hidden="0"/>
+      <column name="jobSubtype" width="-1" type="field" hidden="0"/>
+      <column name="objectType" width="-1" type="field" hidden="0"/>
+      <column name="supp_type" width="-1" type="field" hidden="0"/>
+      <column name="document_subtype" width="-1" type="field" hidden="0"/>
+      <column name="scale" width="-1" type="field" hidden="0"/>
+      <column name="design_type" width="-1" type="field" hidden="0"/>
+      <column name="map_type" width="-1" type="field" hidden="0"/>
+      <column name="map_subtype" width="-1" type="field" hidden="0"/>
+      <column name="pls_no" width="-1" type="field" hidden="0"/>
+      <column name="objectid3" width="-1" type="field" hidden="0"/>
+      <column name="record_jurisdiction" width="-1" type="field" hidden="0"/>
+      <column name="record_office" width="-1" type="field" hidden="0"/>
+      <column name="obtained_from" width="-1" type="field" hidden="0"/>
+      <column name="quality" width="-1" type="field" hidden="0"/>
+      <column name="media" width="-1" type="field" hidden="0"/>
+      <column name="color" width="-1" type="field" hidden="0"/>
+      <column name="author" width="-1" type="field" hidden="0"/>
+      <column name="extension" width="-1" type="field" hidden="0"/>
+      <column name="completed" width="-1" type="field" hidden="0"/>
+      <column name="zdistrict" width="-1" type="field" hidden="0"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -3494,10 +3589,10 @@
     <fieldstyles/>
   </conditionalstyles>
   <storedexpressions/>
-  <editform tolerant="1">Z:\0 - Settings\GIS\QGIS\plugins\profiles\DEV\python\plugins\brsgis_plugin\UI\brs_jobs.ui</editform>
-  <editforminit>Open</editforminit>
+  <editform tolerant="1">Z:\0 - Settings\GIS\QGIS\plugins\profiles\NEW\python\plugins\sgis_plugin\UI\jobs.ui</editform>
+  <editforminit>formOpen</editforminit>
   <editforminitcodesource>1</editforminitcodesource>
-  <editforminitfilepath>Z:\0 - Settings\GIS\QGIS\plugins\profiles\DEV\python\plugins\brsgis_plugin\UI\brs_jobs_init.py</editforminitfilepath>
+  <editforminitfilepath>Z:\0 - Settings\GIS\QGIS\plugins\profiles\NEW\python\plugins\sgis_plugin\UI\jobs_init.py</editforminitfilepath>
   <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -3518,133 +3613,133 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>1</featformsuppress>
   <editorlayout>uifilelayout</editorlayout>
   <editable>
-    <field editable="1" name="abutters"/>
-    <field editable="1" name="active"/>
-    <field editable="1" name="amt_cad"/>
-    <field editable="1" name="amt_dep"/>
-    <field editable="1" name="amt_fw"/>
-    <field editable="1" name="amt_invoice1"/>
-    <field editable="1" name="amt_invoice2"/>
-    <field editable="1" name="amt_invoice3"/>
-    <field editable="1" name="amt_misc"/>
-    <field editable="1" name="amt_rs"/>
-    <field editable="1" name="amt_total"/>
-    <field editable="1" name="area"/>
-    <field editable="1" name="author"/>
-    <field editable="1" name="centroidxy"/>
-    <field editable="0" name="client_name"/>
-    <field editable="1" name="client_role"/>
-    <field editable="1" name="color"/>
-    <field editable="1" name="completed"/>
-    <field editable="1" name="contact_addr"/>
-    <field editable="1" name="contact_type"/>
-    <field editable="1" name="copies_cad"/>
-    <field editable="1" name="copies_deeddesc"/>
-    <field editable="1" name="copies_finalplans"/>
-    <field editable="1" name="copies_fw"/>
-    <field editable="1" name="copies_mylar"/>
-    <field editable="1" name="copies_pins"/>
-    <field editable="1" name="copies_prelim"/>
-    <field editable="0" name="county"/>
-    <field editable="1" name="date_cad"/>
-    <field editable="1" name="date_deeddesc"/>
-    <field editable="1" name="date_dep"/>
-    <field editable="1" name="date_due"/>
-    <field editable="1" name="date_estimate_sent"/>
-    <field editable="1" name="date_finalplans"/>
-    <field editable="1" name="date_fw"/>
-    <field editable="1" name="date_fw_sched"/>
-    <field editable="1" name="date_invoice1"/>
-    <field editable="1" name="date_invoice2"/>
-    <field editable="1" name="date_invoice3"/>
-    <field editable="1" name="date_mylar"/>
-    <field editable="1" name="date_pins"/>
-    <field editable="1" name="date_prelim"/>
-    <field editable="1" name="date_recorded"/>
-    <field editable="1" name="date_requested"/>
-    <field editable="1" name="design_type"/>
-    <field editable="1" name="did"/>
-    <field editable="1" name="document_subtype"/>
-    <field editable="1" name="email_primary"/>
-    <field editable="1" name="email_secondary"/>
-    <field editable="1" name="estimate"/>
-    <field editable="1" name="extension"/>
-    <field editable="1" name="featureType"/>
-    <field editable="0" name="folder_name"/>
-    <field editable="1" name="folder_present"/>
-    <field editable="1" name="folder_type"/>
-    <field editable="1" name="hid"/>
-    <field editable="1" name="hrs_cad_comp"/>
-    <field editable="1" name="hrs_cad_est"/>
-    <field editable="1" name="hrs_fw_comp"/>
-    <field editable="1" name="hrs_fw_est"/>
-    <field editable="1" name="hrs_misc_comp"/>
-    <field editable="1" name="hrs_misc_est"/>
-    <field editable="1" name="hrs_rs_comp"/>
-    <field editable="1" name="hrs_rs_est"/>
-    <field editable="1" name="id"/>
-    <field editable="1" name="job"/>
-    <field editable="1" name="jobSubtype"/>
-    <field editable="1" name="jobType"/>
-    <field editable="1" name="job_desc"/>
-    <field editable="0" name="job_no"/>
-    <field editable="1" name="job_subtype"/>
-    <field editable="1" name="job_type"/>
-    <field editable="1" name="kid"/>
-    <field editable="0" name="lat_lon"/>
-    <field editable="1" name="locus_addr"/>
-    <field editable="1" name="lowtide"/>
-    <field editable="1" name="lowtide_hrs"/>
-    <field editable="0" name="map_bk_lot"/>
-    <field editable="1" name="map_subtype"/>
-    <field editable="1" name="map_type"/>
-    <field editable="1" name="media"/>
-    <field editable="1" name="mid"/>
-    <field editable="1" name="objectType"/>
-    <field editable="1" name="objectid"/>
-    <field editable="1" name="objectid3"/>
-    <field editable="1" name="obtained_from"/>
-    <field editable="1" name="old_plan"/>
-    <field editable="1" name="old_plan_no"/>
-    <field editable="1" name="perimeter"/>
-    <field editable="1" name="phone_home"/>
-    <field editable="1" name="phone_mobile"/>
-    <field editable="1" name="phone_work"/>
-    <field editable="1" name="pid"/>
-    <field editable="1" name="pins_set"/>
-    <field editable="1" name="plan_no"/>
-    <field editable="1" name="planbook_page"/>
-    <field editable="1" name="pls_no"/>
-    <field editable="1" name="primary_contact"/>
-    <field editable="1" name="qid"/>
-    <field editable="1" name="quality"/>
-    <field editable="1" name="rate_cad"/>
-    <field editable="1" name="rate_fw"/>
-    <field editable="1" name="rate_misc"/>
-    <field editable="1" name="rate_rs"/>
-    <field editable="1" name="record_jurisdiction"/>
-    <field editable="1" name="record_office"/>
-    <field editable="1" name="recorded_by"/>
-    <field editable="1" name="rev_no"/>
-    <field editable="1" name="rid"/>
-    <field editable="1" name="sPerimeter"/>
-    <field editable="1" name="scale"/>
-    <field editable="1" name="sid"/>
-    <field editable="1" name="state"/>
-    <field editable="1" name="supp_id"/>
-    <field editable="1" name="supp_type"/>
-    <field editable="1" name="tid"/>
-    <field editable="1" name="to_cad"/>
-    <field editable="1" name="to_deeddesc"/>
-    <field editable="1" name="to_finalplans"/>
-    <field editable="1" name="to_fw"/>
-    <field editable="1" name="to_mylar"/>
-    <field editable="1" name="to_pins"/>
-    <field editable="1" name="to_prelim"/>
-    <field editable="1" name="town"/>
-    <field editable="1" name="zdistrict"/>
-    <field editable="1" name="zip"/>
-    <field editable="0" name="zipcode"/>
+    <field name="abutters" editable="1"/>
+    <field name="active" editable="1"/>
+    <field name="amt_cad" editable="1"/>
+    <field name="amt_dep" editable="1"/>
+    <field name="amt_fw" editable="1"/>
+    <field name="amt_invoice1" editable="1"/>
+    <field name="amt_invoice2" editable="1"/>
+    <field name="amt_invoice3" editable="1"/>
+    <field name="amt_misc" editable="1"/>
+    <field name="amt_rs" editable="1"/>
+    <field name="amt_total" editable="1"/>
+    <field name="area" editable="1"/>
+    <field name="author" editable="1"/>
+    <field name="centroidxy" editable="1"/>
+    <field name="client_name" editable="0"/>
+    <field name="client_role" editable="1"/>
+    <field name="color" editable="1"/>
+    <field name="completed" editable="1"/>
+    <field name="contact_addr" editable="1"/>
+    <field name="contact_type" editable="1"/>
+    <field name="copies_cad" editable="1"/>
+    <field name="copies_deeddesc" editable="1"/>
+    <field name="copies_finalplans" editable="1"/>
+    <field name="copies_fw" editable="1"/>
+    <field name="copies_mylar" editable="1"/>
+    <field name="copies_pins" editable="1"/>
+    <field name="copies_prelim" editable="1"/>
+    <field name="county" editable="0"/>
+    <field name="date_cad" editable="1"/>
+    <field name="date_deeddesc" editable="1"/>
+    <field name="date_dep" editable="1"/>
+    <field name="date_due" editable="1"/>
+    <field name="date_estimate_sent" editable="1"/>
+    <field name="date_finalplans" editable="1"/>
+    <field name="date_fw" editable="1"/>
+    <field name="date_fw_sched" editable="1"/>
+    <field name="date_invoice1" editable="1"/>
+    <field name="date_invoice2" editable="1"/>
+    <field name="date_invoice3" editable="1"/>
+    <field name="date_mylar" editable="1"/>
+    <field name="date_pins" editable="1"/>
+    <field name="date_prelim" editable="1"/>
+    <field name="date_recorded" editable="1"/>
+    <field name="date_requested" editable="1"/>
+    <field name="design_type" editable="1"/>
+    <field name="did" editable="1"/>
+    <field name="document_subtype" editable="1"/>
+    <field name="email_primary" editable="1"/>
+    <field name="email_secondary" editable="1"/>
+    <field name="estimate" editable="1"/>
+    <field name="extension" editable="1"/>
+    <field name="featureType" editable="1"/>
+    <field name="folder_name" editable="0"/>
+    <field name="folder_present" editable="1"/>
+    <field name="folder_type" editable="1"/>
+    <field name="hid" editable="1"/>
+    <field name="hrs_cad_comp" editable="1"/>
+    <field name="hrs_cad_est" editable="1"/>
+    <field name="hrs_fw_comp" editable="1"/>
+    <field name="hrs_fw_est" editable="1"/>
+    <field name="hrs_misc_comp" editable="1"/>
+    <field name="hrs_misc_est" editable="1"/>
+    <field name="hrs_rs_comp" editable="1"/>
+    <field name="hrs_rs_est" editable="1"/>
+    <field name="id" editable="1"/>
+    <field name="job" editable="1"/>
+    <field name="jobSubtype" editable="1"/>
+    <field name="jobType" editable="1"/>
+    <field name="job_desc" editable="1"/>
+    <field name="job_no" editable="0"/>
+    <field name="job_subtype" editable="1"/>
+    <field name="job_type" editable="1"/>
+    <field name="kid" editable="1"/>
+    <field name="lat_lon" editable="0"/>
+    <field name="locus_addr" editable="1"/>
+    <field name="lowtide" editable="1"/>
+    <field name="lowtide_hrs" editable="1"/>
+    <field name="map_bk_lot" editable="0"/>
+    <field name="map_subtype" editable="1"/>
+    <field name="map_type" editable="1"/>
+    <field name="media" editable="1"/>
+    <field name="mid" editable="1"/>
+    <field name="objectType" editable="1"/>
+    <field name="objectid" editable="1"/>
+    <field name="objectid3" editable="1"/>
+    <field name="obtained_from" editable="1"/>
+    <field name="old_plan" editable="1"/>
+    <field name="old_plan_no" editable="1"/>
+    <field name="perimeter" editable="1"/>
+    <field name="phone_home" editable="1"/>
+    <field name="phone_mobile" editable="1"/>
+    <field name="phone_work" editable="1"/>
+    <field name="pid" editable="1"/>
+    <field name="pins_set" editable="1"/>
+    <field name="plan_no" editable="1"/>
+    <field name="planbook_page" editable="1"/>
+    <field name="pls_no" editable="1"/>
+    <field name="primary_contact" editable="1"/>
+    <field name="qid" editable="1"/>
+    <field name="quality" editable="1"/>
+    <field name="rate_cad" editable="1"/>
+    <field name="rate_fw" editable="1"/>
+    <field name="rate_misc" editable="1"/>
+    <field name="rate_rs" editable="1"/>
+    <field name="record_jurisdiction" editable="1"/>
+    <field name="record_office" editable="1"/>
+    <field name="recorded_by" editable="1"/>
+    <field name="rev_no" editable="1"/>
+    <field name="rid" editable="1"/>
+    <field name="sPerimeter" editable="1"/>
+    <field name="scale" editable="1"/>
+    <field name="sid" editable="1"/>
+    <field name="state" editable="1"/>
+    <field name="supp_id" editable="1"/>
+    <field name="supp_type" editable="1"/>
+    <field name="tid" editable="1"/>
+    <field name="to_cad" editable="1"/>
+    <field name="to_deeddesc" editable="1"/>
+    <field name="to_finalplans" editable="1"/>
+    <field name="to_fw" editable="1"/>
+    <field name="to_mylar" editable="1"/>
+    <field name="to_pins" editable="1"/>
+    <field name="to_prelim" editable="1"/>
+    <field name="town" editable="1"/>
+    <field name="zdistrict" editable="1"/>
+    <field name="zip" editable="1"/>
+    <field name="zipcode" editable="0"/>
   </editable>
   <labelOnTop>
     <field labelOnTop="0" name="abutters"/>
@@ -3775,15 +3870,130 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="zip"/>
     <field labelOnTop="0" name="zipcode"/>
   </labelOnTop>
+  <reuseLastValue>
+    <field reuseLastValue="0" name="abutters"/>
+    <field reuseLastValue="0" name="active"/>
+    <field reuseLastValue="0" name="amt_cad"/>
+    <field reuseLastValue="0" name="amt_dep"/>
+    <field reuseLastValue="0" name="amt_fw"/>
+    <field reuseLastValue="0" name="amt_invoice1"/>
+    <field reuseLastValue="0" name="amt_invoice2"/>
+    <field reuseLastValue="0" name="amt_invoice3"/>
+    <field reuseLastValue="0" name="amt_misc"/>
+    <field reuseLastValue="0" name="amt_rs"/>
+    <field reuseLastValue="0" name="amt_total"/>
+    <field reuseLastValue="0" name="area"/>
+    <field reuseLastValue="0" name="author"/>
+    <field reuseLastValue="0" name="client_name"/>
+    <field reuseLastValue="0" name="client_role"/>
+    <field reuseLastValue="0" name="color"/>
+    <field reuseLastValue="0" name="completed"/>
+    <field reuseLastValue="0" name="contact_addr"/>
+    <field reuseLastValue="0" name="contact_type"/>
+    <field reuseLastValue="0" name="copies_cad"/>
+    <field reuseLastValue="0" name="copies_deeddesc"/>
+    <field reuseLastValue="0" name="copies_finalplans"/>
+    <field reuseLastValue="0" name="copies_fw"/>
+    <field reuseLastValue="0" name="copies_mylar"/>
+    <field reuseLastValue="0" name="copies_pins"/>
+    <field reuseLastValue="0" name="copies_prelim"/>
+    <field reuseLastValue="0" name="county"/>
+    <field reuseLastValue="0" name="date_cad"/>
+    <field reuseLastValue="0" name="date_deeddesc"/>
+    <field reuseLastValue="0" name="date_dep"/>
+    <field reuseLastValue="0" name="date_due"/>
+    <field reuseLastValue="0" name="date_estimate_sent"/>
+    <field reuseLastValue="0" name="date_finalplans"/>
+    <field reuseLastValue="0" name="date_fw"/>
+    <field reuseLastValue="0" name="date_fw_sched"/>
+    <field reuseLastValue="0" name="date_invoice1"/>
+    <field reuseLastValue="0" name="date_invoice2"/>
+    <field reuseLastValue="0" name="date_invoice3"/>
+    <field reuseLastValue="0" name="date_mylar"/>
+    <field reuseLastValue="0" name="date_pins"/>
+    <field reuseLastValue="0" name="date_prelim"/>
+    <field reuseLastValue="0" name="date_recorded"/>
+    <field reuseLastValue="0" name="date_requested"/>
+    <field reuseLastValue="0" name="design_type"/>
+    <field reuseLastValue="0" name="document_subtype"/>
+    <field reuseLastValue="0" name="email_primary"/>
+    <field reuseLastValue="0" name="email_secondary"/>
+    <field reuseLastValue="0" name="estimate"/>
+    <field reuseLastValue="0" name="extension"/>
+    <field reuseLastValue="0" name="folder_name"/>
+    <field reuseLastValue="0" name="folder_present"/>
+    <field reuseLastValue="0" name="folder_type"/>
+    <field reuseLastValue="0" name="hrs_cad_comp"/>
+    <field reuseLastValue="0" name="hrs_cad_est"/>
+    <field reuseLastValue="0" name="hrs_fw_comp"/>
+    <field reuseLastValue="0" name="hrs_fw_est"/>
+    <field reuseLastValue="0" name="hrs_misc_comp"/>
+    <field reuseLastValue="0" name="hrs_misc_est"/>
+    <field reuseLastValue="0" name="hrs_rs_comp"/>
+    <field reuseLastValue="0" name="hrs_rs_est"/>
+    <field reuseLastValue="0" name="id"/>
+    <field reuseLastValue="0" name="job"/>
+    <field reuseLastValue="0" name="jobSubtype"/>
+    <field reuseLastValue="0" name="job_desc"/>
+    <field reuseLastValue="0" name="job_no"/>
+    <field reuseLastValue="0" name="job_type"/>
+    <field reuseLastValue="0" name="lat_lon"/>
+    <field reuseLastValue="0" name="locus_addr"/>
+    <field reuseLastValue="0" name="lowtide"/>
+    <field reuseLastValue="0" name="lowtide_hrs"/>
+    <field reuseLastValue="0" name="map_bk_lot"/>
+    <field reuseLastValue="0" name="map_subtype"/>
+    <field reuseLastValue="0" name="map_type"/>
+    <field reuseLastValue="0" name="media"/>
+    <field reuseLastValue="0" name="objectType"/>
+    <field reuseLastValue="0" name="objectid"/>
+    <field reuseLastValue="0" name="objectid3"/>
+    <field reuseLastValue="0" name="obtained_from"/>
+    <field reuseLastValue="0" name="old_plan"/>
+    <field reuseLastValue="0" name="old_plan_no"/>
+    <field reuseLastValue="0" name="perimeter"/>
+    <field reuseLastValue="0" name="phone_home"/>
+    <field reuseLastValue="0" name="phone_mobile"/>
+    <field reuseLastValue="0" name="phone_work"/>
+    <field reuseLastValue="0" name="pins_set"/>
+    <field reuseLastValue="0" name="plan_no"/>
+    <field reuseLastValue="0" name="planbook_page"/>
+    <field reuseLastValue="0" name="pls_no"/>
+    <field reuseLastValue="0" name="primary_contact"/>
+    <field reuseLastValue="0" name="quality"/>
+    <field reuseLastValue="0" name="rate_cad"/>
+    <field reuseLastValue="0" name="rate_fw"/>
+    <field reuseLastValue="0" name="rate_misc"/>
+    <field reuseLastValue="0" name="rate_rs"/>
+    <field reuseLastValue="0" name="record_jurisdiction"/>
+    <field reuseLastValue="0" name="record_office"/>
+    <field reuseLastValue="0" name="recorded_by"/>
+    <field reuseLastValue="0" name="rev_no"/>
+    <field reuseLastValue="0" name="sPerimeter"/>
+    <field reuseLastValue="0" name="scale"/>
+    <field reuseLastValue="0" name="sid"/>
+    <field reuseLastValue="0" name="state"/>
+    <field reuseLastValue="0" name="supp_type"/>
+    <field reuseLastValue="0" name="to_cad"/>
+    <field reuseLastValue="0" name="to_deeddesc"/>
+    <field reuseLastValue="0" name="to_finalplans"/>
+    <field reuseLastValue="0" name="to_fw"/>
+    <field reuseLastValue="0" name="to_mylar"/>
+    <field reuseLastValue="0" name="to_pins"/>
+    <field reuseLastValue="0" name="to_prelim"/>
+    <field reuseLastValue="0" name="town"/>
+    <field reuseLastValue="0" name="zdistrict"/>
+    <field reuseLastValue="0" name="zipcode"/>
+  </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets>
     <widget name="fk_jobs_contacts">
       <config type="Map">
-        <Option name="nm-rel" type="QString" value=""/>
+        <Option name="nm-rel" type="invalid"/>
       </config>
     </widget>
   </widgets>
   <previewExpression>"job_no"</previewExpression>
-  <mapTip></mapTip>
+  <mapTip enabled="1"></mapTip>
   <layerGeometryType>2</layerGeometryType>
 </qgis>

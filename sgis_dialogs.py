@@ -264,115 +264,6 @@ def jobFolders(jobNo):
     shutil.copy(cmdpath, panopath)
 
 # classes
-class FuncThread(threading.Thread):
-    def run(self, *args):
-      print( self._args )
-      self._target(*self._args)
-
-
-class sgis_prep(object):
-    def __init__(self, iface):
-        # save reference to the QGIS interface
-        self.iface = iface
-
-    def __call__(self):
-        self.action = QAction("PFL", self.iface.mainWindow())
-        self.action.triggered.connect(self.run)
-        self.action.trigger()
-
-    def initGui(self):
-
-        icon = QIcon(os.path.dirname(__file__) + "/icons/sgis_voronoi.png")
-        self.action = QAction(icon, "PREP", self.iface.mainWindow())
-        self.action.triggered.connect(self.run)
-
-        def load_project():
-            self.action.trigger()
-
-        self.iface.projectRead.connect(load_project)
-        self.iface.removeToolBarIcon(self.action)
-        # self.iface.projectRead.disconnect(load_project)
-
-    def run(self):
-
-        readConfig()
-        
-        try:
-            self.vl = QgsProject.instance().mapLayersByName('plans')[0]
-            self.iface.setActiveLayer(self.vl)
-            jform = 'plans.ui'
-            jpy = 'plans_init.py'
-            form_config = self.iface.activeLayer().editFormConfig()
-            fPath = self.resolve(jform)
-            pyPath = self.resolve(jpy)
-            form_config.setUiForm(fPath)
-            form_config.setInitFilePath(pyPath)
-            self.iface.activeLayer().setEditFormConfig(form_config)
-
-            self.vl = QgsProject.instance().mapLayersByName('contacts')[0]
-            self.iface.setActiveLayer(self.vl)
-            jform = 'contacts.ui'
-            jpy = 'contacts_init.py'
-            form_config = self.iface.activeLayer().editFormConfig()
-            fPath = self.resolve(jform)
-            pyPath = self.resolve(jpy)
-            form_config.setUiForm(fPath)
-            form_config.setInitFilePath(pyPath)
-            self.iface.activeLayer().setEditFormConfig(form_config)
-
-            self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-            self.iface.setActiveLayer(self.vl)
-            jform = 'jobs.ui'
-            jpy = 'jobs_init.py'
-            form_config = self.iface.activeLayer().editFormConfig()
-            fPath = self.resolve(jform)
-            pyPath = self.resolve(jpy)
-            form_config.setUiForm(fPath)
-            form_config.setInitFilePath(pyPath)
-            self.iface.activeLayer().setEditFormConfig(form_config)
-
-            self.vl = QgsProject.instance().mapLayersByName('supplementals')[0]
-            self.iface.setActiveLayer(self.vl)
-            jform = 'supplementals.ui'
-            jpy = 'supplementals_init.py'
-            form_config = self.iface.activeLayer().editFormConfig()
-            fPath = self.resolve(jform)
-            pyPath = self.resolve(jpy)
-            form_config.setUiForm(fPath)
-            form_config.setInitFilePath(pyPath)
-            self.iface.activeLayer().setEditFormConfig(form_config)
-
-            self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-            self.iface.setActiveLayer(self.vl)
-            self.iface.messageBar().clearWidgets()
-
-            try:
-                layer = QgsProject.instance().mapLayersByName('tmp_buffer')[0]
-                QgsProject.instance().removeMapLayer(layer.id())
-                self.resetLegend()
-
-            except Exception as e:
-                self.resetLegend()
-                pass
-
-        except Exception:
-            pass
-
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return qPath
-
-    def resetLegend(self):
-        root = QgsProject.instance().layerTreeRoot()
-        for child in root.children():
-            child.setExpanded(False)
-        aGroup = root.findGroup('Surveyor')
-        aGroup.setExpanded(True)
-
-
 class sgis_newPlan(object):
     newJob = 0
     selComp = 0
@@ -883,13 +774,6 @@ class sgis_newJob_ORIGINAL(object):
         resetLegend(self)
 
         return 1
-
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            fPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return fPath
 
 
 class sgis_newLPJob(object):
@@ -2060,13 +1944,6 @@ class sgis_newLPJob(object):
         aGroup = root.findGroup('Surveyor')
         aGroup.setExpanded(True)
 
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            fPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return fPath
-
     def selectLastFeature(self, layer):
 
         # layer.setSubsetString('id > 1')
@@ -2512,13 +2389,6 @@ class sgis_editJob(object):
         self.iface.setActiveLayer(self.vl)
         self.iface.activeLayer().commitChanges()
 
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            fPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return fPath
-
 
 class sgis_editSupp(object):
 
@@ -2683,13 +2553,6 @@ class sgis_editSupp(object):
         self.iface.setActiveLayer(self.vl)
         self.iface.activeLayer().commitChanges()
 
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            fPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return fPath
-
 
 class sgis_editPlan(object):
 
@@ -2777,11 +2640,6 @@ class sgis_editPlan(object):
 
     def select_changed(self):
 
-        jstd = 'plans_std.qml'
-        qmlPath = self.resolve(jstd)
-        self.vl = QgsProject.instance().mapLayersByName('plans')[0]
-        self.vl.loadNamedStyle(qmlPath)
-        
         try:
             parcel = self.iface.activeLayer().selectedFeatures()[0]
             planNo = parcel["plan_no"]
@@ -2856,7 +2714,7 @@ class sgis_editPlan(object):
 
             QGuiApplication.setOverrideCursor(Qt.ArrowCursor)
             result = self.iface.openFeatureForm(self.iface.activeLayer(), f, False, True)
-            QgsMessageLog.logMessage('RESULT: ' + str(result), 'sGIS', level=Qgis.Info)
+            # QgsMessageLog.logMessage('RESULT: ' + str(result), 'sGIS', level=Qgis.Info)
 
             QGuiApplication.restoreOverrideCursor()
             QgsMessageLog.logMessage('Saving changes...', 'sGIS', level=Qgis.Info)
@@ -2873,13 +2731,6 @@ class sgis_editPlan(object):
         self.vl = QgsProject.instance().mapLayersByName('plans')[0]
         self.iface.setActiveLayer(self.vl)
         self.iface.activeLayer().commitChanges()
-
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            fPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return fPath
 
 
 class sgis_deleteFeature(object):
@@ -3554,9 +3405,7 @@ class sgis_printFolderLabel(object):
 
         from openpyxl import load_workbook
 
-        tFile = 'GIS_templates.xlsx'
-        fPath = self.resolve(tFile)
-
+        fPath = os.path.dirname(os.path.abspath(__file__)) + '\\GIS_templates.xlsx'
         wb = load_workbook(fPath)
 
         for s in range(len(wb.sheetnames)):
@@ -3642,13 +3491,6 @@ class sgis_printFolderLabel(object):
         QgsMessageLog.logMessage('Saving file: ' + facefile + '...', 'sGIS', level=Qgis.Info)
         wb.save(facefile)
         resetLegend(self)
-
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\' + basepath
-            return qPath
 
 
 class sgis_printYellowSheet(object):
@@ -3766,9 +3608,7 @@ class sgis_printYellowSheet(object):
 
         from openpyxl import load_workbook
 
-        tFile = 'GIS_templates.xlsx'
-        fPath = self.resolve(tFile)
-
+        fPath = os.path.dirname(os.path.abspath(__file__)) + '\\GIS_templates.xlsx'
         wb = load_workbook(fPath)
 
         sheets = wb.sheetnames
@@ -3870,13 +3710,6 @@ class sgis_printYellowSheet(object):
         wb.save(yellowfile)
         resetLegend(self)
 
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\' + basepath
-            return qPath
-
 
 class sgis_label_dialog(QDialog, Ui_sgis_label_form):
     dValue = 4
@@ -3953,9 +3786,7 @@ class sgis_label_dialog(QDialog, Ui_sgis_label_form):
 
         from openpyxl import load_workbook
 
-        tFile = 'GIS_templates.xlsx'
-        fPath = self.resolve(tFile)
-
+        fPath = os.path.dirname(os.path.abspath(__file__)) + '\\GIS_templates.xlsx'
         wb = load_workbook(fPath)
         sheets = wb.sheetnames
         for s in sheets:
@@ -4011,13 +3842,6 @@ class sgis_label_dialog(QDialog, Ui_sgis_label_form):
     def finished(self, **kwargs):
         self.done(1)
 
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\' + basepath
-            return qPath
-
 
 class sgis_printMapTable(object):
 
@@ -4054,8 +3878,7 @@ class sgis_printMapTable(object):
         key = str(feat['map_bk_lot'])
         if key == 'NULL':
             key = str(feat['sid'])
-        QgsMessageLog.logMessage('DROP: ' + str(key), 'sGIS', level=Qgis.Info)
-
+        
         self.iface.setActiveLayer(layerActive)
 
         self.getRelatedWork(feat, cfg0)
@@ -4094,9 +3917,7 @@ class sgis_printMapTable(object):
 
             from openpyxl import load_workbook
 
-            tFile = 'GIS_templates.xlsx'
-            fPath = self.resolve(tFile)
-
+            fPath = os.path.dirname(os.path.abspath(__file__)) + '\\GIS_templates.xlsx'
             wb = load_workbook(fPath)
 
             for s in range(len(wb.sheetnames)):
@@ -4469,13 +4290,6 @@ class sgis_printMapTable(object):
         self.iface.setActiveLayer(layerActive)
         layerActive.selectByIds([fid])
         resetLegend(self)
-
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\' + basepath
-            return qPath
 
     def identAbutters(self):
 
@@ -4894,9 +4708,7 @@ class sgis_printContacts(object):
 
         from openpyxl import load_workbook
 
-        tFile = 'GIS_templates.xlsx'
-        fPath = self.resolve(tFile)
-
+        fPath = os.path.dirname(os.path.abspath(__file__)) + '\\GIS_templates.xlsx'
         wb = load_workbook(fPath)
 
         # grab the correct worksheet
@@ -4976,13 +4788,6 @@ class sgis_printContacts(object):
                 
         #save XLSX
         wb.save(cfile)
-        
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\' + basepath
-            return qPath
 
 
 class sgis_printEstimates(object):
@@ -5185,65 +4990,44 @@ class sgis_printEstimateLayouts(object):
 
         return width, height
 
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\QML\\' + basepath
-            return qPath
-
-    def resolveUI(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return qPath
-
     def reset(self):
 
         self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'jobs.ui'
-        jpy = 'jobs_init.py'
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/jobs.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/jobs_init.py'
         form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
 
         self.vl = QgsProject.instance().mapLayersByName('plans')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'plans.ui'
-        jpy = 'plans_init.py'
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/plans.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/plans_init.py'
         form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
 
         self.vl = QgsProject.instance().mapLayersByName('contacts')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'contacts.ui'
-        jpy = 'contacts_init.py'
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/contacts.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/contacts_init.py'
         form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
 
         self.vl = QgsProject.instance().mapLayersByName('supplementals')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'supplementals.ui'
-        jpy = 'supplementals_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/supplementals.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/supplementals_init.py'
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
+        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
+        self.iface.setActiveLayer(self.vl)
 
 
 class sgis_printMapView(object):
@@ -5260,10 +5044,10 @@ class sgis_printMapView(object):
     def run(self):
         import datetime
 
-        jstd = 'jobs_std.qml'
-        jprn = 'jobs_print.qml'
-        astd = 'abutters_std.qml'
-        aprn = 'abutters_print.qml'
+        jstd = os.path.dirname(os.path.realpath(__file__)) + '/qml/jobs_std.qml'
+        jprn =  os.path.dirname(os.path.realpath(__file__)) + '/qml/jobs_print.qml'
+        astd =  os.path.dirname(os.path.realpath(__file__)) + '/qml/abutters_std.qml'
+        aprn =  os.path.dirname(os.path.realpath(__file__)) + '/qml/abutters_print.qml'
 
         year = datetime.datetime.today().strftime('%Y')
         self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
@@ -5310,14 +5094,12 @@ class sgis_printMapView(object):
             '%Y.%m.%d') + ".pdf"
      
         # enable abutters print style | filter: reffererj = job_no
-        qmlPath = self.resolve(aprn)
         self.vl = QgsProject.instance().mapLayersByName('abutters')[0]
-        self.vl.loadNamedStyle(qmlPath)
+        self.vl.loadNamedStyle(aprn)
         self.vl.setSubsetString('"referrerj"=\'%s\'' % jobNo)
 
         # enable jobs print style | filter: job_no = job_no
-        qmlStdPath = self.resolve(jstd)
-        qmlPrnPath = self.resolve(jprn)
+
         self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
         self.vl.selectAll()
         self.clone_layer = processing.run("native:saveselectedfeatures", {'INPUT': self.vl, 'OUTPUT': 'memory:'})['OUTPUT']
@@ -5326,7 +5108,7 @@ class sgis_printMapView(object):
 
         self.ol = QgsProject.instance().mapLayersByName('output')[0]
 
-        self.vl.loadNamedStyle(qmlPrnPath)
+        self.vl.loadNamedStyle(jprn)
         self.vl.setSubsetString('"job_no"=\'%s\'' % jobNo)
         currentScale = self.iface.mapCanvas().scale()
 
@@ -5334,16 +5116,14 @@ class sgis_printMapView(object):
         self.make_pdf(cfile, jobNo, folder_name, jobType, county, cfile)
 
         # enable abutters standard style | filter: n/a
-        qmlPath = self.resolve(astd)
         self.vl = QgsProject.instance().mapLayersByName('abutters')[0]
-        self.vl.loadNamedStyle(qmlPath)
+        self.vl.loadNamedStyle(astd)
         self.vl.setSubsetString('')
 
         # enable jobs standard style | filter: n/a
-        qmlPath = self.resolve(jstd)
         # QgsMessageLog.logMessage('qmlPath: ' + str(qmlPath) + '...', 'sGIS', level=Qgis.Info)
         self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-        self.vl.loadNamedStyle(qmlPath)
+        self.vl.loadNamedStyle(jstd)
         self.vl.setSubsetString('"supp_type"=\'%s\'' % 'X')
 
         # disable all type-specific layers:
@@ -5561,65 +5341,42 @@ class sgis_printMapView(object):
 
         return width, height
 
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\QML\\' + basepath
-            return qPath
-
-    def resolveUI(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return qPath
-
     def reset(self):
+
+        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
+        self.iface.setActiveLayer(self.vl)
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/jobs.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/jobs_init.py'
+        form_config = self.iface.activeLayer().editFormConfig()
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
+        self.iface.activeLayer().setEditFormConfig(form_config)
 
         self.vl = QgsProject.instance().mapLayersByName('plans')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'plans.ui'
-        jpy = 'plans_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/plans.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/plans_init.py'
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
 
         self.vl = QgsProject.instance().mapLayersByName('contacts')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'contacts.ui'
-        jpy = 'contacts_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/contacts.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/contacts_init.py'
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
 
         self.vl = QgsProject.instance().mapLayersByName('supplementals')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'supplementals.ui'
-        jpy = 'supplementals_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/supplementals.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/supplementals_init.py'
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
-
         self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'jobs.ui'
-        jpy = 'jobs_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
-        self.iface.activeLayer().setEditFormConfig(form_config)
 
 
 class sgis_printSiteMap(object):
@@ -5680,9 +5437,9 @@ class sgis_printSiteMap(object):
 
         QgsMessageLog.logMessage('Saving file: ' + ifile + '...', 'sGIS', level=Qgis.Info)
 
-        std = 'jobs_std.qml'
-        prn = 'jobs_print.qml'
-        sMap = 'jobs_siteMap.qml'
+        std =  os.path.dirname(os.path.realpath(__file__)) + '/qml/jobs_std.qml'
+        prn =  os.path.dirname(os.path.realpath(__file__)) + '/qml/jobs_print.qml'
+        sMap =  os.path.dirname(os.path.realpath(__file__)) + '/qml/jobs_siteMap.qml'
 
         currentScale = self.iface.mapCanvas().scale()
 
@@ -5701,17 +5458,13 @@ class sgis_printSiteMap(object):
         QgsProject.instance().layerTreeRoot().findGroup('IMAGERY').setItemVisibilityChecked(1)
         QgsProject.instance().layerTreeRoot().findGroup('State Orthos').setItemVisibilityChecked(1)
 
-        qmlPath = self.resolve(sMap)
-
         self.iface.mapCanvas().zoomScale(8000)
 
-        self.vl.loadNamedStyle(qmlPath)
+        self.vl.loadNamedStyle(prn)
         self.vl.triggerRepaint()
         self.make_jpg(dwgpath, jobNo)
 
-        qmlPath = self.resolve(std)
-
-        self.vl.loadNamedStyle(qmlPath)
+        self.vl.loadNamedStyle(std)
 
         for l in layersNames:
             self.toggleLayer(l, 1)
@@ -5725,20 +5478,6 @@ class sgis_printSiteMap(object):
         resetLegend(self)
         self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
         self.iface.setActiveLayer(self.vl)
-
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\QML\\' + basepath
-            return qPath
-
-    def resolveUI(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return qPath
 
     def make_jpg(self, cf, jn):
 
@@ -5809,50 +5548,42 @@ class sgis_printSiteMap(object):
 
     def reset(self):
 
+        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
+        self.iface.setActiveLayer(self.vl)
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/jobs.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/jobs_init.py'
+        form_config = self.iface.activeLayer().editFormConfig()
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
+        self.iface.activeLayer().setEditFormConfig(form_config)
+
         self.vl = QgsProject.instance().mapLayersByName('plans')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'plans.ui'
-        jpy = 'plans_init.py'
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/plans.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/plans_init.py'
         form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
 
         self.vl = QgsProject.instance().mapLayersByName('contacts')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'contacts.ui'
-        jpy = 'contacts_init.py'
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/contacts.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/contacts_init.py'
         form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-
-        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = 'jobs.ui'
-        jpy = 'jobs_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
 
         self.vl = QgsProject.instance().mapLayersByName('supplementals')[0]
         self.iface.setActiveLayer(self.vl)
-        jform = 'supplementals.ui'
-        jpy = 'supplementals_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        form_config.setInitFilePath(pyPath)
+        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/supplementals.ui'
+        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/supplementals_init.py'
+        form_config.setUiForm(jform)
+        form_config.setInitFilePath(jpy)
         self.iface.activeLayer().setEditFormConfig(form_config)
-
+        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
+        self.iface.setActiveLayer(self.vl)
 
 class sgis_search(object):
 
@@ -5860,21 +5591,23 @@ class sgis_search(object):
         self.iface = iface
 
     def run(self):
-        QgsMessageLog.logMessage('Search initiated...', 'sGIS', level=Qgis.Info)
         eMenu = self.iface.mainWindow()
+
         vLayer = self.iface.activeLayer()
         oLayer = vLayer
 
         if vLayer.name() == 'jobs':
 
+            # !!! this no longer works in v3.40.1 - need to revisit hiding certain columns during search.
+            # !!! issue being tracked in gitHub: xxxxxxxx
+            
             pLayer = QgsProject.instance().mapLayersByName('jobs')[0]
             cLayer = QgsProject.instance().mapLayersByName('contacts')[0]
             pLayer = pLayer.id()
             cLayer = cLayer.id()
 
             self.killRelation(pLayer, cLayer)
-            QgsMessageLog.logMessage('Hiding columns...', 'sGIS', level=Qgis.Info)
-
+            
             cols = ('job_no','rev_no','job_type','jobSubtype','map_bk_lot','old_plan_no','job_desc','client_name','folder_name',
                     'client_role','contact_type','contact_addr','client_name','locus_addr','town','planbook_page',
                     'estimate','active','pins_set','date_recorded', 'completed')
@@ -5886,12 +5619,12 @@ class sgis_search(object):
                 if str(c.name()) in cols:
                     pass
                 else:
-                    fieldIndex = vLayer.fields().indexFromName(c.name())
-                    vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
+                    pass
+                    # fieldIndex = vLayer.fields().indexFromName(c.name())
+                    # vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
 
         elif vLayer.name() == 'supplementals':
-            QgsMessageLog.logMessage('Hiding columns...', 'sGIS', level=Qgis.Info)
-
+            
             cols = ('job_no','rev_no','job_type','map_bk_lot','old_plan_no','job_desc','client_name','folder_name',
                     'client_role','contact_type','contact_addr','client_name','locus_addr','town','planbook_page',
                     'estimate','active','pins_set','date_recorded','old_plan','job','folder_type','supp_type',
@@ -5904,8 +5637,9 @@ class sgis_search(object):
                 if str(c.name()) in cols:
                     pass
                 else:
-                    fieldIndex = vLayer.fields().indexFromName(c.name())
-                    vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
+                    pass
+                    # fieldIndex = vLayer.fields().indexFromName(c.name())
+                    # vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
 
         elif vLayer.name() == 'plans':
             cols = ('plan_no','map_bk_lot','name','address','town','county','job','date','surveyor',
@@ -5918,8 +5652,9 @@ class sgis_search(object):
                 if str(c.name()) in cols:
                     pass
                 else:
-                    fieldIndex = vLayer.fields().indexFromName(c.name())
-                    vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
+                    pass
+                    # fieldIndex = vLayer.fields().indexFromName(c.name())
+                    # vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
 
         elif vLayer.name() == 'ng911rdss':
             cols = ('RDNAME','STREETNAME','PREDIR','SUFFIX','POSTDIR','TOWN','CITY','RCOUNTY','ROUTE_NUM','ONEWAY',
@@ -5932,8 +5667,9 @@ class sgis_search(object):
                 if str(c.name()) in cols:
                     pass
                 else:
-                    fieldIndex = vLayer.fields().indexFromName(c.name())
-                    vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
+                    pass
+                    # fieldIndex = vLayer.fields().indexFromName(c.name())
+                    # vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
 
         elif vLayer.name() == 'Parcels':
             cols = ('town', 'county', 'map_bk_lot','locus_address', 'owner1','rawdeeds', 'proplocnum', 'prop_loc')
@@ -5944,8 +5680,9 @@ class sgis_search(object):
                 if str(c.name()) in cols:
                     pass
                 else:
-                    fieldIndex = vLayer.fields().indexFromName(c.name())
-                    vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
+                    pass
+                    # fieldIndex = vLayer.fields().indexFromName(c.name())
+                    # vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
                     
         elif vLayer.name() == 'parcels_aux':
             cols = ('town', 'county', 'map_bk_lot','locus_address', 'owner1','rawdeeds', 'proplocnum', 'prop_loc')
@@ -5956,19 +5693,16 @@ class sgis_search(object):
                 if str(c.name()) in cols:
                     pass
                 else:
-                    fieldIndex = vLayer.fields().indexFromName(c.name())
-                    vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
+                    pass
+                    # fieldIndex = vLayer.fields().indexFromName(c.name())
+                    # vLayer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
 
         else:
             pass
 
-        QgsMessageLog.logMessage('Clear form config...', 'sGIS', level=Qgis.Info)
-
         form_config = self.iface.activeLayer().editFormConfig()
         #form_config.setInitCodeSource(1)
         self.iface.activeLayer().setEditFormConfig(form_config)
-
-        QgsMessageLog.logMessage('Launching search form...', 'sGIS', level=Qgis.Info)
 
         try:
             for a in eMenu.findChildren(QAction, 'mActionSelectByForm'):
@@ -5976,110 +5710,13 @@ class sgis_search(object):
         except Exception as e:
             pass
 
-        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = 'jobs.ui'
-        jpy = 'jobs_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-
-        jstd = 'jobs_std.qml'
-        qmlPath = self.resolve(jstd)
-        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-        self.vl.loadNamedStyle(qmlPath)
-        self.vl.setSubsetString('"supp_type"=\'%s\'' % 'X')
-
-        form_config.setUiForm(fPath)
-        # form_config.setInitCodeSource(1)
-        form_config.setInitFilePath(pyPath)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-
-        self.vl = QgsProject.instance().mapLayersByName('plans')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = 'plans.ui'
-        jpy = 'plans_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        # form_config.setInitCodeSource(1)
-        form_config.setInitFilePath(pyPath)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-
-        jstd = 'plans_std.qml'
-        qmlPath = self.resolve(jstd)
-        self.vl = QgsProject.instance().mapLayersByName('plans')[0]
-        self.vl.loadNamedStyle(qmlPath)
- 
-        self.vl = QgsProject.instance().mapLayersByName('contacts')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = 'contacts.ui'
-        jpy = 'contacts_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        # form_config.setInitCodeSource(1)
-        form_config.setInitFilePath(pyPath)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-
-        self.vl = QgsProject.instance().mapLayersByName('supplementals')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = 'supplementals.ui'
-        jpy = 'supplementals_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        fPath = self.resolveUI(jform)
-        pyPath = self.resolveUI(jpy)
-        form_config.setUiForm(fPath)
-        # form_config.setInitCodeSource(1)
-        form_config.setInitFilePath(pyPath)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-
-        jstd = 'supps_std.qml'
-        qmlPath = self.resolve(jstd)
-        self.vl = QgsProject.instance().mapLayersByName('supplementals')[0]
-        self.vl.loadNamedStyle(qmlPath)
-        self.vl.setSubsetString('"supp_type"<>\'%s\'' % 'X')
-
-        jstd = 'parcels.qml'
-        qmlPath = self.resolve(jstd)
-        self.vl = QgsProject.instance().mapLayersByName('Parcels')[0]
-        self.vl.loadNamedStyle(qmlPath)
-
         try:
             self.setRelation(pLayer,cLayer)
         except Exception as e:
             pass
 
         self.iface.setActiveLayer(oLayer)
-        self.resetLegend()
-
-    def resetLegend(self):
-        root = QgsProject.instance().layerTreeRoot()
-        for child in root.children():
-            child.setExpanded(False)
-        aGroup = root.findGroup('Surveyor')
-        aGroup.setExpanded(True)
-
-    def setAllColumnsHidden(self, layer):
-        columns = layer.fields()
-        editor_widget_setup = QgsEditorWidgetSetup('Hidden', {})
-
-        for c in columns:
-            # QgsMessageLog.logMessage(c.name(), 'sGIS', level=Qgis.Info)
-            fieldIndex = layer.fields().indexFromName(c.name())
-            layer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
-
-    def setColumnVisibility(self, layer, columnName):
-        columns = layer.fields()
-        for c in columns:
-            if c.name() == columnName:
-                editor_widget_setup = QgsEditorWidgetSetup('TextEdit', {'IsMultiline': 'False'})
-                fieldIndex = layer.fields().indexFromName(c.name())
-                layer.setEditorWidgetSetup(fieldIndex, editor_widget_setup)
-            else:
-                pass
+        resetLegend(self)
 
     def setRelation(self, pLayer, cLayer):
         rel = QgsRelation()
@@ -6100,20 +5737,6 @@ class sgis_search(object):
         rel.setName('Job Contacts')
         # rel.isValid() # It will only be added if it is valid. If not, check the ids and field names
         QgsProject.instance().relationManager().removeRelation(rel)
-
-    def resolve(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\QML\\' + basepath
-            return qPath
-
-    def resolveUI(name, basepath=None):
-        if not basepath:
-            basepath = os.path.dirname(os.path.realpath(__file__))
-        else:
-            qPath = os.path.dirname(os.path.realpath(__file__)) + '\\UI\\' + basepath
-            return qPath
 
 
 class sgis_bulkMapExport(object):

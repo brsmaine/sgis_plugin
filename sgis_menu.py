@@ -37,11 +37,6 @@ class sgis_menu(object):
             self.sToolBar = self.iface.addToolBar(u'SGIS')
             self.sToolBar.setObjectName(u'SGIS')
 
-        icon = QIcon(os.path.dirname(__file__) + "/icons/create.svg")
-        self.prep_action = QAction(icon, "&Set formConfig", self.iface.mainWindow())
-        self.prep_action.triggered.connect(self.setFormsConfig)
-        self.prep_action.trigger()
-      
         self.sgis_menu = QMenu(QCoreApplication.translate("sgis", "&surveyorGIS"))
         self.iface.mainWindow().menuBar().insertMenu(self.iface.firstRightStandardMenu().menuAction(), self.sgis_menu)
 
@@ -236,10 +231,6 @@ class sgis_menu(object):
         self.CADexportNEW_action = QAction(icon, "&Generate CAD Outputs (NEW)", self.iface.mainWindow())
         self.CADexportNEW_action.triggered.connect(self.cadExportNEW)
         self.util_menu.addAction(self.CADexportNEW_action)
-
-    def setFormsConfig(self):
-        self.prep_dialog = sgis_prep(self.iface)
-        self.prep_dialog.initGui()
 
     def unload(self):
         if self.sgis_menu != None:
