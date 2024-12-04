@@ -1,4 +1,4 @@
-<hr>surveyorGIS (sGIS)<hr>
+<hr><b><font size=+2 color=blue>surveyorGIS (sGIS)</font>font></b><hr>
 v3.40.1a <br>
 2024.03.DEC<br><br>
 <img src="./images/sgisSnap.jpg">
