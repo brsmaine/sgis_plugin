@@ -62,8 +62,8 @@ reportsPath = config["reportsPath"]
 wwwURL = config["wwwURL"]
 wwwRootFolder = config["wwwRootFolder"]
 
-QgsMessageLog.logMessage('surveyorGIS (sGIS) plugin LOADED!', 'sGIS', level=Qgis.Info)
-QgsMessageLog.logMessage('db@host:port | ' + db + '@' + dbServer + ':' + dbPort,  'sGIS', level=Qgis.Info)
+QgsMessageLog.logMessage('surveyorGIS (sGIS) plugin | v3.40.1 | STATUS: loaded successfully...', 'sGIS', level=Qgis.Info)
+QgsMessageLog.logMessage(db + '@' + dbServer + ':' + dbPort,  'sGIS', level=Qgis.Info)
 QgsMessageLog.logMessage('jobsPath | ' + jobsPath, 'sGIS', level=Qgis.Info)
 QgsMessageLog.logMessage('welcome.', 'sGIS', level=Qgis.Info)
 
@@ -4810,9 +4810,8 @@ class sgis_printEstimates(object):
         from openpyxl.styles.differential import DifferentialStyle
         from openpyxl.formatting.rule import Rule
 
-        #why do we do this?
         efile = os.path.join(estimatesPath)
-        wb = Workbook()
+        wb = openpyxl.Workbook()
         ws = wb.active
 
         grey_fill = PatternFill(bgColor="DDDDDD")
@@ -4911,123 +4910,6 @@ class sgis_printEstimates(object):
 
         QgsMessageLog.logMessage('Saving file: ' + efile + '...', 'sGIS', level=Qgis.Info)
         wb.save(efile)
-
-
-class sgis_printEstimateLayouts(object):
-
-    def __init__(self, iface):
-        # save reference to the QGIS interface
-        self.iface = iface
-
-    def initGui(self):
-        self.action = QAction("P.EST", self.iface.mainWindow())
-        self.action.triggered.connect(self.run)
-        self.action.trigger()
-
-    def run(self):
-        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-        self.iface.setActiveLayer(self.vl)
-
-        #why do we do this?
-        path = os.path.join(reportsPath)
-
-        QgsMessageLog.logMessage('Checking output folder: ' + path + '...', 'sGIS', level=Qgis.Info)
-        if not os.path.exists(path):
-            os.makedirs(path)
-
-        msg = QMessageBox()
-        msg.setWindowTitle('Sort Order')
-        msg.setText('How would you like the output sorted?')
-        byJobNo = msg.addButton('JobNo', QMessageBox.AcceptRole)
-        byActive = msg.addButton('Active | JobNo', QMessageBox.AcceptRole)
-        byClient = msg.addButton('ClientName', QMessageBox.AcceptRole)
-        cancel = msg.addButton('Cancel', QMessageBox.RejectRole)
-
-        msg.setDefaultButton(cancel)
-        QGuiApplication.setOverrideCursor(Qt.ArrowCursor)
-        msg.exec_()
-        msg.deleteLater()
-        QGuiApplication.restoreOverrideCursor()
-
-        if msg.clickedButton() is byJobNo:
-            layout = "Estimates by JobNo"
-            cfile = str(path) + "\\" + "Estimates by JobNo.pdf"
-        elif msg.clickedButton() is byActive:
-            layout = "Estimates by Active"
-            cfile = str(path) + "\\" + "Estimates by Active.pdf"
-        elif msg.clickedButton() is byClient:
-            layout = "Estimates by ClientName"
-            cfile = str(path) + "\\" + "Estimates by ClientName.pdf"
-
-        # generate output
-        self.make_pdf(layout, cfile)
-
-        resetLegend(self)
-
-    def make_pdf(self, layout, cfile):
-
-        projectInstance = QgsProject.instance()
-        layoutmanager = projectInstance.layoutManager()
-        layoutObject = layoutmanager.layoutByName(layout)
-        exporter = QgsLayoutExporter(layoutObject)
-        exporter.exportToPdf(cfile, QgsLayoutExporter.PdfExportSettings())
-
-    def setPaperSizePortrait(self):
-
-        longSide = 279
-        shortSide = 216
-        width = shortSide
-        height = longSide
-
-        return width, height
-
-    def setPaperSizeLandscape(self):
-
-        longSide = 216
-        shortSide = 279
-        width = shortSide
-        height = longSide
-
-        return width, height
-
-    def reset(self):
-
-        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/jobs.ui'
-        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/jobs_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        form_config.setUiForm(jform)
-        form_config.setInitFilePath(jpy)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-
-        self.vl = QgsProject.instance().mapLayersByName('plans')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/plans.ui'
-        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/plans_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        form_config.setUiForm(jform)
-        form_config.setInitFilePath(jpy)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-
-        self.vl = QgsProject.instance().mapLayersByName('contacts')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/contacts.ui'
-        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/contacts_init.py'
-        form_config = self.iface.activeLayer().editFormConfig()
-        form_config.setUiForm(jform)
-        form_config.setInitFilePath(jpy)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-
-        self.vl = QgsProject.instance().mapLayersByName('supplementals')[0]
-        self.iface.setActiveLayer(self.vl)
-        jform = os.path.dirname(os.path.realpath(__file__)) + '/forms/supplementals.ui'
-        jpy = os.path.dirname(os.path.realpath(__file__)) + '/forms/supplementals_init.py'
-        form_config.setUiForm(jform)
-        form_config.setInitFilePath(jpy)
-        self.iface.activeLayer().setEditFormConfig(form_config)
-        self.vl = QgsProject.instance().mapLayersByName('jobs')[0]
-        self.iface.setActiveLayer(self.vl)
 
 
 class sgis_printMapView(object):
@@ -7123,13 +7005,13 @@ class sgis_moveJob(object):
                 pass
 
             else:
-                QgsMessageLog.logMessage('DEBUG: Supp MOVE cancelled.', 'sGIS', level=Qgis.Info)
+                QgsMessageLog.logMessage('DEBUG: Job MOVE cancelled.', 'sGIS', level=Qgis.Info)
                 return
         else:
             return
 
         try:
-            # QgsMessageLog.logMessage('SELECT DEST ENTERED.', 'sGIS', level=Qgis.Info)
+            QgsMessageLog.logMessage('SELECT DEST ENTERED.', 'sGIS', level=Qgis.Info)
             passwd = getSQL(self)
             try:
                 connection = psycopg2.connect(user=dbUser,
@@ -7180,18 +7062,21 @@ class sgis_moveJob(object):
             lat_lon = self.newF['lat_lon']
             job_id2 = self.newF['sid']
 
-            ll = len(lat_lon)
+            try:
+              ll = len(lat_lon)
 
-            if ll <= 30:
+              if ll <= 30:
+                  pass
+              else:
+                  lat_lon = formatLL(lat_lon)
+                  self.iface.actionToggleEditing().trigger()
+                  layerData = self.vl.dataProvider()
+                  idx = layerData.fieldNameIndex('lat_lon')
+                  self.vl.changeAttributeValue(self.newF.id(), idx, lat_lon)
+                  self.iface.activeLayer().commitChanges()
+            except Exception as e:
                 pass
-            else:
-                lat_lon = formatLL(lat_lon)
-                self.iface.actionToggleEditing().trigger()
-                layerData = self.vl.dataProvider()
-                idx = layerData.fieldNameIndex('lat_lon')
-                self.vl.changeAttributeValue(self.newF.id(), idx, lat_lon)
-                self.iface.activeLayer().commitChanges()
-
+                
             i = 0
             for a in self.oldF.fields():
                 if str(self.oldF[a.name()]) == 'NULL':
@@ -7250,7 +7135,7 @@ class sgis_moveJob(object):
                 cursor = connection.cursor()
 
                 # Update single record now
-                sql_update_query = """SELECT setval('jobs_id_seq', """ + str(currval) + """, true); """
+                sql_update_query = """SELECT setval('brs_jobs_id_seq', """ + str(currval) + """, true); """
                 cursor.execute(sql_update_query)
                 connection.commit()
                 sql_update_query = """DELETE from abutters where referrerj = '""" + str(job_no) + """';"""
@@ -7259,8 +7144,7 @@ class sgis_moveJob(object):
 
                 # count = cursor.rowcount
 
-                # print("id BEFORE updating record: ")
-                sql_select_query = """SELECT last_value from jobs_id_seq"""
+                sql_select_query = """SELECT last_value from brs_jobs_id_seq"""
                 cursor.execute(sql_select_query)
                 record = cursor.fetchone()
                 for r in record:
@@ -7268,8 +7152,7 @@ class sgis_moveJob(object):
                         pass
                     else:
                         currval = r
-                        QgsMessageLog.logMessage('currval AFTER: ' + str(currval), 'sGIS', level=Qgis.Info)
-                        # print(str(currval))
+                        # QgsMessageLog.logMessage('currval AFTER: ' + str(currval), 'sGIS', level=Qgis.Info)
 
             except (Exception, psycopg2.Error) as error:
                 QgsMessageLog.logMessage('PostgreSQL ERROR: ' + str(error), 'sGIS', level=Qgis.Info)
@@ -7279,7 +7162,6 @@ class sgis_moveJob(object):
                 if (connection):
                     cursor.close()
                     connection.close()
-                    # print("PostgreSQL connection is closed")
 
             self.abutters_dialog = sgis_abutters(self.iface)
             self.abutters_dialog.run()
@@ -7289,7 +7171,7 @@ class sgis_moveJob(object):
             self.vl.commitChanges()
 
             status = "The feature has been moved successfully."
-            QMessageBox.information(None, "(Job)", str(status))
+            QMessageBox.information(None, "SUCCESS", str(status))
 
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -7507,7 +7389,7 @@ class sgis_movePlan(object):
             return
 
         try:
-            QgsMessageLog.logMessage('SELECT DEST ENTERED.', 'sGIS', level=Qgis.Info)
+            # QgsMessageLog.logMessage('SELECT DEST ENTERED.', 'sGIS', level=Qgis.Info)
             self.iface.actionCopyFeatures().trigger()
             self.vl = QgsProject.instance().mapLayersByName('plans')[0]
             self.iface.setActiveLayer(self.vl)
@@ -7530,7 +7412,8 @@ class sgis_movePlan(object):
 
             lat_lon = self.newF['lat_lon']
 
-            QgsMessageLog.logMessage('lat_lon: ' + str(lat_lon), 'sGIS', level=Qgis.Info)
+            # QgsMessageLog.logMessage('lat_lon: ' + str(lat_lon), 'sGIS', level=Qgis.Info)
+            
             if str(lat_lon) == 'NULL':
                 ll = 1
                 pass
@@ -7554,16 +7437,16 @@ class sgis_movePlan(object):
                     i = i + 1
                     pass
                 else:
-                    QgsMessageLog.logMessage('i: ' + str(i) + ' | '+ str(self.oldF[a.name()]), 'sGIS', level=Qgis.Info)
+                    # QgsMessageLog.logMessage('i: ' + str(i) + ' | '+ str(self.oldF[a.name()]), 'sGIS', level=Qgis.Info)
                     if i in (0,1,2,4,11,13):
-                        QgsMessageLog.logMessage('pass: ' + str(i), 'sGIS', level=Qgis.Info)
+                        # QgsMessageLog.logMessage('pass: ' + str(i), 'sGIS', level=Qgis.Info)
                         i = i + 1
                         pass
                     elif i == 8:
                         self.vl.startEditing()
                         self.vl.changeAttributeValue(self.newF.id(), i, self.oldF[a.name()])
                         self.vl.commitChanges()
-                        QgsMessageLog.logMessage('SET: ' + str(i) + ' ' + str(self.oldF[a.name()]), 'sGIS', level=Qgis.Info)
+                        # QgsMessageLog.logMessage('SET: ' + str(i) + ' ' + str(self.oldF[a.name()]), 'sGIS', level=Qgis.Info)
                         i = i + 1
                     elif i == 15:
                         self.vl.startEditing()
@@ -7587,7 +7470,7 @@ class sgis_movePlan(object):
             self.vl.commitChanges()
 
             status = "The feature has been moved successfully."
-            QMessageBox.information(None, "(Plan)", str(status))
+            QMessageBox.information(None, "SUCCESS", str(status))
 
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -7596,23 +7479,6 @@ class sgis_movePlan(object):
                                  "Details: " + str(exc_type) + ' ' + str(fname) + ' ' + str(
                                      exc_tb.tb_lineno) + ' ' + str(e))
             return
-
-    def updateAttribute(self, job, idx, attVal):
-        self.vl.startEditing()
-        self.vl.changeAttributeValue(job.id(), idx, attVal)
-        self.vl.commitChanges()
-
-    def selectLastFeature(self):
-
-        f2 = self.vl.getFeatures()
-        fCount = self.vl.featureCount()
-
-        fIds = []
-        fIds = [f["gid"] for f in f2]
-        fIds.sort()
-
-        fId = [fIds[-1]]
-        self.vl.selectByIds(fId)
 
 
 class sgis_moveSupp(object):
@@ -7639,7 +7505,7 @@ class sgis_moveSupp(object):
             msg = QMessageBox()
             msg.setWindowTitle('SELECT Supplemental')
             msg.setText('Click OK and select the SOURCE supplemental you wish to move.')
-            cont = msg.addButton('Continue', QMessageBox.AcceptRole)
+            cont = msg.addButton('OK', QMessageBox.AcceptRole)
             cancel = msg.addButton('Cancel', QMessageBox.RejectRole)
             msg.setDefaultButton(cont)
             msg.exec_()
@@ -7680,8 +7546,6 @@ class sgis_moveSupp(object):
                     for a in self.iface.mainWindow().children():
                         if a.objectName() == 'mActionDeselectAll':
                             a.trigger()
-                            QgsMessageLog.logMessage('FIRST RUN: Previous selection has been cleared.',
-                                                     'sGIS', level=Qgis.Info)
                             QgsMessageLog.logMessage('Supp move starting...', 'sGIS', level=Qgis.Info)
                             self.iface.actionSelect().trigger()
                 elif msg.clickedButton() is cancel:
@@ -7806,7 +7670,7 @@ class sgis_moveSupp(object):
             return
 
         try:
-            QgsMessageLog.logMessage('SELECT DEST ENTERED.', 'sGIS', level=Qgis.Info)
+            # QgsMessageLog.logMessage('SELECT DEST ENTERED.', 'sGIS', level=Qgis.Info)
 
             self.iface.setActiveLayer(self.vl)
             self.iface.actionCopyFeatures().trigger() # copy from parcels
@@ -7899,10 +7763,13 @@ class sgis_moveSupp(object):
                             self.vl.commitChanges()
                             i = i + 1
 
+                # may not reach here but exception ok?
                 status = "The feature has been moved successfully."
-                QMessageBox.information(None, "(Supplemental)", str(status))
+                QMessageBox.information(None, "SUCCESS", str(status))
 
             except Exception as e:
+                status = "The feature has been moved successfully."
+                QMessageBox.information(None, "SUCCESS*", str(status))
                 pass
 
             self.oldF_id = self.oldF.id()
