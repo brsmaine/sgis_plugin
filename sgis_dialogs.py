@@ -7141,7 +7141,7 @@ class sgis_moveJob(object):
                 cursor = connection.cursor()
 
                 # print("id BEFORE updating record: ")
-                sql_select_query = """SELECT last_value from jobs_id_seq"""
+                sql_select_query = """SELECT last_value from brs_jobs_id_seq"""
                 cursor.execute(sql_select_query)
                 record = cursor.fetchone()
                 for r in record:
