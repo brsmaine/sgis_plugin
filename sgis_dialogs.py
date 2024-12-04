@@ -21,7 +21,6 @@ import os
 import pypdf
 from pypdf import PdfWriter
 
-
 from win32com import client
 
 from PyQt5.QtCore import QVariant, Qt, QRectF, QSettings
@@ -63,7 +62,10 @@ reportsPath = config["reportsPath"]
 wwwURL = config["wwwURL"]
 wwwRootFolder = config["wwwRootFolder"]
 
+QgsMessageLog.logMessage('surveyorGIS (sGIS) plugin LOADED!', 'sGIS', level=Qgis.Info)
+QgsMessageLog.logMessage('db@host:port | ' + db + '@' + dbServer + ':' + dbPort,  'sGIS', level=Qgis.Info)
 QgsMessageLog.logMessage('jobsPath | ' + jobsPath, 'sGIS', level=Qgis.Info)
+QgsMessageLog.logMessage('welcome.', 'sGIS', level=Qgis.Info)
 
 # common functions
 def formatLL(l_l):
@@ -297,8 +299,6 @@ class sgis_newPlan(object):
                     for a in self.iface.mainWindow().children():
                         if a.objectName() == 'mActionDeselectAll':
                             a.trigger()
-                            QgsMessageLog.logMessage('FIRST RUN: Previously selected parcel(s) have been cleared.',
-                                                     'sGIS', level=Qgis.Info)
                             QgsMessageLog.logMessage('Job creation starting...', 'sGIS', level=Qgis.Info)
                             self.iface.actionSelectFreehand().trigger()
                             self.count = self.count + 1
@@ -7960,21 +7960,6 @@ class sgis_parcel(object):
         t1 = sgis_addParcel(newParcel(self))
         t1.start()
         t1.join()
-
-    def selectLastFeature(self):
-
-        request = QgsFeatureRequest().setFlags(QgsFeatureRequest.NoGeometry).setSubsetOfAttributes(['gid'],
-            self.vl.fields())
-
-        f2 = self.vl.getFeatures()
-        fCount = self.vl.featureCount()
-
-        fIds = []
-        fIds = [f.id() for f in f2]
-        fIds.sort()
-
-        fId = [fIds[-1]]
-        self.vl.selectByIds(fId)
 
 
 class sgis_exportDXF(object):
