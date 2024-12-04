@@ -266,6 +266,7 @@ def jobFolders(jobNo):
     shutil.copy(cmdpath, panopath)
 
 # classes
+
 class sgis_newPlan(object):
     newJob = 0
     selComp = 0
@@ -4809,10 +4810,20 @@ class sgis_printEstimates(object):
         from openpyxl.styles import PatternFill, Font
         from openpyxl.styles.differential import DifferentialStyle
         from openpyxl.formatting.rule import Rule
-
+    
+        eTemplate = os.path.join(reportsPath + '\\GIS_Estimates_TEMPLATE.xlsx')
         efile = os.path.join(estimatesPath)
-        wb = openpyxl.Workbook()
+        
+        # this is crashing
+        # wb = openpyxl.Workbook()
+        # ws = wb.active
+
+        from openpyxl import load_workbook
+
+        #this works but could be improved or combined with main template.  revisit.
+        wb = load_workbook(eTemplate)
         ws = wb.active
+
 
         grey_fill = PatternFill(bgColor="DDDDDD")
         dxf = DifferentialStyle(fill=grey_fill)
@@ -4905,8 +4916,11 @@ class sgis_printEstimates(object):
                     writeInactives(active, j, ws)
 
         for column_cells in ws.columns:
-            length = max(len(cell.value) + 5 for cell in column_cells)
-            ws.column_dimensions[column_cells[0].column_letter].width = length
+            try:
+                length = max(len(cell.value) + 5 for cell in column_cells)
+                ws.column_dimensions[column_cells[0].column_letter].width = length
+            except Exception as e:
+                pass
 
         QgsMessageLog.logMessage('Saving file: ' + efile + '...', 'sGIS', level=Qgis.Info)
         wb.save(efile)
