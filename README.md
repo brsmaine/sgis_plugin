@@ -4,8 +4,6 @@ v3.40.1a <br>
 <img src="./images/sgisSnap.jpg">
 updated to ensure compatibility with latest QGIS (v3.40.1)<br>
 <hr>
-POTENTIAL ISSUE: PrintEstimates may crash QGIS - CONFIRMED, will submit.<br>
-<hr>
 latest updates:
 <ul>
 <li>sanitized* - all but two references to BRS/LA and all hardcoded paths/values removed</li>
