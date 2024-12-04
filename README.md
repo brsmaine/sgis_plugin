@@ -1,7 +1,7 @@
 <hr>surveyorGIS (sGIS)<hr>
 v3.40.1a <br>
 2024.03.DEC<br>
-<img src="/images/sgisSnap.jpg">
+<img src="./images/sgisSnap.jpg">
 <br>
 updated to ensure compatibility with latest QGIS (v3.40.1)<br><br>
 <ul>
