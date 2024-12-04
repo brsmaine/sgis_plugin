@@ -7129,7 +7129,7 @@ class sgis_moveJob(object):
             return
 
         try:
-            QgsMessageLog.logMessage('SELECT DEST ENTERED.', 'sGIS', level=Qgis.Info)
+            # QgsMessageLog.logMessage('SELECT DEST ENTERED.', 'sGIS', level=Qgis.Info)
             passwd = getSQL(self)
             try:
                 connection = psycopg2.connect(user=dbUser,
