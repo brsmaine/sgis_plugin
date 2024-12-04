@@ -36,7 +36,7 @@ class sgis_menu(object):
         if not self.sToolBar:
             self.sToolBar = self.iface.addToolBar(u'SGIS')
             self.sToolBar.setObjectName(u'SGIS')
-
+        
         self.sgis_menu = QMenu(QCoreApplication.translate("sgis", "&surveyorGIS"))
         self.iface.mainWindow().menuBar().insertMenu(self.iface.firstRightStandardMenu().menuAction(), self.sgis_menu)
 
@@ -231,7 +231,7 @@ class sgis_menu(object):
         self.CADexportNEW_action = QAction(icon, "&Generate CAD Outputs (NEW)", self.iface.mainWindow())
         self.CADexportNEW_action.triggered.connect(self.cadExportNEW)
         self.util_menu.addAction(self.CADexportNEW_action)
-
+        
     def unload(self):
         if self.sgis_menu != None:
             self.iface.mainWindow().menuBar().removeAction(self.sgis_menu.menuAction())
