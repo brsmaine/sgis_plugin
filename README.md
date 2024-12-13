@@ -1,7 +1,7 @@
 <hr><b>surveyorGIS (sGIS)<hr>
 v3.40.1a <br>
 2024.03.DEC</b><br><br>
-sGIS is a set of Python plugins for manipulating vector map layers in Quantum GIS.  sGIS provides an alternative to the Processing toolbox, an intuitive user interface and customized capabilities tailored to the operations of professional Surveyors in the US State of Maine.<br>
+sGIS is a set of Python plugins for manipulating vector map layers in Quantum GIS.  sGIS provides an alternative to the Processing toolbox, an intuitive user interface and customized capabilities tailored to the operations of professional Surveyors in the US State of Maine.<br><br>
 Key Features:<br>
 <ul>
   <li>QGIS Client Plugin</li>
