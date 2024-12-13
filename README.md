@@ -11,7 +11,7 @@ Key Features:<br>
   <li>CAD Output Generation</li>
   <li>Potree Webpage Generation</li>
 </ul>
-<br><br>
+<br>
 <img src="./images/sgisSnap.jpg">
 updated to ensure compatibility with latest QGIS (v3.40.1)<br>
 <hr>
